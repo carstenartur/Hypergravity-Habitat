@@ -1,195 +1,193 @@
-Hypergravity Habitat
+# Hypergravity Habitat
 
-An open research project exploring long-term habitation and experimentation under elevated gravity.
+**An open research concept for long-duration studies under moderately elevated effective gravity.**
 
-⸻
+---
 
-Motivation
+## Executive Summary
 
-Humanity has invested decades of research into microgravity, resulting in major advances in space medicine, physiology, and human performance research aboard orbital platforms.
+Hypergravity Habitat is an early-stage research and documentation project. It explores whether a terrestrial research platform could support controlled long-duration experiments at effective gravity levels above normal Earth gravity.
 
-However, there appears to be no publicly known research infrastructure that enables humans to live, sleep, work, train, and conduct scientific experiments under moderately elevated gravity for weeks or months.
+The project addresses a gap between established microgravity research, short-duration acceleration studies, parabolic flight, and conventional laboratory environments. Existing platforms are highly valuable, but they do not fully answer what could be learned from sustained, moderate, experimentally controlled hypergravity exposure.
 
-This repository investigates that research gap.
+The central question is:
 
-Rather than focusing on a single engineering solution, the project explores the broader question:
+> How do biological, technical, and human-centred systems respond to sustained effective gravity above 1 g over scientifically meaningful durations?
 
-How do humans, animals, plants, and technical systems adapt to long-term exposure to elevated gravity?
+This repository does not propose immediate construction of a facility. Its purpose is to develop a rigorous basis for discussion, modelling, feasibility assessment, and future collaboration.
 
-⸻
+---
 
-Research Vision
+## Research Vision
 
-The long-term vision is to investigate the feasibility of a terrestrial research platform capable of providing a controlled environment with effective gravity levels above Earth’s natural gravity.
+The long-term vision is to evaluate a possible terrestrial infrastructure for moderate hypergravity research.
 
-Potential characteristics include:
+Potential applications include:
 
-* Long-duration human habitation
-* Scientific laboratories
-* Medical monitoring
-* Sports science experiments
-* Biological research
-* Engineering validation
-* Modular and scalable infrastructure
+- artificial-gravity research,
+- space medicine,
+- physiology,
+- biomechanics,
+- sports science,
+- biology,
+- engineering validation,
+- research infrastructure planning.
 
-The repository evaluates different technical concepts that could enable such a facility.
+The project remains architecture-neutral. Circular railway systems, magnetic levitation systems, rotating structures, and smaller demonstrator concepts are all treated as candidates for comparison.
 
-⸻
+---
 
-Research Questions
+## Research Gap
 
-Human Physiology
+| Research regime | Typical platform | Typical duration | Gravity environment |
+|---|---|---:|---:|
+| Microgravity | Orbital platform | Days to months | Near 0 g |
+| Parabolic flight | Aircraft | Seconds | Alternating low-g and high-g |
+| Centrifuge study | Ground-based centrifuge | Minutes to hours | Elevated g |
+| Bed-rest analogue | Clinical research facility | Days to months | 1 g with unloading analogue |
+| Hypergravity habitat concept | Large-radius terrestrial platform | To be studied | Moderately above 1 g |
 
-* Muscle adaptation
-* Bone remodeling
-* Cardiovascular adaptation
-* Sleep quality
-* Recovery
-* Aging
-* Vestibular adaptation
+The research gap is the lack of a clearly defined, habitable, long-duration platform for studying moderate hypergravity as its own scientific regime.
 
-Human Performance
+---
 
-* Strength development
-* Endurance
-* Running performance
-* Balance
-* Coordination
-* Ball handling
-* Motor learning
+## Candidate Concepts
 
-Biology
+### Circular Railway Platform
 
-* Plant growth
-* Root development
-* Animal physiology
-* Cell cultures
-* Microbiology
+A circular railway platform could use a large-radius track and continuous motion to generate effective acceleration. This approach may benefit from mature rail engineering, but it raises questions about vibration, wear, access, maintenance, and cost.
 
-Engineering
+### Magnetic Levitation Platform
 
-* Railway concepts
-* Maglev concepts
-* Rotating habitats
-* Energy requirements
-* Safety
-* Cost models
+A maglev platform could reduce mechanical contact and may allow smoother operation. It also introduces higher system complexity, infrastructure cost, and certification challenges.
 
-⸻
+### Rotating or Hybrid Platform
 
-Why Hypergravity?
+A rotating or hybrid demonstrator could provide a more direct artificial-gravity test environment. Smaller demonstrators may be useful for early modelling and validation, while larger systems require deeper engineering analysis.
 
-Research infrastructures already exist for
+---
 
-* microgravity
-* high-g exposure
-* parabolic flights
+## Objectives
 
-but long-term exposure to moderately elevated gravity remains largely unexplored.
+The repository aims to:
 
-Possible applications include
+1. define the research domain,
+2. collect scientific questions,
+3. document physical and engineering assumptions,
+4. compare candidate infrastructure concepts,
+5. develop reproducible calculations,
+6. identify risks and uncertainties,
+7. prepare material suitable for academic and institutional review.
 
-* Space medicine
-* Artificial gravity research
-* Sports science
-* Rehabilitation
-* Healthy aging
-* Human performance
-* Biology
-* Material science
+---
 
-⸻
+## Evidence Levels
 
-Current Concept
+Documentation should distinguish between:
 
-The initial engineering concept investigates a large circular railway or maglev research platform capable of supporting long-duration experiments.
+| Evidence level | Meaning |
+|---|---|
+| Established knowledge | Supported by accepted physics, engineering practice, or literature |
+| Engineering estimate | Approximation based on explicit assumptions |
+| Working hypothesis | Plausible idea requiring validation |
+| Open research question | Topic requiring further review, modelling, or experiments |
 
-The concept intentionally builds upon existing transportation technologies to minimize technical risk while maximizing scalability.
+This distinction is essential because the project combines established mechanics with early-stage concept development.
 
-Alternative concepts remain part of the project and will be evaluated as research progresses.
+---
 
-⸻
+## Repository Structure
 
-Repository Structure
+```text
+README.md
 
 docs/
-    concept-note.md
-    research-gap.md
-    scientific-questions.md
-    railway-platform.md
-    maglev-platform.md
-    human-physiology.md
-    sports-science.md
-    biology.md
-    engineering.md
-    economics.md
-    roadmap.md
+  concept-note.md
+  research-gap.md
+  scientific-questions.md
+  railway-platform.md
+  maglev-platform.md
+  human-physiology.md
+  sports-science.md
+  biology.md
+  engineering.md
+  economics.md
+  roadmap.md
+
 calculations/
+  Reproducible physics and cost calculations
+
 simulations/
+  Numerical models and parameter studies
+
 diagrams/
+  Concept sketches and explanatory graphics
+
 references/
+  Literature notes and source material
+
 papers/
+  Draft papers, whitepapers, and proposal-oriented documents
+```
 
-⸻
+---
 
-Roadmap
+## Roadmap
 
-Phase 1
+### Phase 1: Foundation
 
-* Literature review
-* Research gap analysis
-* Initial concept note
-* Physics calculations
-* Cost estimates
+- Literature review
+- Terminology and scope
+- Baseline calculations
+- Research gap analysis
+- Initial concept note
 
-Phase 2
+### Phase 2: Comparative Study
 
-* Engineering concepts
-* Medical feasibility
-* Biological applications
-* Comparison of technical platforms
+- Compare rail, maglev, rotating, and demonstrator concepts
+- Develop cost and energy estimates
+- Document safety and operational constraints
+- Identify the smallest useful experimental platform
 
-Phase 3
+### Phase 3: Feasibility Preparation
 
-* Numerical simulations
-* Human performance models
-* Experimental concepts
-* Scientific collaborations
+- Refine research questions with domain experts
+- Create simulation and visualization models
+- Prepare material for external review
+- Define a demonstrator pathway
 
-Phase 4
+---
 
-* Comprehensive feasibility study
-* Whitepaper
-* Open research collaboration
+## Documentation Standards
 
-⸻
+Contributions should:
 
-Contributions
+- separate facts from hypotheses,
+- state assumptions explicitly,
+- use SI units consistently,
+- include derivations for key calculations,
+- cite sources wherever possible,
+- document uncertainty,
+- avoid promotional language,
+- identify limitations and risks,
+- make calculations reproducible.
 
-Contributions are welcome.
+---
 
-Especially appreciated are
+## Collaboration
 
-* scientific literature
-* engineering expertise
-* medical expertise
-* cost estimates
-* simulation models
-* constructive criticism
-* alternative concepts
+The project welcomes critical feedback from experts in aerospace medicine, physiology, biomechanics, sports science, biology, railway engineering, maglev systems, structural engineering, safety engineering, simulation, and research infrastructure planning.
 
-⸻
+---
 
-Disclaimer
+## Disclaimer
 
-This repository represents an open research effort.
+This repository is an exploratory research and documentation project. It does not propose immediate construction or operation of any facility. Any real-world implementation would require scientific review, engineering validation, safety assessment, ethical review, and institutional oversight.
 
-The concepts presented here are intended to stimulate scientific discussion and evaluate the feasibility of long-term hypergravity research infrastructures. The repository does not propose immediate implementation of any specific concept without appropriate scientific, engineering, medical, and ethical evaluation.
+---
 
-⸻
+## License
 
-License
+Documentation is intended to be published under Creative Commons Attribution 4.0 International (CC BY 4.0) unless otherwise stated.
 
-Documentation is intended to be published under Creative Commons Attribution 4.0 (CC BY 4.0).
-
-Software, simulations, or source code may use different licenses where appropriate.
+Software, simulations, datasets, diagrams, or generated artifacts may use different licenses where appropriate.
