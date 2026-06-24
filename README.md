@@ -108,6 +108,7 @@ docs/
     design-requirements.md
     preliminary-sizing.md
     railway-platform.md
+    tilting-train-and-cant-limits.md
     maglev-platform.md
     transfer-system-concept.md
 
@@ -178,6 +179,7 @@ papers/
 - [`docs/engineering/design-requirements.md`](docs/engineering/design-requirements.md) — technology-neutral requirements framework.
 - [`docs/engineering/preliminary-sizing.md`](docs/engineering/preliminary-sizing.md) — vector-corrected radius, speed, acceleration, and sizing model.
 - [`docs/engineering/railway-platform.md`](docs/engineering/railway-platform.md) — circular railway concept assessment.
+- [`docs/engineering/tilting-train-and-cant-limits.md`](docs/engineering/tilting-train-and-cant-limits.md) — tilting trains, track cant, cant deficiency, floor alignment, wheel unloading, and maximum-g constraints for railway concepts.
 - [`docs/engineering/maglev-platform.md`](docs/engineering/maglev-platform.md) — magnetic-levitation concept assessment.
 - [`docs/engineering/transfer-system-concept.md`](docs/engineering/transfer-system-concept.md) — staged access, logistics, and emergency-transfer concepts.
 
@@ -198,7 +200,7 @@ papers/
 
 ### Circular Railway Platform
 
-A circular railway platform could use a large-radius track and continuous motion to generate centripetal acceleration. This approach may benefit from mature rail engineering, but it raises questions about vibration, wear, access, maintenance, banking geometry, land use, emergency stopping, and cost.
+A circular railway platform could use a large-radius track and continuous motion to generate centripetal acceleration. This approach may benefit from mature rail engineering, but it raises questions about vibration, wear, access, maintenance, banking geometry, tilting-vehicle feasibility, land use, emergency stopping, and cost.
 
 ### Magnetic Levitation Platform
 
