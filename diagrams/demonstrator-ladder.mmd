@@ -1,0 +1,30 @@
+%% FIG-002: Demonstrator Ladder
+%% Source basis:
+%% - docs/roadmap.md
+%% - docs/minimum-useful-demonstrator.md
+%% - docs/experimental-programme.md
+%% Assumptions:
+%% - staged pre-feasibility progression
+%% - human studies are deferred until safety, ethics, and non-human evidence exist
+
+flowchart TD
+    S0["Stage 0<br/>Literature + modelling<br/>Research gap, equations, parameters"]
+    S1["Stage 1<br/>Instrumentation-only demonstrator<br/>Acceleration, vibration, environment"]
+    S2["Stage 2<br/>Physical payload<br/>Dummy mass, fluids, payload rack"]
+    S3["Stage 3<br/>Low-risk biological payload<br/>Plant seedling or microbial pilot"]
+    S4["Stage 4<br/>Refined biological programme<br/>Matched controls, repeatability"]
+    S5["Stage 5<br/>Engineering demonstrator<br/>Guided cart, rail, maglev, or rotating rig"]
+    S6["Stage 6<br/>Short human tolerance study<br/>Only after formal review"]
+    S7["Stage 7<br/>Repeated / longer human exposure<br/>Deferred, governance-heavy"]
+
+    S0 --> S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
+
+    STOP1{"Stop/go<br/>Is gap real?"}
+    STOP2{"Stop/go<br/>Is measurement quality sufficient?"}
+    STOP3{"Stop/go<br/>Are biological data interpretable?"}
+    STOP4{"Stop/go<br/>Is human exposure justified?"}
+
+    S0 --> STOP1 --> S1
+    S2 --> STOP2 --> S3
+    S4 --> STOP3 --> S5
+    S5 --> STOP4 --> S6
