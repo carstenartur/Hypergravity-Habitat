@@ -1,14 +1,56 @@
 # Diagrams
 
-This directory is intended for figures, schematics, and visual explanation material for the Hypergravity Habitat project.
+This directory contains **source-backed diagram material** for the Hypergravity Habitat project.
 
-The project needs diagrams because many review-relevant ideas are geometric or systems-based: resultant effective gravity, radius/speed trade-offs, Coriolis effects, demonstrator staging, architecture comparison, and safety logic.
+No diagram in this repository should be treated as valid unless it has a documented source: an equation, a calculation script, a data table, a Mermaid source file, or a cited project document.
+
+---
+
+## Source Rule
+
+Every figure must have:
+
+1. a figure ID,
+2. a source file,
+3. a source document or calculation script,
+4. stated assumptions,
+5. units where numerical values are shown,
+6. a limitation note.
+
+Generated images without a source file should not be committed.
+
+---
+
+## Current Diagram Sources
+
+| Figure ID | Topic | Source file | Source basis |
+|---|---|---|---|
+| FIG-001 | Resultant effective gravity vector | `resultant-effective-gravity.mmd` | `docs/physics-reference.md`, `calculations/hypergravity_sizing.py` |
+| FIG-002 | Demonstrator ladder | `demonstrator-ladder.mmd` | `docs/roadmap.md`, `docs/minimum-useful-demonstrator.md`, `docs/experimental-programme.md` |
+| FIG-003 | Architecture options | `architecture-options.mmd` | `docs/architecture-trade-study.md` |
+| FIG-004 | Safety case structure | `safety-case-structure.mmd` | `docs/safety-case-outline.md`, `docs/risk-register.md`, `docs/requirements-traceability-matrix.md` |
+| FIG-005 | Confounder-control chain | `confounder-control-chain.mmd` | `docs/vibration-and-confounders.md`, `docs/data-management-plan.md` |
+| FIG-006 | Physics plots | `generate_physics_plots.py` | `calculations/hypergravity_sizing.py`, `calculations/coriolis_projectile_deflection.py`, `docs/physics-reference.md` |
+
+---
+
+## Planned Rendered Outputs
+
+Rendered SVG/PNG files are intentionally not required at this stage. The authoritative sources are the Mermaid and Python files.
+
+If rendered graphics are later added, they should be generated from the source files and accompanied by a note such as:
+
+```text
+Generated from: diagrams/resultant-effective-gravity.mmd
+Source documents: docs/physics-reference.md, calculations/hypergravity_sizing.py
+Generated on: YYYY-MM-DD
+```
 
 ---
 
 ## Priority Figures
 
-### 1. Resultant Effective Gravity Vector
+### FIG-001: Resultant Effective Gravity Vector
 
 Purpose:
 
@@ -16,49 +58,21 @@ Purpose:
 - show the resultant effective gravity vector,
 - show the required bank or floor angle.
 
-Related documents:
+Source basis:
 
 - `docs/physics-reference.md`
 - `docs/engineering/preliminary-sizing.md`
-
----
-
-### 2. Radius-Speed-Gravity Trade-Off
-
-Purpose:
-
-- show how required speed changes with radius,
-- compare target resultant gravity levels,
-- make large-radius implications visible.
-
-Related files:
-
 - `calculations/hypergravity_sizing.py`
 
 ---
 
-### 3. Coriolis Projectile Deflection
-
-Purpose:
-
-- show how thrown or kicked projectiles deviate in a rotating frame,
-- compare handball and football examples,
-- explain why sport-specific skill maintenance can require larger radii than strength training.
-
-Related files:
-
-- `calculations/coriolis_projectile_deflection.py`
-- `docs/science/coriolis-projectile-accuracy.md`
-
----
-
-### 4. Demonstrator Ladder
+### FIG-002: Demonstrator Ladder
 
 Purpose:
 
 - show progression from calculation to instrumentation, biological payloads, engineering demonstrators, and only later possible human studies.
 
-Related documents:
+Source basis:
 
 - `docs/roadmap.md`
 - `docs/minimum-useful-demonstrator.md`
@@ -66,25 +80,26 @@ Related documents:
 
 ---
 
-### 5. Architecture Trade Study Diagram
+### FIG-003: Architecture Trade Study Diagram
 
 Purpose:
 
 - compare no-build, existing facilities, payload demonstrator, rotating platform, rail, maglev, and hybrid concepts.
 
-Related document:
+Source basis:
 
 - `docs/architecture-trade-study.md`
+- `docs/facility-comparison.md`
 
 ---
 
-### 6. Safety Case Structure
+### FIG-004: Safety Case Structure
 
 Purpose:
 
 - show how hazards, requirements, mitigations, evidence, and residual risk connect.
 
-Related documents:
+Source basis:
 
 - `docs/safety-case-outline.md`
 - `docs/risk-register.md`
@@ -92,27 +107,54 @@ Related documents:
 
 ---
 
+### FIG-005: Confounder-Control Chain
+
+Purpose:
+
+- show how platform effects can confound biological or human results and how measurement/logging controls interpretation.
+
+Source basis:
+
+- `docs/vibration-and-confounders.md`
+- `docs/data-management-plan.md`
+
+---
+
+### FIG-006: Radius-Speed and Coriolis Plots
+
+Purpose:
+
+- generate numerical plots from reproducible equations rather than hand-drawn illustration.
+
+Source basis:
+
+- `diagrams/generate_physics_plots.py`
+- `calculations/hypergravity_sizing.py`
+- `calculations/coriolis_projectile_deflection.py`
+
+---
+
 ## Style Guidelines
 
 Figures should be:
 
-- simple,
 - source-controlled,
 - editable,
+- reproducible,
 - labelled with SI units,
-- referenced from the relevant document,
+- referenced from relevant documents,
 - cautious in wording,
 - suitable for academic or proposal use.
 
 Preferred source formats:
 
-- SVG,
-- Mermaid diagrams in Markdown,
-- Python-generated plots,
-- draw.io source files if exported to SVG or PNG.
+- Mermaid `.mmd`,
+- Python generators,
+- CSV data files,
+- SVG generated from source.
 
 ---
 
 ## Status
 
-No final figure set exists yet. This directory currently defines the required figure plan.
+This directory now contains source-backed diagram definitions and a generator script. The next step is rendering selected figures to SVG after deciding the exact output style.
