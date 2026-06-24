@@ -69,6 +69,7 @@ The purpose is to make the project reviewable:
 | ENG-002 | Define safe state for each demonstrator | `safety-case-outline.md` | safe-state requirement | integrated test | open |
 | ENG-003 | Compare architecture options before selection | `architecture-trade-study.md` | trade-study matrix | expert review | drafted |
 | ENG-004 | Do not claim railway target-g capability from radius and speed alone; include cant, tilt, wheel unloading, low-speed/stopped condition, and clearance analysis | `engineering/tilting-train-and-cant-limits.md` | cant/tilt analysis as railway gate criterion | railway expert review and vehicle-track simulation | drafted |
+| ENG-005 | If proposing a full-ring vehicle, analyse global ring load path, local support unloading, guideway capture, stopped-state behaviour, thermal expansion, maintenance, and emergency access | `engineering/full-ring-vehicle-concept.md` | full-ring architecture treated as separate concept class | annular-structure simulation and expert review | drafted |
 | SAF-001 | Maintain a risk register | `risk-register.md` | risk categories and mitigation | periodic review | drafted |
 | SAF-002 | Define emergency stop/shutdown concept | `safety-case-outline.md` | safety requirement | demonstrator test | open |
 | SAF-003 | Define fire and power-loss response | `safety-case-outline.md` | hazard sections | safety review | open |
@@ -101,7 +102,9 @@ Possible verification methods:
 - data audit,
 - cost sensitivity analysis,
 - vehicle-track dynamics simulation,
-- railway cant/tilt expert review.
+- railway cant/tilt expert review,
+- annular-structure dynamics simulation,
+- guideway-capture and stopped-state analysis.
 
 ---
 
@@ -118,7 +121,8 @@ The following artifacts are still needed:
 7. cost sensitivity spreadsheet or script,
 8. diagram set for physics and roadmap,
 9. railway cant/tilt calculation model,
-10. vehicle-track dynamics review for rail concepts.
+10. vehicle-track dynamics review for rail concepts,
+11. full-ring vehicle load-path and stopped-state model.
 
 ---
 
