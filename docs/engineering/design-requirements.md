@@ -1,317 +1,360 @@
 # Design Requirements
 
 **Project:** Hypergravity Habitat  
-**Document:** System Design Requirements  
-**Version:** 0.1 (Draft)
+**Document type:** technology-neutral system requirements  
+**Status:** working document for pre-feasibility review  
+**Scope:** scientific, engineering, safety, operational, medical, biological, and programme requirements for candidate hypergravity research infrastructure
 
 ---
 
-# Purpose
+## 1. Purpose
 
-This document defines the engineering, scientific and operational requirements for a long-duration hypergravity research infrastructure.
+This document defines technology-neutral requirements for evaluating Hypergravity Habitat concepts. It is intended to prevent premature architecture selection and to provide a common basis for comparing railway, maglev, rotating, hybrid, and payload-only demonstrator concepts.
 
-The requirements are intentionally **technology-independent**.
+The requirements are not final specifications. They are a pre-feasibility framework that should be refined through literature review, modelling, expert consultation, and demonstrator testing.
 
-Every proposed implementation—including conventional railways, magnetic levitation systems, or future concepts—should be evaluated against the same requirements.
+The central rule is:
 
----
-
-# Scope
-
-The research infrastructure shall enable long-duration experiments under moderately elevated gravity while supporting realistic living conditions.
-
-Target applications include:
-
-- Human physiology
-- Space medicine
-- Sports science
-- Biology
-- Plant science
-- Animal studies
-- Material science
-- Engineering research
+> A design concept is only credible if it can be traced back to a scientific requirement and evaluated against safety, controllability, reproducibility, and operational feasibility.
 
 ---
 
-# Scientific Requirements
+## 2. Requirement Levels
 
-## SR-001 – Long-Duration Exposure
+Requirements should be classified by maturity.
 
-The infrastructure shall support continuous experiments lasting from several weeks to several months.
+| Level | Meaning |
+|---|---|
+| Mandatory requirement | Required for safety, scientific validity, or governance |
+| Target requirement | Desired performance for a useful system |
+| Trade requirement | Can be optimized against cost, complexity, or scope |
+| Unknown requirement | Requires research before a value can be set |
+| Stage-specific requirement | Applies only to a demonstrator, payload platform, or human-rated system |
 
----
-
-## SR-002 – Stable Gravity
-
-The effective gravity shall remain as constant as reasonably achievable throughout an experiment.
-
----
-
-## SR-003 – Adjustable Gravity
-
-Different target gravity levels should be achievable by design or through future upgrades.
-
-Initial target range:
-
-- 1.05 g
-- 1.10 g
-- 1.15 g
-- 1.20 g
-- 1.25 g
+This classification is important because early demonstrators should not be burdened with full habitat requirements.
 
 ---
 
-## SR-004 – Continuous Monitoring
+## 3. Development Stages
 
-The platform shall permit continuous collection of physiological, environmental and technical data.
+The project should define requirements separately for each stage.
 
----
+| Stage | Description | Requirement emphasis |
+|---|---|---|
+| Stage 0 | literature review and modelling | equations, evidence map, requirements definition |
+| Stage 1 | instrumented physics demonstrator | acceleration, vibration, control, data quality |
+| Stage 2 | biological payload demonstrator | environmental control, sample handling, reproducibility |
+| Stage 3 | short human tolerance study | medical governance, safety, monitoring |
+| Stage 4 | repeated or medium-duration exposure | habitability, recovery, operations |
+| Stage 5 | long-duration habitat-scale research | full safety case, logistics, emergency systems |
 
-## SR-005 – Repeatability
-
-Experiments shall be repeatable under identical operating conditions.
-
----
-
-# Human Requirements
-
-## HR-001 – Habitability
-
-Participants shall be able to remain onboard for extended periods without unacceptable reductions in quality of life.
+Human-habitation requirements should not be applied to Stage 1 or Stage 2 unless they are explicitly needed.
 
 ---
 
-## HR-002 – Private Accommodation
+## 4. Scientific Requirements
 
-Every participant should have access to a private cabin suitable for sleeping and personal recovery.
+### SR-001 — Defined Effective Gravity
 
----
+The system shall define and measure the effective gravity environment experienced by the payload or participant.
 
-## HR-003 – Social Areas
+Required documentation:
 
-Shared areas should support
+- target resultant effective gravity,
+- lateral and vertical acceleration components,
+- gravity vector orientation,
+- variation across payload area or body height,
+- transient accelerations,
+- measurement uncertainty.
 
-- dining
-- meetings
-- recreation
-- informal interaction
+### SR-002 — Reproducibility
 
----
+Experiments shall be repeatable under comparable conditions.
 
-## HR-004 – Physical Exercise
+Minimum requirements:
 
-Dedicated space should be available for
+- controlled operating parameters,
+- environmental logging,
+- documented transfer events,
+- baseline and recovery conditions,
+- matched 1 g controls where appropriate.
 
-- strength training
-- endurance training
-- coordination exercises
-- sport-specific investigations
+### SR-003 — Exposure Duration
 
----
+The system shall support exposure durations appropriate to the research question.
 
-## HR-005 – Mental Wellbeing
+Examples:
 
-The environment should minimise psychological stress associated with long-duration confinement.
+- seconds to minutes for sensor and tolerance tests,
+- hours to days for early response,
+- days to weeks for adaptation studies,
+- weeks to months only after sufficient evidence and governance.
 
-Possible measures include
+### SR-004 — Adjustable or Selectable Gravity
 
-- daylight access
-- natural colours
-- quiet areas
-- entertainment
-- communication with family
-- internet access
+The project should allow comparison between at least two effective-gravity conditions over time. This may be achieved by speed variation, radius variation, payload position, different demonstrators, or staged infrastructure.
 
----
+### SR-005 — Measurement Quality
 
-## HR-006 – Accessibility
+The system shall monitor variables that could confound scientific interpretation.
 
-Medical personnel shall be able to reach participants rapidly.
+Minimum variables:
 
----
-
-# Medical Requirements
-
-## MR-001
-
-Medical examinations shall be possible without interrupting an experiment whenever practical.
-
----
-
-## MR-002
-
-Continuous health monitoring should be supported.
-
-Examples include
-
-- ECG
-- blood pressure
-- activity monitoring
-- sleep monitoring
-- body composition
-- balance testing
+- acceleration,
+- vibration,
+- temperature,
+- humidity,
+- acoustic noise where relevant,
+- light where relevant,
+- air quality where relevant,
+- power interruptions,
+- operational events.
 
 ---
 
-## MR-003
+## 5. Physics and Engineering Requirements
 
-Emergency medical evacuation procedures shall be available.
+### ER-001 — Transparent Parameter Model
 
----
+Each concept shall provide equations and assumptions for:
 
-# Engineering Requirements
+- centripetal acceleration,
+- resultant effective gravity,
+- angular velocity,
+- bank or floor angle,
+- gravity gradients,
+- speed,
+- radius,
+- energy and power where applicable.
 
-## ER-001 – Continuous Operation
+### ER-002 — Acceleration Stability
 
-The infrastructure should support continuous 24/7 operation.
+The platform shall maintain acceleration within defined tolerances for the intended experiment class. Tolerances remain open until payload requirements are defined.
 
----
+### ER-003 — Vibration Control
 
-## ER-002 – Ride Quality
+Mechanical vibration shall be measured continuously and reduced to levels compatible with the experiment class.
 
-Mechanical vibration should be minimised.
+This is mandatory because vibration can be a biological, physiological, and instrument confounder.
 
----
+### ER-004 — Environmental Control
 
-## ER-003 – Noise
+The platform shall control or measure environmental variables relevant to the experiment.
 
-Interior noise levels should remain compatible with long-term habitation.
+Examples:
 
----
+- temperature,
+- humidity,
+- CO2,
+- oxygen where relevant,
+- airflow,
+- light level and spectrum,
+- noise,
+- contamination,
+- electromagnetic environment where relevant.
 
-## ER-004 – Reliability
+### ER-005 — Reliability and Maintainability
 
-The design should maximise operational availability while minimising planned interruptions.
+The system should support operation long enough for the intended protocol. Maintenance needs shall be documented as part of the experiment plan.
 
----
+### ER-006 — Safe State
 
-## ER-005 – Maintainability
-
-Routine maintenance should be possible without major reconstruction.
-
----
-
-## ER-006 – Expandability
-
-Future scientific modules should be integrated without redesigning the complete infrastructure.
-
----
-
-# Operational Requirements
-
-## OR-001
-
-The infrastructure should support experiments involving multiple participants simultaneously.
-
----
-
-## OR-002
-
-Boarding and disembarkation procedures should minimise disruption to ongoing experiments.
+Every concept shall define a safe state after power loss, control failure, guideway fault, fire, medical emergency, or environmental-control failure.
 
 ---
 
-## OR-003
+## 6. Biological Payload Requirements
 
-Scientific equipment should be replaceable during the operational lifetime.
+Biological payloads may be the most credible early science pathway.
 
----
+Minimum requirements:
 
-## OR-004
+- controlled enclosure,
+- matched 1 g control strategy,
+- temperature and humidity logging,
+- acceleration and vibration logging,
+- contamination control,
+- sample-access plan,
+- power and data interface,
+- recovery or fixation procedure,
+- documentation of handling events.
 
-The infrastructure should support decades of operation.
+Additional requirements may include:
 
----
-
-# Safety Requirements
-
-## SAF-001
-
-Safe evacuation procedures shall exist for every occupied area.
-
----
-
-## SAF-002
-
-Fire detection and suppression systems shall be integrated.
-
----
-
-## SAF-003
-
-Redundant communication systems shall be provided.
+- lighting control,
+- CO2 monitoring,
+- sterile work interface,
+- microscopy,
+- fluid handling,
+- hydroponics or growth medium control,
+- automated imaging.
 
 ---
 
-## SAF-004
+## 7. Human-Subject Requirements
 
-Critical technical systems shall be continuously monitored.
+Human-subject requirements apply only to stages involving people.
 
----
+Mandatory requirements:
 
-# Economic Requirements
+- ethics approval,
+- medical screening,
+- informed consent,
+- exposure stop criteria,
+- emergency procedures,
+- adverse-event reporting,
+- privacy and data protection,
+- participant withdrawal procedure,
+- medical monitoring appropriate to exposure level,
+- independent review for higher-risk protocols.
 
-## ECO-001
-
-The project should permit phased implementation.
-
----
-
-## ECO-002
-
-An initial demonstrator should require substantially lower investment than a full-scale research facility.
-
----
-
-## ECO-003
-
-Life-cycle cost shall be considered alongside construction cost.
+Human studies shall begin with conservative exposure durations and low-risk participant groups. Long-duration habitation shall not be considered an early-stage requirement.
 
 ---
 
-## ECO-004
+## 8. Habitability Requirements
 
-The infrastructure should maximise the use of existing industrial technology where appropriate.
+For any medium- or long-duration human study, the environment must support health, safety, and scientific validity.
 
----
+Potential requirements:
 
-# Evaluation Criteria
+- private rest area,
+- sleep environment,
+- hygiene facilities,
+- nutrition management,
+- exercise and movement space,
+- communication,
+- acoustic comfort,
+- lighting and circadian support,
+- psychological support,
+- emergency communication,
+- access to medical evaluation.
 
-Every proposed platform should be evaluated using the following criteria.
-
-| Criterion | Weight | Notes |
-|-----------|--------|-------|
-| Scientific capability | High | Primary objective |
-| Human habitability | High | Long-term occupation |
-| Safety | High | Mandatory |
-| Technical feasibility | High | Existing technology preferred |
-| Scalability | Medium | Future expansion |
-| Reliability | High | Continuous operation |
-| Maintainability | Medium | Whole-life cost |
-| Capital cost | Medium | Initial investment |
-| Operating cost | Medium | Long-term sustainability |
-| Upgrade potential | Medium | Future research needs |
+Quantitative values remain undefined and should be derived from analogue-habitat, clinical, occupational, and human-factors literature.
 
 ---
 
-# Requirements Not Yet Defined
+## 9. Operational Requirements
 
-The following topics require additional research before quantitative requirements can be specified.
+The system should define procedures for:
 
-- Acceptable vibration limits
-- Acceptable interior noise levels
-- Minimum cabin size
-- Optimum gravity level
-- Maximum acceptable Coriolis effects
-- Minimum curve radius
-- Acceptable interruption frequency for maintenance
-- Daylight requirements
-- Environmental conditions for long-term habitation
+- experiment start and end,
+- transfer events,
+- routine logistics,
+- sample handling,
+- maintenance,
+- emergency stop,
+- emergency evacuation,
+- power loss,
+- data backup,
+- participant monitoring where applicable,
+- contamination events where applicable.
+
+Each operational event should be logged because it may affect scientific interpretation.
 
 ---
 
-# Summary
+## 10. Safety Requirements
 
-This document establishes a technology-neutral set of requirements for evaluating candidate Hypergravity Habitat concepts.
+Safety requirements apply to all stages, including payload-only tests.
 
-Future platform studies should explicitly reference these requirements and document how each concept satisfies—or fails to satisfy—them.
+Mandatory topics:
+
+- hazard identification,
+- risk register,
+- safe shutdown,
+- access control,
+- fire protection,
+- emergency communication,
+- electrical safety,
+- mechanical safety,
+- containment where relevant,
+- data and control-system reliability,
+- inspection and maintenance plan,
+- incident reporting.
+
+For moving or rotating platforms, additional topics include:
+
+- overspeed protection,
+- braking behaviour,
+- kinetic energy,
+- structural monitoring,
+- guideway integrity,
+- emergency access,
+- rescue procedures.
+
+---
+
+## 11. Economic and Programme Requirements
+
+The project should be financially staged.
+
+Requirements:
+
+- define the smallest useful demonstrator,
+- separate CAPEX from OPEX,
+- include maintenance and renewal costs,
+- include staffing assumptions,
+- state uncertainty ranges,
+- avoid unsupported headline cost claims,
+- include stop/go decision points,
+- compare cost to scientific output.
+
+A full-scale facility should not be proposed before a pre-feasibility study and demonstrator evidence justify it.
+
+---
+
+## 12. Evaluation Matrix
+
+| Criterion | Importance | Notes |
+|---|---:|---|
+| Scientific usefulness | high | primary justification |
+| Safety | high | mandatory for all stages |
+| Measurement quality | high | determines scientific validity |
+| Reproducibility | high | required for reviewable science |
+| Environmental control | high | especially for biology and humans |
+| Technical feasibility | high | concept must be buildable at the stage proposed |
+| Maintainability | medium-high | critical for long exposure |
+| Cost realism | medium-high | required for funding credibility |
+| Scalability | medium | useful but not required for first demonstrator |
+| Habitability | stage-dependent | not required for payload-only phases |
+| Upgrade potential | medium | should not override near-term validity |
+
+---
+
+## 13. Requirements Not Yet Quantified
+
+The following values remain open:
+
+- acceptable vibration limits for each payload class,
+- acceptable angular rate for different human protocols,
+- acceptable noise levels,
+- minimum radius for human-centred studies,
+- environmental tolerances for biological payloads,
+- target gravity range,
+- exposure duration thresholds,
+- interruption frequency,
+- emergency response time,
+- minimum living volume,
+- cost thresholds for demonstrator stages.
+
+These should be converted into quantitative requirements only after literature review, modelling, and expert feedback.
+
+---
+
+## 14. Traceability Requirement
+
+Every future design document should include a requirements traceability table:
+
+| Requirement ID | Design response | Evidence or assumption | Verification method | Status |
+|---|---|---|---|---|
+
+This will make the repository more suitable for academic review and funding discussions.
+
+---
+
+## 15. Preliminary Conclusion
+
+The Hypergravity Habitat project should remain requirements-led. The first objective is not to choose between railway, maglev, rotating, or hybrid concepts. The first objective is to define what scientific questions require, what safety allows, and what demonstrators can verify.
+
+This document should be updated whenever the research gap, physics model, experimental plan, or safety analysis changes.
