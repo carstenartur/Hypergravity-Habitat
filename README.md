@@ -90,6 +90,7 @@ docs/
     biology.md
     plant-science.md
     sports-science.md
+    coriolis-projectile-accuracy.md
 
   engineering/
     design-requirements.md
@@ -139,6 +140,7 @@ papers/
 - [`docs/science/biology.md`](docs/science/biology.md) — cell, microbial, organismal, and model-system biology.
 - [`docs/science/plant-science.md`](docs/science/plant-science.md) — plant growth, gravitropism, controlled-environment agriculture.
 - [`docs/science/sports-science.md`](docs/science/sports-science.md) — human performance and sports-science questions, treated cautiously as a later-stage domain.
+- [`docs/science/coriolis-projectile-accuracy.md`](docs/science/coriolis-projectile-accuracy.md) — Coriolis limits on sport-specific projectile accuracy and skill maintenance during hypergravity residency.
 
 ### Engineering and Feasibility
 
