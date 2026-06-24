@@ -109,6 +109,7 @@ docs/
     preliminary-sizing.md
     railway-platform.md
     tilting-train-and-cant-limits.md
+    railway-g-envelope.md
     maglev-platform.md
     transfer-system-concept.md
 
@@ -119,6 +120,7 @@ calculations/
   README.md
   hypergravity_sizing.py
   coriolis_projectile_deflection.py
+  railway_g_envelope.py
 
 diagrams/
   README.md
@@ -180,6 +182,7 @@ papers/
 - [`docs/engineering/preliminary-sizing.md`](docs/engineering/preliminary-sizing.md) — vector-corrected radius, speed, acceleration, and sizing model.
 - [`docs/engineering/railway-platform.md`](docs/engineering/railway-platform.md) — circular railway concept assessment.
 - [`docs/engineering/tilting-train-and-cant-limits.md`](docs/engineering/tilting-train-and-cant-limits.md) — tilting trains, track cant, cant deficiency, floor alignment, wheel unloading, and maximum-g constraints for railway concepts.
+- [`docs/engineering/railway-g-envelope.md`](docs/engineering/railway-g-envelope.md) — first-order achievable-g corridor for railway concepts under cant, cant deficiency, tilt, and safety constraints.
 - [`docs/engineering/maglev-platform.md`](docs/engineering/maglev-platform.md) — magnetic-levitation concept assessment.
 - [`docs/engineering/transfer-system-concept.md`](docs/engineering/transfer-system-concept.md) — staged access, logistics, and emergency-transfer concepts.
 
@@ -192,6 +195,7 @@ papers/
 - [`calculations/README.md`](calculations/README.md) — calculation standards and usage notes.
 - [`calculations/hypergravity_sizing.py`](calculations/hypergravity_sizing.py) — dependency-free sizing calculator for circular terrestrial hypergravity concepts.
 - [`calculations/coriolis_projectile_deflection.py`](calculations/coriolis_projectile_deflection.py) — first-order Coriolis deflection estimator for thrown or kicked projectiles.
+- [`calculations/railway_g_envelope.py`](calculations/railway_g_envelope.py) — first-order railway g-envelope screening calculator.
 - [`diagrams/README.md`](diagrams/README.md) — planned figure set for proposal and review material.
 
 ---
