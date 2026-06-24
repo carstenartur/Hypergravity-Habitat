@@ -65,7 +65,7 @@ Each risk should later be expanded with likelihood, consequence, mitigation, own
 
 | ID | Risk | Rating | Mitigation |
 |---|---|---:|---|
-| PHY-001 | Incorrect interpretation of resultant gravity vector | High | use explicit vector equations and peer review |
+| PHY-001 | Ambiguity in resultant gravity-vector modelling | High | use explicit vector equations and peer review |
 | PHY-002 | Required radius and speed may be impractical | High | parameter sweeps and architecture comparison |
 | PHY-003 | Angular rate or Coriolis effects may limit human studies | High | large-radius evaluation and human-factors review |
 | PHY-004 | Gravity gradients may affect payload interpretation | Medium | map acceleration fields across payload volume |
@@ -178,7 +178,7 @@ Each risk should later be expanded with likelihood, consequence, mitigation, own
 The most urgent risks to address are:
 
 1. SCI-001 — effect sizes may be too small,
-2. PHY-001 — resultant gravity must be modelled correctly,
+2. PHY-001 — resultant gravity-vector modelling requires explicit treatment,
 3. ENG-001 — vibration may confound experiments,
 4. HUM-001 — human studies may be premature,
 5. ECO-002 — OPEX may be underestimated,
