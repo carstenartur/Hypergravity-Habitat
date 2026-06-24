@@ -1,289 +1,424 @@
-# Sports Science
+# Sports Science and Human Performance under Sustained Moderate Hypergravity
 
 **Project:** Hypergravity Habitat  
-**Document:** Sports Science Research Opportunities  
-**Version:** 0.1 (Draft)
+**Document type:** scientific domain brief  
+**Status:** working document for research framing and feasibility planning  
+**Scope:** sports science, training adaptation, human performance, injury risk, measurement strategy, ethics, and translational limits
 
 ---
 
-# Purpose
+## 1. Purpose
 
-This document identifies research opportunities in sports science that could become possible using a long-duration hypergravity habitat.
+This document defines sports-science and human-performance questions that could be explored in a sustained moderate-hypergravity research environment. It is not a training recommendation and does not claim that hypergravity improves performance.
 
-Unlike existing short-duration hypergravity experiments, the proposed infrastructure would allow athletes to **live, recover, train and perform sport-specific activities under continuously elevated gravity**.
+The central question is:
 
-The objective is not to assume improved performance, but to investigate whether prolonged adaptation produces measurable changes in athletic capability.
+> Does sustained or repeated exposure to moderately elevated effective gravity produce measurable changes in performance, movement, fatigue, recovery, or injury risk after return to 1 g?
 
----
-
-# Background
-
-Many training methods deliberately modify environmental conditions.
-
-Examples include
-
-- altitude training
-- heat acclimation
-- hypoxic chambers
-- resistance training
-- weighted vests
-
-Moderately elevated gravity represents another environmental variable that could influence physical adaptation.
-
-Unlike weighted clothing, hypergravity affects the entire body continuously, including posture, gait, balance and daily movement.
+The document frames sports science as a possible later-stage research domain. Human-subject studies require medical screening, ethics approval, risk assessment, and a mature safety case.
 
 ---
 
-# Primary Research Question
+## 2. Scientific Context
 
-> Does long-duration exposure to moderate hypergravity improve physical performance after returning to normal gravity?
+Sports science often studies adaptation to modified environmental or mechanical conditions. Examples include altitude exposure, heat acclimation, resistance training, eccentric loading, weighted garments, plyometric training, and hypoxic training. Moderate hypergravity would be another environmental variable, but with an important difference: it changes the effective load of the whole body, not just a specific exercise.
 
----
+A Hypergravity Habitat could in principle allow study of:
 
-# Secondary Questions
+- daily movement under elevated load,
+- training under elevated body weight,
+- recovery under elevated load,
+- sleep under elevated load,
+- sport-specific skill under altered mechanics,
+- transfer of adaptation back to Earth-normal gravity.
 
-- Does adaptation improve muscular strength?
-- Does it improve explosive power?
-- Does it improve endurance?
-- Does it alter movement technique?
-- Does it improve balance?
-- Does it influence coordination?
-- Does it influence injury risk?
-
----
-
-# Athlete Populations
-
-Potential study groups include
-
-- football players
-- basketball players
-- volleyball players
-- tennis players
-- runners
-- cyclists
-- swimmers
-- climbers
-- military personnel
-
-Different sports may respond differently to prolonged hypergravity.
+However, these possibilities remain hypotheses. They must be tested cautiously and should not be presented as a performance-enhancement method without evidence.
 
 ---
 
-# Strength Training
+## 3. Scope
 
-Possible investigations include
+### In Scope
 
-- maximal strength
-- rate of force development
-- muscular endurance
-- recovery time
-- adaptation rate
+This document covers:
 
-Measurements
+- strength and power,
+- endurance and running economy,
+- agility and change of direction,
+- motor control and coordination,
+- balance and landing mechanics,
+- sport-specific skills,
+- fatigue and recovery,
+- injury risk,
+- measurement strategy,
+- translational limits.
 
-- isometric strength
-- squat
-- deadlift
-- bench press
-- grip strength
+### Out of Scope
 
----
+This document does not provide:
 
-# Running
-
-Potential investigations
-
-- running economy
-- stride length
-- cadence
-- ground contact time
-- joint loading
-
-Research Question
-
-Does prolonged running under elevated gravity improve running performance after returning to 1 g?
+- athlete training advice,
+- clinical recommendations,
+- exposure prescriptions,
+- evidence of performance benefit,
+- participant-selection rules,
+- an approved human-subject protocol.
 
 ---
 
-# Jump Performance
+## 4. Evidence Standard
 
-Measurements
+Sports-science claims should be separated by evidence level.
 
-- vertical jump
-- standing long jump
-- repeated jump performance
+| Evidence level | Meaning |
+|---|---|
+| Established principle | Mechanical load influences training adaptation |
+| Plausible hypothesis | Elevated effective gravity may alter movement cost or training stimulus |
+| Measurement question | Requires controlled performance testing |
+| Safety question | Requires monitoring and medical governance |
+| Unknown | Whether performance improves, worsens, or remains unchanged |
 
-Questions
-
-- Does jump height increase after adaptation?
-- Does explosive power improve?
-- Does landing technique change?
-
----
-
-# Agility
-
-Possible tests
-
-- shuttle runs
-- change-of-direction tests
-- obstacle courses
-
-Possible outcome measures
-
-- completion time
-- movement efficiency
-- stability
+The project should not use language such as “performance enhancement” or “training advantage” unless supported by controlled data.
 
 ---
 
-# Ball Sports
+## 5. Core Research Questions
 
-One unique feature of the proposed habitat is the possibility of continuing normal ball training.
+### 5.1 Adaptation and Transfer
 
-Potential investigations include
+- Does training or living under moderate hypergravity produce measurable performance changes after return to 1 g?
+- Are changes positive, negative, neutral, or sport-specific?
+- How long do any changes persist?
+- Are effects due to gravity exposure, increased training load, altered movement technique, or changed recovery?
 
-- passing accuracy
-- catching
-- throwing
-- dribbling
-- shooting
-- heading
-- goalkeeper training
+### 5.2 Dose and Duration
 
-Research Question
+- What gravity level is tolerable during physical activity?
+- What exposure duration is required to produce measurable adaptation?
+- Is continuous exposure distinct from short repeated training sessions?
+- Can exposure be periodized like other training stimuli?
 
-Does prolonged training under elevated gravity improve performance after returning to normal gravity?
+### 5.3 Risk and Recovery
 
----
-
-# Coordination
-
-Potential investigations
-
-- hand-eye coordination
-- foot-eye coordination
-- reaction time
-- balance
-- precision movements
-
-These studies require unrestricted movement and therefore cannot easily be performed in conventional human centrifuges.
+- Does hypergravity increase overuse risk?
+- Does recovery under elevated load differ from recovery at 1 g?
+- Are sleep and soreness affected?
+- Do tendon, ligament, and joint loads become limiting factors?
 
 ---
 
-# Fatigue
+## 6. Athlete and Participant Populations
 
-Potential investigations
+Different populations would require different protocols and safeguards.
 
-- fatigue development
-- recovery rate
-- cumulative training load
-- overtraining
+| Population | Potential relevance | Caution |
+|---|---|---|
+| Healthy untrained adults | early tolerance and adaptation baseline | results may not transfer to athletes |
+| Recreationally active adults | moderate-risk performance studies | training variability must be controlled |
+| Trained athletes | sport-specific transfer questions | higher performance demands and injury implications |
+| Elite athletes | high external relevance | strong ethical, contractual, and injury-risk concerns |
+| Military or occupational groups | load carriage and operational performance | requires separate institutional governance |
+| Rehabilitation populations | possible translational interest | not appropriate without clinical evidence |
 
-Continuous monitoring may reveal whether hypergravity changes the relationship between training load and recovery.
-
----
-
-# Injury Prevention
-
-Possible topics
-
-- tendon adaptation
-- ligament adaptation
-- joint loading
-- muscle imbalance
-- balance training
-
-Potential risks should also be investigated.
+Initial studies, if ever pursued, should begin with low-risk healthy volunteers, not elite athletes or clinical populations.
 
 ---
 
-# Team Sports
+## 7. Strength and Power
 
-Unlike laboratory studies involving isolated participants, a habitat could permit
+Research questions:
 
-- team training
-- tactical exercises
-- communication studies
-- leadership research
+- Does elevated effective body weight alter strength adaptation?
+- Does rate of force development change after exposure?
+- Are lower-limb and trunk muscles more affected than upper-body muscles?
+- Does hypergravity interact with conventional resistance training?
+- Does increased daily load cause useful adaptation or excessive fatigue?
 
-This may provide insights unavailable in conventional exercise laboratories.
+Candidate measurements:
 
----
+- maximal voluntary contraction,
+- isometric and isokinetic strength,
+- jump force and power,
+- rate of force development,
+- electromyography,
+- muscle soreness,
+- training load and recovery metrics.
 
-# Recovery
+Confounders:
 
-Recovery itself represents a major research topic.
-
-Possible measurements
-
-- sleep quality
-- heart rate variability
-- muscle soreness
-- biochemical markers
-
-Research Question
-
-Does recovery under elevated gravity differ from recovery at 1 g?
-
----
-
-# Transfer Back to Normal Gravity
-
-One of the most interesting phases begins after participants leave the habitat.
-
-Possible investigations include
-
-- performance immediately after return
-- adaptation over subsequent weeks
-- persistence of physiological changes
-- comparison with baseline measurements
-
-This phase may be scientifically as important as the exposure itself.
+- baseline training status,
+- training programme differences,
+- nutrition,
+- sleep,
+- fatigue,
+- motivation,
+- injury history.
 
 ---
 
-# Comparison with Existing Training Methods
+## 8. Endurance and Running Economy
 
-| Method | Continuous | Whole Body | Long Duration | Daily Life |
-|----------|:---------:|:----------:|:-------------:|:----------:|
-| Weighted vest | ✗ | Partial | Limited | Partial |
-| Resistance training | ✗ | Partial | Limited | ✗ |
-| Altitude training | ✓ | ✓ | ✓ | ✓ |
-| Hypergravity habitat | ✓ | ✓ | ✓ | ✓ |
+Research questions:
 
----
+- Does locomotion under elevated gravity alter running or walking economy?
+- Does cardiovascular load increase proportionally with effective body weight?
+- Does adaptation improve, impair, or not affect performance at 1 g?
+- Are technique changes retained after return to normal gravity?
+- Is endurance training under hypergravity safe and controllable?
 
-# Potential Scientific Impact
+Candidate measurements:
 
-Research outcomes may contribute to
-
-- elite sport
-- rehabilitation
-- military training
-- occupational physiology
-- healthy aging
-- space medicine
-
----
-
-# Open Research Questions
-
-- What gravity level provides measurable adaptation?
-- How long should exposure last?
-- Which sports benefit most?
-- Are adaptations retained after return to 1 g?
-- Does hypergravity influence motor learning?
-- Does prolonged exposure reduce or increase injury risk?
-- Are there negative long-term effects?
+- VO2 and metabolic cost,
+- heart rate,
+- lactate where appropriate,
+- perceived exertion,
+- running economy,
+- stride length and cadence,
+- ground contact time,
+- training volume,
+- fatigue and recovery markers.
 
 ---
 
-# Summary
+## 9. Jumping, Landing, and Explosive Movement
 
-Long-duration hypergravity represents a previously unexplored training environment.
+Research questions:
 
-Whether it provides meaningful advantages remains unknown.
+- Does repeated movement under elevated gravity alter jump mechanics?
+- Are landing forces and joint loads increased in ways that elevate injury risk?
+- Does explosive power change after exposure?
+- Are tendon and muscle adaptations measurable?
+- Does technique change to reduce load?
 
-The proposed research infrastructure would allow this question to be investigated under realistic living conditions while participants continue normal daily activities, structured training and sport-specific practice.
+Candidate measurements:
+
+- countermovement jump,
+- squat jump,
+- repeated jump tests,
+- force plates,
+- landing kinematics,
+- tendon pain monitoring,
+- stiffness measures,
+- motion capture.
+
+Safety note:
+
+Jumping and plyometric tasks under hypergravity may create high peak loads. These activities should be introduced only after conservative risk analysis.
+
+---
+
+## 10. Agility and Change of Direction
+
+Research questions:
+
+- How does elevated effective gravity affect acceleration, deceleration, and change-of-direction mechanics?
+- Does exposure improve control after return to 1 g, or does it induce inefficient movement patterns?
+- Are balance and stability altered?
+- Does fatigue accumulate faster in agility tasks?
+
+Candidate measurements:
+
+- shuttle runs,
+- change-of-direction tests,
+- acceleration profiles,
+- ground reaction forces,
+- inertial measurement units,
+- movement quality scoring,
+- completion time and error rate.
+
+---
+
+## 11. Coordination and Skill Acquisition
+
+Sport is not only physiology. It also depends on motor control and perception-action coupling.
+
+Research questions:
+
+- Does hypergravity alter throwing, catching, kicking, striking, or balance tasks?
+- Does skill learned under elevated gravity transfer back to 1 g?
+- Are there after-effects immediately after return to normal gravity?
+- Does altered load improve robustness or create maladaptive patterns?
+
+Candidate measurements:
+
+- accuracy tests,
+- reaction time,
+- eye-hand or eye-foot coordination,
+- movement variability,
+- learning curves,
+- post-exposure transfer tests.
+
+---
+
+## 12. Team and Tactical Performance
+
+A large habitat concept raises questions that conventional laboratories cannot easily address, but these should be treated as long-term possibilities.
+
+Research questions:
+
+- Does elevated gravity affect team communication and decision-making through fatigue or workload?
+- Can tactical movement be practiced safely under elevated load?
+- Does group training under hypergravity create measurable transfer effects?
+
+These studies are likely late-stage because they require space, safety management, and complex protocols.
+
+---
+
+## 13. Fatigue and Recovery
+
+Fatigue may be the limiting factor in any sports-science application.
+
+Research questions:
+
+- Does daily movement under hypergravity increase baseline fatigue?
+- Does recovery require longer periods?
+- Is sleep quality affected?
+- Are soreness, inflammation, or injury markers increased?
+- Does elevated gravity affect autonomic recovery?
+
+Candidate measurements:
+
+- heart-rate variability,
+- sleep monitoring,
+- perceived recovery,
+- soreness scales,
+- biochemical markers where justified,
+- training-load metrics,
+- performance readiness tests.
+
+---
+
+## 14. Injury Risk
+
+A sports-science programme must treat injury risk as a primary outcome, not an afterthought.
+
+Potential risks:
+
+- tendon overload,
+- joint stress,
+- altered landing mechanics,
+- fatigue-related errors,
+- balance impairment,
+- vestibular discomfort,
+- overtraining,
+- musculoskeletal pain.
+
+Research questions:
+
+- Which activities become unsafe first as gravity increases?
+- Are risks activity-specific or exposure-duration-specific?
+- Can gradual adaptation reduce risk?
+- What screening and stop criteria are required?
+
+---
+
+## 15. Comparison with Existing Training Methods
+
+| Method | Whole-body exposure | Continuous daily exposure | Sport-specific movement | Main limitation compared with hypergravity concept |
+|---|---:|---:|---:|---|
+| Weighted vest | partial | possible | limited | local load distribution differs from gravity |
+| Resistance training | partial | no | limited | discrete sessions, not environmental exposure |
+| Plyometrics | partial | no | limited | high peak load, short duration |
+| Altitude training | systemic | yes | yes | changes oxygen availability, not mechanical load |
+| Heat acclimation | systemic | possible | possible | thermal stress, not gravity |
+| Short centrifugation | systemic acceleration | usually no | limited | limited movement and duration |
+| Hypergravity habitat | potentially systemic | potentially yes | potentially yes | unproven, complex, safety constraints |
+
+This comparison does not imply superiority. It clarifies how the research condition differs from existing methods.
+
+---
+
+## 16. Measurement Strategy
+
+A credible sports-science study requires:
+
+- baseline period,
+- controlled training programme,
+- nutrition monitoring,
+- sleep monitoring,
+- activity logging,
+- matched 1 g control group or crossover design,
+- primary and secondary outcomes defined before exposure,
+- immediate and delayed post-exposure testing,
+- injury surveillance,
+- environmental monitoring.
+
+Primary outcomes should be selected narrowly. A broad battery of tests without clear hypotheses would be difficult to interpret.
+
+---
+
+## 17. Confounders
+
+Important confounders include:
+
+- training history,
+- motivation,
+- placebo and novelty effects,
+- sleep quality,
+- diet,
+- recovery time,
+- coaching differences,
+- footwear and surface,
+- vibration,
+- motion sickness,
+- confinement,
+- social effects,
+- measurement learning effects.
+
+These variables must be controlled or recorded.
+
+---
+
+## 18. Ethics and Governance
+
+Sports-science research involving humans requires the same seriousness as medical physiology research.
+
+Requirements include:
+
+- ethics approval,
+- informed consent,
+- medical screening,
+- injury-risk assessment,
+- emergency procedures,
+- conservative exposure progression,
+- adverse-event reporting,
+- data protection,
+- independent review for higher-risk protocols.
+
+Elite athletes require additional caution because injury or performance disruption can have professional consequences.
+
+---
+
+## 19. Candidate Early Studies
+
+Sports science should probably not be the first experimental domain. However, later staged studies could include:
+
+1. modelling of effective body-weight increase and joint loading,
+2. short-duration walking and balance tolerance tests,
+3. repeated low-intensity locomotion under slightly elevated gravity,
+4. crossover study of movement economy,
+5. sleep and recovery monitoring under mild exposure,
+6. conservative strength or gait adaptation pilot,
+7. post-exposure transfer testing at 1 g.
+
+Each step should include explicit stop criteria.
+
+---
+
+## 20. Open Questions
+
+- Does sustained moderate hypergravity improve, impair, or not affect performance?
+- Which performance domains are most sensitive?
+- What gravity level is tolerable during training?
+- How quickly does fatigue accumulate?
+- Does altered movement transfer back to 1 g?
+- Does injury risk increase?
+- Can the effects be separated from ordinary training-load effects?
+
+---
+
+## 21. Preliminary Conclusion
+
+Sports science is a compelling but later-stage application area for the Hypergravity Habitat concept. It could provide insights into load adaptation, movement, recovery, and performance transfer, but it also introduces substantial human-subject risk, confounding variables, and ethical constraints.
+
+The responsible path is to treat sports science as a hypothesis-driven research domain that follows literature review, physics modelling, non-human payload work, safety analysis, and conservative human-tolerance studies.
