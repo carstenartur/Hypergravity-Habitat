@@ -58,6 +58,7 @@ The purpose is to make the project reviewable:
 | PHY-001 | Use vector-corrected resultant gravity model | `preliminary-sizing.md`, `physics-reference.md` | equations and sizing script | code review, calculation check | modelled |
 | PHY-002 | Calculate radius, speed, angular rate, and bank angle | `preliminary-sizing.md` | `hypergravity_sizing.py` | script output | modelled |
 | PHY-003 | Model Coriolis effects for projectile tasks | `literature-review.md`, `sports-science.md` | `coriolis_projectile_deflection.py` | script output and later 3D model | modelled |
+| PHY-004 | Analyse track cant, carbody tilt, cant deficiency, and low-speed cant excess for railway concepts | `engineering/tilting-train-and-cant-limits.md`, `engineering/railway-platform.md` | cant/tilt feasibility requirement | railway dynamics model and expert review | drafted |
 | BIO-001 | Include matched 1 g biological controls | `biology.md`, `plant-science.md` | payload protocol requirement | demonstrator protocol | drafted |
 | BIO-002 | Log environmental variables for biological payloads | `data-management-plan.md`, `vibration-and-confounders.md` | metadata and sensor requirements | data package review | drafted |
 | BIO-003 | Prevent contamination and define sample handling | `ethics-and-governance.md` | biosafety and handling plan | biosafety review | open |
@@ -67,6 +68,7 @@ The purpose is to make the project reviewable:
 | ENG-001 | Measure acceleration and vibration continuously | `design-requirements.md`, `vibration-and-confounders.md` | instrumentation requirement | sensor calibration and test run | drafted |
 | ENG-002 | Define safe state for each demonstrator | `safety-case-outline.md` | safe-state requirement | integrated test | open |
 | ENG-003 | Compare architecture options before selection | `architecture-trade-study.md` | trade-study matrix | expert review | drafted |
+| ENG-004 | Do not claim railway target-g capability from radius and speed alone; include cant, tilt, wheel unloading, low-speed/stopped condition, and clearance analysis | `engineering/tilting-train-and-cant-limits.md` | cant/tilt analysis as railway gate criterion | railway expert review and vehicle-track simulation | drafted |
 | SAF-001 | Maintain a risk register | `risk-register.md` | risk categories and mitigation | periodic review | drafted |
 | SAF-002 | Define emergency stop/shutdown concept | `safety-case-outline.md` | safety requirement | demonstrator test | open |
 | SAF-003 | Define fire and power-loss response | `safety-case-outline.md` | hazard sections | safety review | open |
@@ -97,7 +99,9 @@ Possible verification methods:
 - ethics approval,
 - safety case review,
 - data audit,
-- cost sensitivity analysis.
+- cost sensitivity analysis,
+- vehicle-track dynamics simulation,
+- railway cant/tilt expert review.
 
 ---
 
@@ -112,7 +116,9 @@ The following artifacts are still needed:
 5. expert-review questionnaire,
 6. architecture scoring sheet,
 7. cost sensitivity spreadsheet or script,
-8. diagram set for physics and roadmap.
+8. diagram set for physics and roadmap,
+9. railway cant/tilt calculation model,
+10. vehicle-track dynamics review for rail concepts.
 
 ---
 
