@@ -2,6 +2,9 @@ cff-version: 1.2.0
 message: "If you use or reference this exploratory repository, please cite it using this metadata."
 title: "Hypergravity Habitat"
 authors:
+  - family-names: "Hammer"
+    given-names: "Carsten"
+    orcid: "https://orcid.org/0009-0005-1047-6381"
   - name: "Hypergravity Habitat contributors"
 repository-code: "https://github.com/carstenartur/Hypergravity-Habitat"
 date-released: "2026-06-24"
