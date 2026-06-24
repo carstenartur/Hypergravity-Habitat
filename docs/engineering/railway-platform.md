@@ -80,6 +80,10 @@ v = √(a_c r)
 
 Large radii reduce angular rate but increase land use and infrastructure cost. Small radii reduce site size but increase angular rate, curvature, wear, and vestibular side effects.
 
+Screening consequence: standard railway assumptions appear most relevant for **very mild resultant hypergravity**, roughly in the 1.01–1.03 g range. Special railway assumptions, tilt, or aggressive approval envelopes may make about 1.03–1.04 g, and perhaps optimistic cases near 1.05 g, worth discussing. Above about 1.05–1.06 g, the concept likely leaves ordinary railway practice and becomes a specialized guideway, captured vehicle, internally tilted cabin, maglev, or rotating-system problem.
+
+See [`railway-g-envelope.md`](railway-g-envelope.md) for the detailed screening table and caveats.
+
 ---
 
 ## 5. Why Rail Is Worth Evaluating
