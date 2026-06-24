@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use or reference this exploratory repository, please cite it using this metadata."
+title: "Hypergravity Habitat"
+authors:
+  - family-names: "Hammer"
+    given-names: "Carsten"
+    orcid: "https://orcid.org/0009-0005-1047-6381"
+  - name: "Hypergravity Habitat contributors"
+repository-code: "https://github.com/carstenartur/Hypergravity-Habitat"
+date-released: "2026-06-24"
+license: "CC-BY-4.0"
+type: software
+abstract: >-
+  Exploratory research documentation and calculation material for assessing whether sustained moderate hypergravity could become a useful terrestrial research environment for biological, human-centred, and technical systems. The repository is a pre-feasibility and expert-review resource, not evidence that a facility is feasible, safe, funded, or justified.
+keywords:
+  - hypergravity
+  - artificial gravity
+  - space medicine
+  - terrestrial analogue
+  - research infrastructure
+  - pre-feasibility

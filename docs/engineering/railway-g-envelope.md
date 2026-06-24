@@ -9,9 +9,7 @@
 
 ## 1. Purpose
 
-This document defines a first-order **railway g-envelope** for rail-based Hypergravity Habitat concepts. It answers the question:
-
-> Is there a technical corridor of achievable g-values once railway limits such as track cant, cant deficiency, carbody tilt, wheel unloading, floor angle, and low-speed/stopped conditions are considered?
+This document defines a first-order **railway g-envelope** for rail-based Hypergravity Habitat concepts. It asks whether there is a technical corridor of achievable g-values once track cant, cant deficiency, carbody tilt, wheel unloading, floor angle, and low-speed or stopped conditions are considered.
 
 The answer is yes: there is an envelope. But for conventional railway practice it is likely a **narrow low-g envelope**, unless the system departs strongly from standard railway assumptions.
 
@@ -23,22 +21,17 @@ This document is a screening tool, not a certification analysis.
 
 For a terrestrial circular platform:
 
-\[
-g_{eff} = \sqrt{g^2 + a_c^2}
-\]
-
-and:
-
-\[
-\theta = \arctan(a_c/g)
-\]
+```text
+g_eff = √(g² + a_c²)
+θ = arctan(a_c / g)
+```
 
 where:
 
-- \(g_{eff}\) is resultant effective gravity,
-- \(g\) is Earth gravity,
-- \(a_c\) is lateral centripetal acceleration,
-- \(\theta\) is the resultant-vector angle relative to vertical.
+- `g_eff` is resultant effective gravity,
+- `g` is Earth gravity,
+- `a_c` is lateral centripetal acceleration,
+- `θ` is the resultant-vector angle relative to vertical.
 
 For railway concepts, this target angle must be compared with what the track and vehicle can safely provide.
 
@@ -48,15 +41,15 @@ For railway concepts, this target angle must be compared with what the track and
 
 A simple screening approximation for standard-gauge railway is:
 
-\[
-\frac{a_c}{g} \approx \frac{h_{cant} + h_{def}}{G_{track}}
-\]
+```text
+a_c / g ≈ (h_cant + h_def) / G_track
+```
 
 where:
 
-- \(h_{cant}\) is track cant,
-- \(h_{def}\) is cant deficiency,
-- \(G_{track}\) is track gauge, approximately 1.435 m for standard gauge.
+- `h_cant` is track cant,
+- `h_def` is cant deficiency,
+- `G_track` is track gauge, approximately 1.435 m for standard gauge.
 
 This approximation is useful because it shows how much lateral acceleration a conventional rail geometry can balance or tolerate.
 
@@ -93,11 +86,11 @@ These are not recommended design values. They are order-of-magnitude screening c
 
 ## 6. Target-g Requirements
 
-The required equivalent cant-plus-deficiency for target resultant effective gravity is:
+The required equivalent cant-plus-deficiency for target resultant effective gravity is approximately:
 
-\[
-(h_{cant}+h_{def}) \approx G_{track}\sqrt{g_{rel}^2 - 1}
-\]
+```text
+h_cant + h_def ≈ G_track × √(g_rel² − 1)
+```
 
 For standard gauge:
 
@@ -116,50 +109,23 @@ This table shows why railway-based hypergravity above approximately 1.03–1.05 
 
 ## 7. Interpretation
 
-### Conventional railway corridor
+A conservative conventional rail corridor appears to sit close to approximately 1.01–1.03 g resultant under standard-like cant and cant-deficiency assumptions. Higher values may be possible only with aggressive assumptions, special approval, or a system that becomes less like conventional rail and more like a custom guided, banked, or internally gimballed research system.
 
-A conservative conventional rail corridor appears to sit close to:
-
-- approximately **1.01–1.03 g resultant** under standard-like cant and cant-deficiency assumptions,
-- potentially somewhat higher only with aggressive assumptions and special approval,
-- still far below 1.10 g unless track and vehicle design become highly nonstandard.
-
-### Special railway or guided-system corridor
-
-Higher values may be physically possible only if the system becomes less like a conventional railway and more like a custom guided, banked, or internally gimballed research system.
-
-Possible approaches:
-
-- extreme dedicated cant,
-- special low-speed/stopped support concept,
-- internal tilting or gimballed cabin,
-- nonstandard bogies and suspension,
-- guideway rather than conventional rail,
-- maglev or roller-coaster-like support geometry,
-- payload-only rather than human-rated operation.
+Possible approaches include extreme dedicated cant, special low-speed/stopped support concepts, internal tilting or gimballed cabins, nonstandard bogies and suspension, guideway capture, maglev, or payload-only operation.
 
 ---
 
 ## 8. Low-Speed and Stopped Condition
 
-A high-cant circular railway has a major low-speed problem.
+A high-cant circular railway has a major low-speed problem. If the train slows down or stops on a strongly banked track, the lateral centripetal acceleration disappears but the track remains tilted.
 
-If the train slows down or stops on a strongly banked track, the lateral centripetal acceleration disappears but the track remains tilted. This creates:
-
-- inward/downhill load shift,
-- cant excess,
-- boarding and evacuation problems,
-- maintenance difficulty,
-- possible payload orientation problems,
-- emergency-response complications.
+This creates inward/downhill load shift, cant excess, boarding and evacuation problems, maintenance difficulty, possible payload orientation problems, and emergency-response complications.
 
 Therefore, a high-g railway concept needs a credible low-speed and stopped-state concept before it can be considered serious.
 
 ---
 
 ## 9. Practical Design Corridor
-
-A useful screening corridor can be described as:
 
 | Corridor | Approximate g-range | Interpretation |
 |---|---:|---|
@@ -174,17 +140,7 @@ These ranges are not final limits. They are a first-order feasibility map.
 
 ## 10. Required Next Analysis
 
-Before a rail concept claims any target g value, it needs:
-
-1. cant and cant-deficiency calculation,
-2. wheel unloading estimate,
-3. derailment-risk and vehicle dynamics model,
-4. carbody tilt and internal floor alignment model,
-5. stopped and low-speed analysis,
-6. emergency braking analysis,
-7. clearance and loading-gauge analysis,
-8. ride-quality and vibration analysis,
-9. expert review by railway dynamics specialists.
+Before a rail concept claims any target g value, it needs cant and cant-deficiency calculation, wheel-unloading estimate, derailment-risk and vehicle dynamics model, carbody tilt and internal floor alignment model, stopped and low-speed analysis, emergency braking analysis, clearance analysis, ride-quality and vibration analysis, and expert review by railway dynamics specialists.
 
 ---
 
@@ -196,9 +152,7 @@ A first-order screening calculator has been added:
 python calculations/railway_g_envelope.py
 ```
 
-It prints example envelope cases and target-g requirements.
-
-The tool is intentionally simple. It is designed to expose orders of magnitude and identify when target values are far outside conventional rail assumptions.
+It prints example envelope cases and target-g requirements. The tool is intentionally simple and is designed to expose orders of magnitude.
 
 ---
 
@@ -208,8 +162,6 @@ Yes, a g-envelope exists. It is the intersection of physics, railway geometry, t
 
 The preliminary conclusion is that conventional railway technology may be relevant for **very mild hypergravity** or for payload/engineering demonstrators, but target values like **1.10 g resultant effective gravity** are probably outside ordinary railway practice unless the system becomes a highly specialized guideway or internally tilted research platform.
 
-This makes the railway concept still worth evaluating, but it also strengthens the case for comparing rail with maglev, rotating platforms, and payload-first demonstrators.
-
 ---
 
 ## 13. Source Anchors
@@ -218,3 +170,8 @@ This makes the railway concept still worth evaluating, but it also strengthens t
 - `docs/physics-reference.md` — equations for resultant effective gravity and floor angle.
 - `docs/engineering/tilting-train-and-cant-limits.md` — qualitative engineering discussion of tilting trains and cant limits.
 - `calculations/railway_g_envelope.py` — reproducible screening calculations.
+
+---
+
+<!-- project-footer -->
+**Project:** [Hypergravity Habitat](../../README.md) · **Status:** exploratory research documentation · **License:** see repository license and file-level notes

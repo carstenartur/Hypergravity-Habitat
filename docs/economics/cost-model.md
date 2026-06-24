@@ -43,107 +43,31 @@ Costs should be estimated separately for:
 
 ### Parametric
 
-Costs should be linked to variables such as:
-
-- radius,
-- guideway length,
-- operating speed,
-- vehicle mass,
-- payload complexity,
-- staffing model,
-- operating hours,
-- maintenance interval,
-- environmental-control requirements,
-- safety and certification burden.
+Costs should be linked to variables such as radius, guideway length, operating speed, vehicle mass, payload complexity, staffing model, operating hours, maintenance interval, environmental-control requirements, and safety or certification burden.
 
 ### Traceable
 
-Every estimate should state:
-
-- source or assumption,
-- unit cost,
-- quantity,
-- uncertainty range,
-- date of estimate,
-- included and excluded items.
+Every estimate should state source or assumption, unit cost, quantity, uncertainty range, date of estimate, included items, and excluded items.
 
 ---
 
 ## 3. Cost Categories
 
-### 3.1 Capital Expenditure (CAPEX)
+### 3.1 Capital Expenditure
 
-One-time investment costs.
+Capital expenditure includes one-time investment costs such as land, permitting, site preparation, guideway construction, rotating structures, vehicles or payload modules, propulsion, control systems, power infrastructure, buildings, laboratories, environmental control, safety systems, commissioning, project management, and contingency.
 
-Examples:
+### 3.2 Operating Expenditure
 
-- land acquisition or leasing,
-- permitting and planning,
-- site preparation,
-- earthworks,
-- track or guideway construction,
-- rotating structure or test rig,
-- vehicles or payload modules,
-- propulsion and control systems,
-- electrical infrastructure,
-- buildings,
-- laboratories,
-- environmental-control systems,
-- medical systems where relevant,
-- safety systems,
-- commissioning and testing,
-- project management,
-- contingency.
-
-### 3.2 Operating Expenditure (OPEX)
-
-Recurring operating costs.
-
-Examples:
-
-- electricity,
-- staff,
-- maintenance,
-- inspections,
-- consumables,
-- laboratory operations,
-- medical support,
-- data systems,
-- insurance,
-- training,
-- safety and emergency readiness,
-- administration,
-- facility management.
+Operating expenditure includes recurring costs such as electricity, staff, maintenance, inspections, consumables, laboratory operations, medical support where relevant, data systems, insurance, training, safety readiness, administration, and facility management.
 
 ### 3.3 Renewal and Replacement Costs
 
-Costs during the asset lifetime.
-
-Examples:
-
-- rail replacement,
-- wheel replacement,
-- bearings,
-- guideway components,
-- power electronics,
-- sensors,
-- HVAC systems,
-- laboratory equipment,
-- software and control-system upgrades,
-- building refurbishment.
+Renewal costs include rail replacement, wheel replacement, bearings, guideway components, power electronics, sensors, HVAC systems, laboratory equipment, software upgrades, and building refurbishment.
 
 ### 3.4 Decommissioning Costs
 
-End-of-life costs.
-
-Examples:
-
-- dismantling,
-- site restoration,
-- disposal,
-- recycling,
-- hazardous-material handling,
-- documentation and closure.
+End-of-life costs include dismantling, site restoration, disposal, recycling, hazardous-material handling, documentation, and project closure.
 
 ---
 
@@ -166,126 +90,39 @@ Each stage should include stop/go criteria.
 
 ## 5. Cost Drivers by Concept
 
-### 5.1 Railway Platform
+### Railway Platform
 
-Primary CAPEX drivers:
+Primary drivers include track length, track quality, earthworks, land, rolling stock, depot and workshop, power supply, control and safety systems, environmental-control modifications, laboratory integration, wheel and rail maintenance, inspections, staff, and downtime management.
 
-- track length,
-- track quality,
-- earthworks,
-- land and permitting,
-- rolling stock,
-- vehicle refurbishment,
-- depot and workshop,
-- power supply,
-- control and safety systems,
-- environmental-control modifications,
-- laboratory integration.
+Dominant uncertainty: continuous circular operation may produce maintenance patterns that differ from ordinary railway service.
 
-Primary OPEX drivers:
+### Maglev Platform
 
-- electricity,
-- wheel and rail maintenance,
-- vehicle maintenance,
-- inspections,
-- operations staff,
-- laboratory staff,
-- safety readiness,
-- downtime management.
+Primary drivers include guideway, levitation and guidance, propulsion, power electronics, control systems, electromagnetic shielding where required, thermal management, specialized vehicles, fallback systems, power demand, specialized maintenance, inspection, cooling, and software support.
 
-Dominant uncertainty:
+Dominant uncertainty: the cost and safety case of a specialized circular long-duration research maglev system are not yet established.
 
-- continuous circular operation may produce maintenance patterns that differ from ordinary railway service.
+### Rotating Platform
 
-### 5.2 Maglev Platform
+Primary drivers include structure, bearings or support system, drive system, balancing, vibration control, payload modules, safety enclosure, access system, environmental control, inspection, and maintenance.
 
-Primary CAPEX drivers:
+Dominant uncertainty: scaling from small payload demonstrator to habitat-scale system.
 
-- guideway,
-- levitation and guidance systems,
-- propulsion,
-- power electronics,
-- control systems,
-- electromagnetic shielding if required,
-- thermal management,
-- specialized vehicles,
-- safety and fallback systems.
+### Payload-Only Demonstrator
 
-Primary OPEX drivers:
+Primary drivers include test rig, sensor package, environmental enclosure, payload containers, data system, control software, safety enclosure, experiment preparation, sample handling, consumables, staff time, and data analysis.
 
-- power demand,
-- specialized maintenance,
-- software and control support,
-- inspection,
-- cooling,
-- operations staff,
-- component replacement.
-
-Dominant uncertainty:
-
-- the cost and safety case of a specialized circular long-duration research maglev system are not yet established.
-
-### 5.3 Rotating Platform
-
-Primary CAPEX drivers:
-
-- structure,
-- bearings or support system,
-- drive system,
-- balancing,
-- vibration control,
-- payload modules,
-- safety enclosure,
-- access system,
-- environmental control.
-
-Primary OPEX drivers:
-
-- energy,
-- bearing and drive maintenance,
-- inspection,
-- balancing operations,
-- payload support,
-- safety readiness.
-
-Dominant uncertainty:
-
-- scaling from small payload demonstrator to habitat-scale system.
-
-### 5.4 Payload-Only Demonstrator
-
-Primary CAPEX drivers:
-
-- test rig,
-- sensor package,
-- environmental enclosure,
-- payload containers,
-- data system,
-- control software,
-- safety enclosure.
-
-Primary OPEX drivers:
-
-- experiment preparation,
-- sample handling,
-- consumables,
-- power,
-- staff time,
-- data analysis.
-
-Dominant uncertainty:
-
-- whether the demonstrator is scientifically sufficient to justify later stages.
+Dominant uncertainty: whether the demonstrator is scientifically sufficient to justify later stages.
 
 ---
 
 ## 6. Life-Cycle Cost
 
-Life-cycle cost should include:
+Life-cycle cost should include capital expenditure, operating expenditure, renewals, and decommissioning:
 
-\[
-LCC = CAPEX + \sum OPEX + \sum Renewals + Decommissioning
-\]
+```text
+LCC = CAPEX + ΣOPEX + ΣRenewals + Decommissioning
+```
 
 A concept with lower initial cost may become expensive if maintenance is high. A concept with high initial cost may become attractive if it significantly reduces vibration, wear, downtime, or operational risk.
 
@@ -333,21 +170,7 @@ All cost estimates should include contingency. The contingency percentage should
 
 ## 9. Sensitivity Analysis
 
-Future cost models should test sensitivity to:
-
-- radius,
-- target gravity,
-- operating speed,
-- guideway unit cost,
-- vehicle mass,
-- operating hours per year,
-- electricity price,
-- maintenance interval,
-- staff count,
-- laboratory complexity,
-- safety requirements,
-- downtime tolerance,
-- contingency percentage.
+Future cost models should test sensitivity to radius, target gravity, operating speed, guideway unit cost, vehicle mass, operating hours, electricity price, maintenance interval, staff count, laboratory complexity, safety requirements, downtime tolerance, and contingency percentage.
 
 Sensitivity analysis is important because one or two assumptions may dominate total cost.
 
@@ -371,17 +194,7 @@ This framework should be updated when more data become available.
 
 ## 11. Funding Strategy Implications
 
-A proposal-grade funding strategy should begin with modest, reviewable milestones.
-
-Possible early funding packages:
-
-1. literature and infrastructure review,
-2. reproducible physics and cost model,
-3. biological payload demonstrator design,
-4. vibration and acceleration measurement campaign,
-5. safety and ethics framework,
-6. railway/maglev/rotating architecture trade study,
-7. pre-feasibility study with external reviewers.
+A proposal-grade funding strategy should begin with modest, reviewable milestones such as literature review, reproducible physics and cost models, biological payload demonstrator design, vibration and acceleration measurement, safety and ethics framework, architecture trade study, and external pre-feasibility review.
 
 The first funding request should probably not be for a full habitat. It should be for a defined feasibility package that produces decision-quality evidence.
 
@@ -389,39 +202,19 @@ The first funding request should probably not be for a full habitat. It should b
 
 ## 12. Data Needed for a Proposal-Grade Estimate
 
-Future revisions should gather:
-
-- comparable research-infrastructure costs,
-- rail construction cost references,
-- maglev guideway cost references,
-- rotating test-rig costs,
-- laboratory equipment costs,
-- HVAC and environmental-control costs,
-- staffing models,
-- maintenance intervals,
-- power consumption estimates,
-- land and permitting assumptions,
-- insurance and safety-compliance costs,
-- uncertainty ranges.
+Future revisions should gather comparable research-infrastructure costs, rail construction references, maglev guideway references, rotating test-rig costs, laboratory equipment costs, HVAC costs, staffing models, maintenance intervals, power consumption estimates, land and permitting assumptions, insurance costs, safety-compliance costs, and uncertainty ranges.
 
 All sources should be cited and dated.
 
 ---
 
-## 13. Open Questions
-
-1. What is the smallest scientifically useful demonstrator?
-2. Which cost driver dominates at each stage?
-3. How much scientific value can be produced before large infrastructure is needed?
-4. What level of cost uncertainty is acceptable for early funding?
-5. How should cost be allocated between research, engineering, safety, and operations?
-6. Which architecture retires the most risk per euro?
-7. How should long-term maintenance be estimated before a final architecture exists?
-
----
-
-## 14. Preliminary Conclusion
+## 13. Preliminary Conclusion
 
 The cost model should remain staged, transparent, and decision-oriented. The project should avoid premature full-facility cost claims and instead focus on defining the lowest-cost pathway that can verify the research gap, validate the physics model, test measurement quality, and retire key risks.
 
 A credible funding narrative is not “build the habitat immediately”. It is “fund the next evidence-producing step and decide from the results whether the next stage is justified”.
+
+---
+
+<!-- project-footer -->
+**Project:** [Hypergravity Habitat](../../README.md) · **Status:** exploratory research documentation · **License:** see repository license and file-level notes

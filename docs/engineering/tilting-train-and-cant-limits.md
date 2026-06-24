@@ -45,21 +45,12 @@ For a circular railway Hypergravity Habitat, the interior floor should ideally b
 
 For a terrestrial circular platform:
 
-\[
-g_{eff} = \sqrt{g^2 + a_c^2}
-\]
+```text
+g_eff = √(g² + a_c²)
+θ = arctan(a_c / g)
+```
 
-and the required floor alignment angle is:
-
-\[
-\theta = \arctan(a_c/g)
-\]
-
-where:
-
-- \(g\) is Earth gravity,
-- \(a_c\) is centripetal acceleration,
-- \(\theta\) is the angle of the resultant load vector relative to vertical.
+where `g` is Earth gravity, `a_c` is centripetal acceleration, and `θ` is the angle of the resultant load vector relative to vertical.
 
 A tilting vehicle could help align the cabin floor with this resultant vector. This makes tilting trains relevant as an engineering concept.
 
@@ -80,7 +71,7 @@ Therefore, a tilting train may keep the passenger cabin more comfortable while t
 
 ## 5. Reference Values from Existing Railway Practice
 
-Existing tilting trains commonly have carbody tilt on the order of several degrees, not tens of degrees. The Pendolino family is a relevant example; public technical descriptions commonly cite carbody tilt up to about 8 degrees for some Pendolino variants.
+Existing tilting trains commonly have carbody tilt on the order of several degrees, not tens of degrees. Public technical descriptions commonly cite carbody tilt up to about 8 degrees for some Pendolino variants.
 
 Railway cant limits are also limited. For example, the U.S. Federal Railroad Administration rule 49 CFR 213.329 states that the maximum elevation of the outside rail of a curve may not be more than 7 inches. It also requires approval for higher cant deficiency and includes wheel-unloading and passenger-floor acceleration/roll criteria.
 
@@ -105,28 +96,15 @@ Approximate required floor alignment angles for a terrestrial circular platform:
 
 These values are much larger than typical passenger tilting-train carbody tilt values. Even if track cant and vehicle tilt are combined, ordinary railway practice is unlikely to provide the full required floor angle for higher target g values.
 
-This does not make rail impossible, but it means:
-
-1. lower target g values may be more realistic,
-2. special cabin tilt systems may be required,
-3. the bogie/track system may need to remain closer to conventional cant limits,
-4. passenger/payload modules may need internal floors independent of the track plane,
-5. maglev or non-rail guideway concepts may become more attractive if large cabin tilt is required.
+This does not make rail impossible, but it means that lower target g values may be more realistic, special cabin tilt systems may be required, and bogie/track systems may need to remain closer to conventional cant limits.
 
 ---
 
 ## 7. Static and Low-Speed Problem on a Highly Banked Track
 
-A highly banked track can be problematic at low speed or at rest.
+A highly banked track can be problematic at low speed or at rest. If the track is strongly tilted for high-speed operation, then at low speed there is insufficient centripetal acceleration to balance the gravitational component along the track plane.
 
-If the track is strongly tilted for high-speed operation, then at low speed there is insufficient centripetal acceleration to balance the gravitational component along the track plane. The resultant load shifts inward/downhill. This can create:
-
-- uncomfortable or unsafe stopped conditions,
-- high load on the low rail,
-- cant excess,
-- boarding and maintenance problems,
-- emergency stop complications,
-- risk of interior equipment or occupants being poorly oriented when the train is stationary.
+This can create uncomfortable or unsafe stopped conditions, high load on the low rail, cant excess, boarding and maintenance problems, emergency stop complications, and risk of poorly oriented interior equipment or occupants.
 
 Therefore, a circular railway habitat cannot simply use extreme permanent track cant. It needs a credible low-speed, stopped, maintenance, and emergency-state concept.
 
@@ -134,113 +112,33 @@ Therefore, a circular railway habitat cannot simply use extreme permanent track 
 
 ## 8. Maximum Effective-g Is Not Set by Tilt Alone
 
-The maximum feasible effective gravity for a railway concept depends on multiple limits:
-
-1. **radius** — smaller radius increases angular rate, wear, and curvature effects;
-2. **speed** — higher speed increases centripetal acceleration and kinetic energy;
-3. **track cant** — limited by railway standards, maintenance, low-speed operation, and mixed operating conditions;
-4. **cant deficiency** — limited by comfort, wheel unloading, safety, and certification;
-5. **vehicle tilt** — limited by mechanism, clearance, comfort, and dynamic stability;
-6. **wheel unloading** — safety-critical; excessive unloading increases derailment risk;
-7. **loading gauge** — tilted vehicles need clearance from infrastructure;
-8. **platform access** — doors, transfer, maintenance, and evacuation become harder;
-9. **safe stopping** — high speed and high cant complicate emergency response;
-10. **passenger/payload environment** — internal floor alignment may require special module design.
-
----
-
-## 9. Design Options
-
-### Option A: Conventional Track Cant Only
-
-Pros:
-
-- mature railway engineering,
-- simple vehicle design.
-
-Cons:
-
-- limited angle,
-- problematic at rest if high cant,
-- likely insufficient for target hypergravity levels above very mild values.
-
-### Option B: Conventional Tilting Train
-
-Pros:
-
-- known technology,
-- improves passenger comfort,
-- may allow variable operating speeds.
-
-Cons:
-
-- typical tilt angles are far below required hypergravity floor angles,
-- does not eliminate track-force limits,
-- limited use for high target g.
-
-### Option C: Special Internal Tilting Module
-
-Pros:
-
-- cabin floor can align with resultant vector independently of bogie orientation,
-- track cant can remain within safer limits,
-- supports different target g values by active floor/cabin orientation.
-
-Cons:
-
-- new engineering complexity,
-- moving interiors, doors, utilities, emergency access, and payload racks become harder,
-- requires safety analysis.
-
-### Option D: Gimballed Payload or Cabin
-
-Pros:
-
-- strong alignment flexibility,
-- useful for payload demonstrators,
-- separates track dynamics from experimental orientation.
-
-Cons:
-
-- complex for human habitation,
-- introduces moving interfaces and failure modes.
-
-### Option E: Reject Rail for High-g Targets
-
-Pros:
-
-- avoids forcing railway technology beyond realistic limits.
-
-Cons:
-
-- may require maglev, rotating structures, or other guideways.
-
----
-
-## 10. Requirement Added
-
-A railway or rail-like Hypergravity Habitat concept shall include a **cant and tilt feasibility analysis** covering:
-
-- target resultant gravity,
-- required lateral acceleration,
-- required floor angle,
-- installed track cant,
-- vehicle carbody tilt,
-- cant deficiency or excess,
-- wheel unloading,
-- passenger or payload lateral acceleration,
-- stopped and low-speed conditions,
-- clearance / loading gauge,
-- emergency stop and evacuation,
-- maintenance and inspection limits.
+The maximum feasible effective gravity for a railway concept depends on radius, speed, track cant, cant deficiency, vehicle tilt, wheel unloading, loading gauge, platform access, safe stopping, and passenger or payload environment.
 
 No railway concept should claim a target g capability based on speed and radius alone.
 
 ---
 
+## 9. Design Options
+
+| Option | Potential value | Main limitation |
+|---|---|---|
+| Conventional track cant only | mature railway engineering | limited angle and problematic at rest if high cant |
+| Conventional tilting train | known technology and passenger-comfort value | typical tilt angles are far below many target hypergravity floor angles |
+| Special internal tilting module | cabin floor can align independently of bogies | new engineering complexity |
+| Gimballed payload or cabin | strong alignment flexibility | complex for human habitation |
+| Reject rail for high-g targets | avoids forcing railway technology beyond realistic limits | may require maglev, rotating structures, or other guideways |
+
+---
+
+## 10. Requirement Added
+
+A railway or rail-like Hypergravity Habitat concept shall include a **cant and tilt feasibility analysis** covering target resultant gravity, required lateral acceleration, required floor angle, installed track cant, vehicle carbody tilt, cant deficiency or excess, wheel unloading, passenger or payload lateral acceleration, stopped and low-speed conditions, clearance, emergency stop and evacuation, and maintenance limits.
+
+---
+
 ## 11. Preliminary Conclusion
 
-Tilting trains should definitely be mentioned in the Hypergravity Habitat documentation. They are relevant because they show that railway vehicles can actively manage passenger-perceived lateral acceleration.
+Tilting trains should be mentioned in the Hypergravity Habitat documentation because they show that railway vehicles can actively manage passenger-perceived lateral acceleration.
 
 However, existing tilting-train practice is not sufficient by itself to support the large floor angles required for many target hypergravity values. For a railway-based Hypergravity Habitat, the limiting factors are not only passenger comfort but also track cant, cant deficiency, wheel unloading, low-speed/stopped conditions, clearance, safe stopping, and certification.
 
@@ -256,3 +154,8 @@ The following sources provide initial context and should be replaced or suppleme
 - Public Pendolino technical descriptions — used only as initial context for typical carbody tilt values around 8 degrees.
 - Hypergravity Habitat `docs/physics-reference.md` — project equations for resultant effective gravity and required floor angle.
 - Hypergravity Habitat `calculations/hypergravity_sizing.py` — reproducible sizing calculations.
+
+---
+
+<!-- project-footer -->
+**Project:** [Hypergravity Habitat](../../README.md) · **Status:** exploratory research documentation · **License:** see repository license and file-level notes
