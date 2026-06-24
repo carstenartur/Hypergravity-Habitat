@@ -28,7 +28,7 @@ Rendered graphics should be reproducible from the source files.
 |---|---|---|---|---|
 | FIG-001 | Resultant Effective Gravity Vector | `resultant-effective-gravity.mmd` | `docs/physics-reference.md`; `calculations/hypergravity_sizing.py` | source ready |
 | FIG-002 | Demonstrator Ladder | `demonstrator-ladder.mmd` | `docs/roadmap.md`; `docs/minimum-useful-demonstrator.md`; `docs/experimental-programme.md` | source ready |
-| FIG-003 | Architecture Options | `architecture-options.mmd` | `docs/architecture-trade-study.md`; `docs/facility-comparison.md` | source ready |
+| FIG-003 | Architecture Options | `architecture-options.mmd` | `docs/architecture-trade-study.md`; `docs/facility-comparison.md`; `docs/engineering/full-ring-vehicle-concept.md` | source ready |
 | FIG-004 | Safety Case Structure | `safety-case-structure.mmd` | `docs/safety-case-outline.md`; `docs/risk-register.md`; `docs/requirements-traceability-matrix.md` | source ready |
 | FIG-005 | Confounder-Control Chain | `confounder-control-chain.mmd` | `docs/vibration-and-confounders.md`; `docs/data-management-plan.md` | source ready |
 | FIG-006 | Physics Plots | `generate_physics_plots.py` | `docs/physics-reference.md`; `calculations/hypergravity_sizing.py`; `calculations/coriolis_projectile_deflection.py` | generator ready |
@@ -41,15 +41,10 @@ Rendered graphics should be reproducible from the source files.
 
 Assumes a terrestrial circular platform where Earth gravity and centripetal acceleration are perpendicular components. Uses:
 
-\[
-g_{eff} = \sqrt{g^2 + a_c^2}
-\]
-
-and:
-
-\[
-\theta = \arctan(a_c/g)
-\]
+```text
+g_eff = √(g² + a_c²)
+θ = arctan(a_c / g)
+```
 
 ### FIG-002
 
@@ -90,3 +85,8 @@ Limitations: first-order / conceptual / not to scale / etc.
 ## 5. Status
 
 The register is now active. Future diagrams should be added here before being used in proposal material.
+
+---
+
+<!-- project-footer -->
+**Project:** [Hypergravity Habitat](../README.md) · **Status:** exploratory research documentation · **License:** see repository license and file-level notes

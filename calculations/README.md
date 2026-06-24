@@ -23,9 +23,9 @@ It calculates:
 
 The model uses the vector-corrected relationship:
 
-\[
-g_{eff} = \sqrt{g^2 + a_c^2}
-\]
+```text
+g_eff = √(g² + a_c²)
+```
 
 This is important because a terrestrial circular platform combines vertical Earth gravity and horizontal centripetal acceleration.
 
@@ -52,16 +52,16 @@ It estimates:
 
 The screening model is:
 
-\[
-y \approx \Omega \frac{L^2}{v}
-\]
+```text
+y ≈ Ω × L² / v
+```
 
 where:
 
-- \(y\) is lateral deflection,
-- \(\Omega\) is platform angular rate,
-- \(L\) is projectile range,
-- \(v\) is projectile speed.
+- `y` is lateral deflection,
+- `Ω` is platform angular rate,
+- `L` is projectile range,
+- `v` is projectile speed.
 
 This model is intentionally simple. It does not include drag, spin, Magnus effect, launch angle, bounce, target height, or exact 3D geometry.
 
@@ -89,15 +89,15 @@ It estimates:
 
 The screening relationship is:
 
-\[
-\frac{a_c}{g} \approx \frac{h_{cant} + h_{def}}{G_{track}}
-\]
+```text
+a_c / g ≈ (h_cant + h_def) / G_track
+```
 
 where:
 
-- \(h_{cant}\) is track cant,
-- \(h_{def}\) is cant deficiency,
-- \(G_{track}\) is track gauge.
+- `h_cant` is track cant,
+- `h_def` is cant deficiency,
+- `G_track` is track gauge.
 
 Usage:
 
@@ -106,9 +106,7 @@ python calculations/railway_g_envelope.py
 python calculations/railway_g_envelope.py --targets 1.02 1.05 1.10 1.20
 ```
 
-Important limitation:
-
-Carbody tilt can help align the cabin floor, but it does not remove the wheel-rail force limits. This tool is not a certification model.
+Important limitation: carbody tilt can help align the cabin floor, but it does not remove the wheel-rail force limits. This tool is not a certification model.
 
 ---
 
@@ -132,7 +130,7 @@ Related documents:
 
 All future calculation files should:
 
-1. state equations,
+1. state equations in readable notation,
 2. define units,
 3. expose assumptions,
 4. avoid hidden constants,
@@ -145,3 +143,8 @@ All future calculation files should:
 ## Status
 
 The current calculation tools are suitable for concept screening and documentation consistency. They are not sufficient for detailed engineering, safety certification, sports-science protocol design, railway approval, or construction planning.
+
+---
+
+<!-- project-footer -->
+**Project:** [Hypergravity Habitat](../README.md) · **Status:** exploratory research documentation · **License:** see repository license and file-level notes

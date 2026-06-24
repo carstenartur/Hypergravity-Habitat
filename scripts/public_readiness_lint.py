@@ -7,9 +7,10 @@ review publicly:
 - unfinished formula markup,
 - unverified DOI markers,
 - known stale internal paths,
-- missing project footers.
+- optional missing project footers.
 
-It can also add the standard project footer with --fix-footers.
+Use --fix-footers to add the standard footer to Markdown files. Use
+--require-footers to fail when a Markdown file has no footer.
 """
 
 from __future__ import annotations
@@ -57,7 +58,7 @@ def footer_for(path: Path, root: Path) -> str:
     )
 
 
-def check_file(path: Path, root: Path) -> list[str]:
+def check_file(path: Path, root: Path, require_footers: bool) -> list[str]:
     text = path.read_text(encoding="utf-8")
     rel = path.relative_to(root)
     issues: list[str] = []
@@ -74,7 +75,7 @@ def check_file(path: Path, root: Path) -> list[str]:
         if stale in text:
             issues.append(f"stale path `{stale}`; use `{replacement}`")
 
-    if FOOTER_MARKER not in text:
+    if require_footers and FOOTER_MARKER not in text:
         issues.append("missing project footer")
 
     return [f"{rel}: {issue}" for issue in issues]
@@ -92,6 +93,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Check public-release readiness of Markdown docs.")
     parser.add_argument("root", nargs="?", default=".", help="Repository root; default: current directory")
     parser.add_argument("--fix-footers", action="store_true", help="Add missing standard project footers")
+    parser.add_argument("--require-footers", action="store_true", help="Fail when Markdown files lack project footers")
     args = parser.parse_args()
 
     root = Path(args.root).resolve()
@@ -102,10 +104,10 @@ def main() -> int:
     all_issues: list[str] = []
 
     for path in iter_markdown_files(root):
-        if args.fix_footers and FOOTER_MARKER not in path.read_text(encoding="utf-8"):
+        if args.fix_footers:
             if fix_footer(path, root):
                 changed += 1
-        all_issues.extend(check_file(path, root))
+        all_issues.extend(check_file(path, root, require_footers=args.require_footers))
 
     if changed:
         print(f"Added project footer to {changed} Markdown file(s).")

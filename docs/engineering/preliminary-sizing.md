@@ -13,55 +13,46 @@ This document provides first-order sizing relationships for candidate Hypergravi
 
 Its purpose is to make the dominant physical relationships explicit before architecture selection. For a terrestrial circular platform, target effective gravity is treated as the vector result of Earth gravity and generated lateral acceleration.
 
-The document supports comparison of:
-
-- small rotating or guided demonstrators,
-- circular railway concepts,
-- magnetic levitation concepts,
-- larger habitat-scale systems.
-
 ---
 
 ## 2. Core Physical Model
 
 For a body moving in a circle:
 
-\[
-a_c = \frac{v^2}{r} = \omega^2 r
-\]
+```text
+a_c = v² / r = ω²r
+```
 
 where:
 
-- \(a_c\) = centripetal acceleration in m/s²,
-- \(v\) = tangential speed in m/s,
-- \(r\) = radius in m,
-- \(\omega\) = angular velocity in rad/s.
+- `a_c` is centripetal acceleration in m/s²,
+- `v` is tangential speed in m/s,
+- `r` is radius in m,
+- `ω` is angular velocity in rad/s.
 
 On Earth, a circular platform combines vertical gravity with horizontal centripetal acceleration:
 
-\[
-g_{eff} = \sqrt{g^2 + a_c^2}
-\]
+```text
+g_eff = √(g² + a_c²)
+```
 
 Solving for the required lateral acceleration:
 
-\[
-a_c = g \sqrt{g_{rel}^2 - 1}
-\]
+```text
+a_c = g × √(g_rel² − 1)
+```
 
-where \(g_{rel}\) is the desired resultant effective gravity in multiples of 1 g.
+where `g_rel` is the desired resultant effective gravity in multiples of 1 g.
 
 The bank angle or cabin-tilt angle needed to align the floor with the resultant load vector is:
 
-\[
-\theta = \arctan\left(\frac{a_c}{g}\right)
-\]
+```text
+θ = arctan(a_c / g)
+```
 
 ---
 
 ## 3. Resultant Gravity Requirements
-
-The table below shows the lateral acceleration and approximate resultant-vector angle required for selected target effective-gravity levels.
 
 | Target resultant effective gravity | Required lateral acceleration | Required lateral acceleration | Approximate resultant-vector angle |
 |---:|---:|---:|---:|
@@ -161,32 +152,7 @@ A human-rated railway or maglev habitat would require a much more demanding safe
 
 ## 9. First-Order Cost Drivers
 
-At this stage, cost should be treated parametrically rather than as a single headline number.
-
-Main capital-cost drivers:
-
-- guideway or track length,
-- earthworks and site preparation,
-- vehicle or payload module design,
-- power supply,
-- control and safety systems,
-- laboratories and support buildings,
-- environmental-control systems,
-- emergency infrastructure,
-- permitting and certification,
-- commissioning and test programme.
-
-Main operating-cost drivers:
-
-- continuous operating hours,
-- energy demand,
-- maintenance and inspection,
-- staffing,
-- payload operations,
-- medical or biological support,
-- safety and emergency readiness,
-- component replacement,
-- data and facility management.
+At this stage, cost should be treated parametrically rather than as a single headline number. Main drivers include guideway length, civil works, vehicle or payload-module design, power, control and safety systems, support buildings, environmental control, emergency infrastructure, permitting, commissioning, energy, maintenance, staffing, payload operations, and data management.
 
 ---
 
@@ -209,57 +175,13 @@ This table includes only guideway length. It excludes land, vehicles, buildings,
 
 ## 11. Architecture Trade-Offs
 
-### Smaller Radius
-
-Potential advantages:
-
-- lower land use,
-- shorter guideway,
-- lower civil cost,
-- easier demonstrator construction.
-
-Potential disadvantages:
-
-- higher angular rate,
-- stronger vestibular effects,
-- tighter curvature,
-- higher wear for rail systems,
-- stronger gravity gradients across payloads or humans.
-
-### Larger Radius
-
-Potential advantages:
-
-- lower angular rate,
-- reduced curvature effects,
-- potentially better comfort,
-- more plausible habitat-scale layout.
-
-Potential disadvantages:
-
-- much higher land use,
-- longer guideway,
-- higher required speed for the same lateral acceleration,
-- higher capital cost,
-- more difficult emergency and operations concept.
+Smaller radii reduce land use and guideway length, but increase angular rate, curvature, wear, and gravity gradients. Larger radii reduce angular rate and improve some human-factors constraints, but increase land use, required speed, capital cost, and emergency-response complexity.
 
 ---
 
 ## 12. Required Next Calculations
 
-This document should be followed by reproducible calculations for:
-
-- emergency stopping distance,
-- propulsion power,
-- aerodynamic drag,
-- rolling resistance or maglev power demand,
-- vibration assumptions,
-- ride-quality limits,
-- banking geometry,
-- gravity gradients,
-- payload-environment variability,
-- land-use constraints,
-- energy and operational cost.
+This document should be followed by reproducible calculations for emergency stopping distance, propulsion power, aerodynamic drag, rolling resistance or maglev power demand, vibration assumptions, ride-quality limits, banking geometry, gravity gradients, payload-environment variability, land-use constraints, energy, and operational cost.
 
 All future calculations should state equations, units, assumptions, and uncertainty.
 
@@ -283,3 +205,8 @@ All future calculations should state equations, units, assumptions, and uncertai
 The sizing model shows that even modest resultant hypergravity levels may require substantial lateral acceleration. This strengthens the case for staged demonstrators, careful modelling, and architecture-neutral trade studies before any large facility is proposed.
 
 The most immediate engineering output should be a reproducible parameter model that allows reviewers to vary target gravity, radius, speed, angular rate, bank angle, land use, and cost assumptions.
+
+---
+
+<!-- project-footer -->
+**Project:** [Hypergravity Habitat](../../README.md) · **Status:** exploratory research documentation · **License:** see repository license and file-level notes
