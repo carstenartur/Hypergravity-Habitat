@@ -110,6 +110,7 @@ docs/
     railway-platform.md
     tilting-train-and-cant-limits.md
     railway-g-envelope.md
+    full-ring-vehicle-concept.md
     maglev-platform.md
     transfer-system-concept.md
 
@@ -183,6 +184,7 @@ papers/
 - [`docs/engineering/railway-platform.md`](docs/engineering/railway-platform.md) — circular railway concept assessment.
 - [`docs/engineering/tilting-train-and-cant-limits.md`](docs/engineering/tilting-train-and-cant-limits.md) — tilting trains, track cant, cant deficiency, floor alignment, wheel unloading, and maximum-g constraints for railway concepts.
 - [`docs/engineering/railway-g-envelope.md`](docs/engineering/railway-g-envelope.md) — first-order achievable-g corridor for railway concepts under cant, cant deficiency, tilt, and safety constraints.
+- [`docs/engineering/full-ring-vehicle-concept.md`](docs/engineering/full-ring-vehicle-concept.md) — mechanically connected full-ring vehicle concept between conventional railway and rotating annular habitat.
 - [`docs/engineering/maglev-platform.md`](docs/engineering/maglev-platform.md) — magnetic-levitation concept assessment.
 - [`docs/engineering/transfer-system-concept.md`](docs/engineering/transfer-system-concept.md) — staged access, logistics, and emergency-transfer concepts.
 
@@ -205,6 +207,10 @@ papers/
 ### Circular Railway Platform
 
 A circular railway platform could use a large-radius track and continuous motion to generate centripetal acceleration. This approach may benefit from mature rail engineering, but it raises questions about vibration, wear, access, maintenance, banking geometry, tilting-vehicle feasibility, land use, emergency stopping, and cost.
+
+### Full-Ring Vehicle
+
+A mechanically connected full-ring vehicle could reduce the intuitive problem of a short train tipping or sliding on a steeply canted curve by distributing loads around a closed annular structure. However, it becomes a specialized guided ring system with new constraints: structural load paths, guideway capture, thermal expansion, vibration modes, stopped-state behaviour, maintenance, and emergency access.
 
 ### Magnetic Levitation Platform
 
