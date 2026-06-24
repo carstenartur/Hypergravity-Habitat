@@ -75,13 +75,53 @@ python calculations/coriolis_projectile_deflection.py --target-g 1.10 --range 30
 
 ---
 
+### `railway_g_envelope.py`
+
+First-order railway g-envelope screening model.
+
+It estimates:
+
+- track-equivalent lateral acceleration from cant and cant deficiency,
+- track-equivalent resultant effective g,
+- resultant-vector angle,
+- cabin alignment angle when carbody tilt or internal floor tilt is added,
+- equivalent cant-plus-deficiency required for target g values.
+
+The screening relationship is:
+
+\[
+\frac{a_c}{g} \approx \frac{h_{cant} + h_{def}}{G_{track}}
+\]
+
+where:
+
+- \(h_{cant}\) is track cant,
+- \(h_{def}\) is cant deficiency,
+- \(G_{track}\) is track gauge.
+
+Usage:
+
+```bash
+python calculations/railway_g_envelope.py
+python calculations/railway_g_envelope.py --targets 1.02 1.05 1.10 1.20
+```
+
+Important limitation:
+
+Carbody tilt can help align the cabin floor, but it does not remove the wheel-rail force limits. This tool is not a certification model.
+
+---
+
 ## Documentation Links
 
 Related documents:
 
+- `docs/physics-reference.md`
 - `docs/engineering/preliminary-sizing.md`
 - `docs/engineering/design-requirements.md`
 - `docs/engineering/railway-platform.md`
+- `docs/engineering/tilting-train-and-cant-limits.md`
+- `docs/engineering/railway-g-envelope.md`
 - `docs/engineering/maglev-platform.md`
 - `docs/literature-review.md`
 - `docs/science/sports-science.md`
@@ -104,4 +144,4 @@ All future calculation files should:
 
 ## Status
 
-The current calculation tools are suitable for concept screening and documentation consistency. They are not sufficient for detailed engineering, safety certification, sports-science protocol design, or construction planning.
+The current calculation tools are suitable for concept screening and documentation consistency. They are not sufficient for detailed engineering, safety certification, sports-science protocol design, railway approval, or construction planning.
