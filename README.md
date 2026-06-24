@@ -77,12 +77,24 @@ README.md
 
 docs/
   concept-note.md
+  proposal-brief.md
   research-gap.md
   literature-review.md
   scientific-questions.md
   glossary.md
   roadmap.md
+  work-packages.md
   risk-register.md
+  safety-case-outline.md
+  ethics-and-governance.md
+  data-management-plan.md
+  requirements-traceability-matrix.md
+  facility-comparison.md
+  architecture-trade-study.md
+  minimum-useful-demonstrator.md
+  experimental-programme.md
+  physics-reference.md
+  vibration-and-confounders.md
   habitability.md
 
   science/
@@ -107,11 +119,11 @@ calculations/
   hypergravity_sizing.py
   coriolis_projectile_deflection.py
 
+diagrams/
+  README.md
+
 simulations/
   Numerical models and parameter studies
-
-diagrams/
-  Concept sketches and explanatory graphics
 
 references/
   Literature notes and source material
@@ -124,15 +136,34 @@ papers/
 
 ## Main Documents
 
-### Concept and Research Framing
+### Concept and Proposal Framing
 
 - [`docs/concept-note.md`](docs/concept-note.md) — proposal-grade concept framing.
+- [`docs/proposal-brief.md`](docs/proposal-brief.md) — short brief suitable for academic or institutional feedback.
 - [`docs/research-gap.md`](docs/research-gap.md) — structured research-gap analysis.
 - [`docs/literature-review.md`](docs/literature-review.md) — annotated literature review, search strategy, inclusion/exclusion criteria, and evidence matrix.
 - [`docs/scientific-questions.md`](docs/scientific-questions.md) — research-question catalogue.
 - [`docs/glossary.md`](docs/glossary.md) — controlled terminology and notation.
+
+### Programme, Governance, and Reviewability
+
 - [`docs/roadmap.md`](docs/roadmap.md) — staged research and development roadmap.
+- [`docs/work-packages.md`](docs/work-packages.md) — proposal-style work packages, deliverables, and milestones.
 - [`docs/risk-register.md`](docs/risk-register.md) — preliminary risk register.
+- [`docs/safety-case-outline.md`](docs/safety-case-outline.md) — preliminary safety-case framework.
+- [`docs/ethics-and-governance.md`](docs/ethics-and-governance.md) — human, animal, biological, sports-science, and data governance framework.
+- [`docs/data-management-plan.md`](docs/data-management-plan.md) — FAIR/open-science and sensitive-data handling framework.
+- [`docs/requirements-traceability-matrix.md`](docs/requirements-traceability-matrix.md) — requirement-to-evidence traceability.
+
+### Demonstrator and Architecture Logic
+
+- [`docs/facility-comparison.md`](docs/facility-comparison.md) — comparison with existing research infrastructure.
+- [`docs/architecture-trade-study.md`](docs/architecture-trade-study.md) — comparison of no-build, existing facilities, payload demonstrator, rotating, rail, maglev, and hybrid options.
+- [`docs/minimum-useful-demonstrator.md`](docs/minimum-useful-demonstrator.md) — payload-first demonstrator strategy.
+- [`docs/experimental-programme.md`](docs/experimental-programme.md) — staged experimental programme.
+- [`docs/physics-reference.md`](docs/physics-reference.md) — physics and notation reference.
+- [`docs/vibration-and-confounders.md`](docs/vibration-and-confounders.md) — confounder-control framework.
+- [`docs/habitability.md`](docs/habitability.md) — human-factors and habitability framework.
 
 ### Science
 
@@ -154,11 +185,12 @@ papers/
 
 - [`docs/economics/cost-model.md`](docs/economics/cost-model.md) — staged cost framework for CAPEX, OPEX, renewal, and funding logic.
 
-### Calculations
+### Calculations and Figures
 
 - [`calculations/README.md`](calculations/README.md) — calculation standards and usage notes.
 - [`calculations/hypergravity_sizing.py`](calculations/hypergravity_sizing.py) — dependency-free sizing calculator for circular terrestrial hypergravity concepts.
 - [`calculations/coriolis_projectile_deflection.py`](calculations/coriolis_projectile_deflection.py) — first-order Coriolis deflection estimator for thrown or kicked projectiles.
+- [`diagrams/README.md`](diagrams/README.md) — planned figure set for proposal and review material.
 
 ---
 
