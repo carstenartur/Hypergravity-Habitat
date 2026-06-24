@@ -2,9 +2,11 @@
 %% Source basis:
 %% - docs/architecture-trade-study.md
 %% - docs/facility-comparison.md
+%% - docs/engineering/full-ring-vehicle-concept.md
 %% Assumptions:
 %% - architecture-neutral pre-feasibility comparison
 %% - no full-scale architecture is selected at current stage
+%% - full-ring vehicle is a distinct architecture class, not just a longer train
 
 flowchart LR
     Q["Research question<br/>Sustained moderate hypergravity"]
@@ -15,6 +17,7 @@ flowchart LR
     LAB["Laboratory centrifuge<br/>Biology-first experiments"]
     CART["Circular guided cart<br/>Engineering measurement demonstrator"]
     RAIL["Circular railway<br/>Large-radius mature technology candidate"]
+    FULL["Full-ring vehicle<br/>Mechanically connected annular guideway concept"]
     MAG["Maglev platform<br/>Low-contact advanced candidate"]
     ROT["Large rotating platform<br/>Artificial-gravity habitat candidate"]
     HYB["Hybrid system<br/>Combined staged architecture"]
@@ -27,6 +30,7 @@ flowchart LR
     Q --> LAB
     Q --> CART
     Q --> RAIL
+    Q --> FULL
     Q --> MAG
     Q --> ROT
     Q --> HYB
@@ -38,6 +42,7 @@ flowchart LR
     CART --> REC
 
     RAIL -.later trade study.-> REC
+    FULL -.annular-structure modelling.-> REC
     MAG -.later trade study.-> REC
     ROT -.later concept.-> REC
     HYB -.after requirements mature.-> REC
