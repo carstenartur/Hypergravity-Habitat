@@ -104,6 +104,7 @@ docs/
 calculations/
   README.md
   hypergravity_sizing.py
+  coriolis_projectile_deflection.py
 
 simulations/
   Numerical models and parameter studies
@@ -126,7 +127,7 @@ papers/
 
 - [`docs/concept-note.md`](docs/concept-note.md) — proposal-grade concept framing.
 - [`docs/research-gap.md`](docs/research-gap.md) — structured research-gap analysis.
-- [`docs/literature-review.md`](docs/literature-review.md) — literature-review scaffold and institutional source anchors.
+- [`docs/literature-review.md`](docs/literature-review.md) — annotated literature review, search strategy, inclusion/exclusion criteria, and evidence matrix.
 - [`docs/scientific-questions.md`](docs/scientific-questions.md) — research-question catalogue.
 - [`docs/glossary.md`](docs/glossary.md) — controlled terminology and notation.
 - [`docs/roadmap.md`](docs/roadmap.md) — staged research and development roadmap.
@@ -155,6 +156,7 @@ papers/
 
 - [`calculations/README.md`](calculations/README.md) — calculation standards and usage notes.
 - [`calculations/hypergravity_sizing.py`](calculations/hypergravity_sizing.py) — dependency-free sizing calculator for circular terrestrial hypergravity concepts.
+- [`calculations/coriolis_projectile_deflection.py`](calculations/coriolis_projectile_deflection.py) — first-order Coriolis deflection estimator for thrown or kicked projectiles.
 
 ---
 
