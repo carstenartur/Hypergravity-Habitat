@@ -1,254 +1,285 @@
 # Preliminary Sizing Study
 
 **Project:** Hypergravity Habitat  
-**Document:** Preliminary Engineering Sizing  
-**Version:** 0.2 (Working Draft)
+**Document type:** preliminary engineering sizing and parameter study  
+**Status:** working document for pre-feasibility review  
+**Scope:** relationship between target effective gravity, lateral acceleration, radius, speed, angular rate, infrastructure size, and first-order cost drivers
 
 ---
 
-# Purpose
+## 1. Purpose
 
-This document provides a first-order engineering comparison of several candidate Hypergravity Habitat configurations.
+This document provides first-order sizing relationships for candidate Hypergravity Habitat configurations. It is not a construction proposal and should not be read as a final engineering design.
 
-It is **not** a construction proposal.
+Its purpose is to make the dominant physical relationships explicit before architecture selection. In particular, it corrects a common simplification: for a terrestrial circular platform, target effective gravity is the vector result of Earth gravity and generated lateral acceleration, not simply Earth gravity plus an additional vertical component.
 
-Its purpose is to identify the principal relationships between
+The document supports comparison of:
 
-- ring radius,
-- operating speed,
-- infrastructure size,
-- construction cost,
-- operating cost,
-- maintainability,
-- scalability.
-
-All calculations are preliminary and intended for feasibility discussions.
+- small rotating or guided demonstrators,
+- circular railway concepts,
+- magnetic levitation concepts,
+- larger habitat-scale systems.
 
 ---
 
-# Assumptions
+## 2. Core Physical Model
 
-## Target gravity levels
+For a body moving in a circle:
 
-The project currently evaluates two operating points.
+\[
+a_c = \frac{v^2}{r} = \omega^2 r
+\]
 
-| Parameter | Value |
-|-----------|------:|
-| Earth gravity | 1.00 g |
-| Scenario A | 1.10 g |
-| Scenario B | 1.25 g |
+where:
 
-The additional radial acceleration therefore becomes
+- \(a_c\) = centripetal acceleration in m/s²,
+- \(v\) = tangential speed in m/s,
+- \(r\) = radius in m,
+- \(\omega\) = angular velocity in rad/s.
 
-| Scenario | Additional radial acceleration |
-|----------|-------------------------------:|
-|1.10 g|0.10 g = 0.981 m/s²|
-|1.25 g|0.25 g = 2.452 m/s²|
+On Earth, a circular platform combines vertical gravity with horizontal centripetal acceleration:
 
----
+\[
+g_{eff} = \sqrt{g^2 + a_c^2}
+\]
 
-# Equations
+Solving for the required lateral acceleration:
 
-Required speed:
+\[
+a_c = g \sqrt{g_{rel}^2 - 1}
+\]
 
-$begin:math:display$
-v\=\\sqrt\{a \\cdot r\}
-$end:math:display$
+where \(g_{rel}\) is the desired resultant effective gravity in multiples of 1 g.
 
-where
+The bank angle or cabin-tilt angle needed to align the floor with the resultant load vector is:
 
-- v = velocity (m/s)
-- a = additional radial acceleration
-- r = ring radius
-
-Track length:
-
-$begin:math:display$
-L\=2\\pi r
-$end:math:display$
+\[
+\theta = \arctan\left(\frac{a_c}{g}\right)
+\]
 
 ---
 
-# Candidate Ring Sizes
+## 3. Important Correction
 
-| Radius | Track length |
-|---------:|------------:|
-|100 m|628 m|
-|200 m|1,257 m|
-|400 m|2,513 m|
-|500 m|3,142 m|
-|1000 m|6,283 m|
-|2000 m|12,566 m|
+A target of **1.10 g resultant effective gravity** does **not** require only 0.10 g lateral acceleration. It requires approximately 0.458 g lateral acceleration because the lateral and vertical components combine vectorially.
 
----
+| Target resultant effective gravity | Required lateral acceleration | Required lateral acceleration | Approximate resultant-vector angle |
+|---:|---:|---:|---:|
+| 1.05 g | 3.14 m/s² | 0.320 g | 17.8° |
+| 1.10 g | 4.49 m/s² | 0.458 g | 24.6° |
+| 1.20 g | 6.50 m/s² | 0.663 g | 33.6° |
+| 1.25 g | 7.35 m/s² | 0.750 g | 36.9° |
+| 1.50 g | 10.96 m/s² | 1.118 g | 48.2° |
 
-# Required Operating Speed
-
-| Radius | 1.10 g | 1.25 g |
-|---------:|-------:|-------:|
-|100 m|36 km/h|57 km/h|
-|200 m|50 km/h|80 km/h|
-|400 m|71 km/h|114 km/h|
-|500 m|80 km/h|127 km/h|
-|1000 m|113 km/h|180 km/h|
-|2000 m|160 km/h|255 km/h|
-
-> **Note:** These values are recalculated directly from the equations above and supersede earlier rough estimates discussed during the concept phase.
+This correction has major implications for operating speed, track design, comfort, land use, and feasibility.
 
 ---
 
-# Approximate Lap Time
+## 4. Candidate Ring Sizes
 
-| Radius | 1.10 g | 1.25 g |
-|---------:|-------:|-------:|
-|100 m|63 s|40 s|
-|200 m|90 s|57 s|
-|400 m|127 s|79 s|
-|500 m|141 s|89 s|
-|1000 m|200 s|126 s|
-|2000 m|283 s|178 s|
+| Radius | Circumference | Diameter | Approximate enclosed area |
+|---:|---:|---:|---:|
+| 100 m | 0.63 km | 200 m | 3.1 ha |
+| 200 m | 1.26 km | 400 m | 12.6 ha |
+| 400 m | 2.51 km | 800 m | 50.3 ha |
+| 500 m | 3.14 km | 1.0 km | 78.5 ha |
+| 1,000 m | 6.28 km | 2.0 km | 314 ha |
+| 2,000 m | 12.57 km | 4.0 km | 1,257 ha |
 
----
-
-# Reference Railway Cost Model
-
-The following assumptions are used throughout the repository.
-
-These values are placeholders and shall be replaced by literature values later.
-
-| Parameter | Assumption |
-|-----------|-----------:|
-|High-quality railway construction|25 M€/km|
-|Operations building|10 M€|
-|Workshop|8 M€|
-|Electrical infrastructure|5 M€|
-|Contingency|20 %|
+Larger radii reduce angular rate but increase land use, guideway length, civil infrastructure, and likely cost.
 
 ---
 
-# Estimated Track Cost
+## 5. Required Operating Speed
 
-| Radius | Track length | Track cost |
-|---------:|------------:|-----------:|
-|100 m|0.63 km|15.7 M€|
-|200 m|1.26 km|31.4 M€|
-|400 m|2.51 km|62.8 M€|
-|500 m|3.14 km|78.5 M€|
-|1000 m|6.28 km|157.1 M€|
-|2000 m|12.57 km|314.2 M€|
+Using the vector-corrected model above:
 
----
+| Radius | Speed for 1.10 g resultant | Speed for 1.25 g resultant |
+|---:|---:|---:|
+| 100 m | 76 km/h | 98 km/h |
+| 200 m | 108 km/h | 138 km/h |
+| 400 m | 153 km/h | 195 km/h |
+| 500 m | 171 km/h | 218 km/h |
+| 1,000 m | 241 km/h | 309 km/h |
+| 2,000 m | 341 km/h | 437 km/h |
 
-# Demonstrator Rolling Stock
-
-Reference configuration
-
-- 1 locomotive
-- 3 passenger coaches
-- medical instrumentation
-- basic laboratory equipment
-
-The exact vehicle type remains open.
-
-Using existing rolling stock is expected to minimise project cost.
+These values show why modest resultant gravity increases can still imply demanding operating speeds at large radius.
 
 ---
 
-# Capital Cost (Demonstrator)
+## 6. Approximate Lap Time and Angular Rate
 
-| Component | Estimate |
-|-----------|----------:|
-|Track|see table above|
-|Rolling stock|2–6 M€|
-|Workshop & depot|18 M€|
-|Utilities|5 M€|
-|Contingency|20 %|
+| Radius | Lap time at 1.10 g | Angular rate at 1.10 g | Lap time at 1.25 g | Angular rate at 1.25 g |
+|---:|---:|---:|---:|---:|
+| 100 m | 30 s | 2.02 rpm | 23 s | 2.59 rpm |
+| 200 m | 42 s | 1.43 rpm | 33 s | 1.83 rpm |
+| 400 m | 59 s | 1.01 rpm | 46 s | 1.29 rpm |
+| 500 m | 66 s | 0.91 rpm | 52 s | 1.16 rpm |
+| 1,000 m | 94 s | 0.64 rpm | 73 s | 0.82 rpm |
+| 2,000 m | 133 s | 0.45 rpm | 104 s | 0.58 rpm |
 
-### Example (500 m radius)
-
-| Component | Cost |
-|-----------|----:|
-|Track|78.5 M€|
-|Rolling stock|4 M€|
-|Buildings|23 M€|
-|Contingency|21 M€|
-|**Total**|**≈127 M€**|
+Angular rate is important for vestibular and Coriolis effects. A large radius can reduce angular-rate concerns but may require high speed and very large land area.
 
 ---
 
-# Operating Cost Model
+## 7. Interpretation for Railway and Maglev Concepts
 
-Operating costs depend mainly on
+A circular railway or maglev system must be evaluated against multiple coupled variables:
 
-- electricity
-- personnel
-- wheel wear
-- rail wear
-- scheduled maintenance
+- resultant gravity target,
+- lateral acceleration,
+- banking or cabin tilt,
+- radius,
+- speed,
+- angular rate,
+- track or guideway length,
+- ride quality,
+- maintenance,
+- emergency stopping distance,
+- land use,
+- cost.
 
-Instead of presenting unsupported values, future revisions shall derive annual operating costs from
-
-- annual distance travelled,
-- axle loads,
-- maintenance intervals,
-- electricity price,
-- staffing model.
-
----
-
-# Railway vs. Maglev
-
-| Criterion | Railway | Maglev |
-|-----------|:-------:|:------:|
-|Technology readiness|★★★★★|★★★★☆|
-|Initial investment|★★★★★|★★☆☆☆|
-|Mechanical wear|★★☆☆☆|★★★★★|
-|Ride quality|★★★☆☆|★★★★★|
-|Maintenance complexity|★★★☆☆|★★★★☆|
-|Upgrade potential|★★★★☆|★★★★★|
+No single radius is optimal without weighting these variables against scientific requirements.
 
 ---
 
-# Engineering Observations
+## 8. Demonstrator Implications
 
-A smaller radius
+The corrected sizing suggests that early demonstrators should not aim immediately for large human-habitat systems.
 
-- reduces construction cost,
-- reduces land use,
-- increases curvature,
-- increases wheel and rail wear.
+More credible early steps include:
 
-A larger radius
+1. small payload centrifuge or rotating platform,
+2. instrumented circular payload cart,
+3. low-speed guideway rig for acceleration and vibration measurement,
+4. biological payload demonstrator at modest resultant gravity,
+5. parameter study comparing rail, maglev, and rotating systems.
 
-- improves ride quality,
-- reduces curvature,
-- increases infrastructure cost,
-- requires higher operating speed for the same effective gravity.
-
-No optimum radius can currently be identified without considering maintenance cost, human comfort and scientific requirements simultaneously.
+A human-rated railway or maglev habitat would require a much more demanding safety and operations case.
 
 ---
 
-# Open Engineering Questions
+## 9. First-Order Cost Drivers
 
-- What minimum radius provides acceptable ride comfort?
-- How does wheel wear scale with continuous operation?
-- What is the optimal compromise between CAPEX and OPEX?
-- At which radius does a maglev solution become economically competitive?
-- Can the same infrastructure support multiple target gravity levels?
+At this stage, cost should be treated parametrically rather than as a single headline number.
+
+Main capital-cost drivers:
+
+- guideway or track length,
+- earthworks and site preparation,
+- vehicle or payload module design,
+- power supply,
+- control and safety systems,
+- laboratories and support buildings,
+- environmental-control systems,
+- emergency infrastructure,
+- permitting and certification,
+- commissioning and test programme.
+
+Main operating-cost drivers:
+
+- continuous operating hours,
+- energy demand,
+- maintenance and inspection,
+- staffing,
+- payload operations,
+- medical or biological support,
+- safety and emergency readiness,
+- component replacement,
+- data and facility management.
 
 ---
 
-# Revision History
+## 10. Preliminary Track-Length Cost Placeholder
 
-**Version 0.1**
+The following placeholder uses a notional high-quality circular guideway or railway construction cost of 25 M€/km. This number is not a validated estimate and must be replaced with project-specific cost data.
 
-- Initial sizing study.
+| Radius | Circumference | Placeholder guideway cost |
+|---:|---:|---:|
+| 100 m | 0.63 km | 15.7 M€ |
+| 200 m | 1.26 km | 31.4 M€ |
+| 400 m | 2.51 km | 62.8 M€ |
+| 500 m | 3.14 km | 78.5 M€ |
+| 1,000 m | 6.28 km | 157.1 M€ |
+| 2,000 m | 12.57 km | 314.2 M€ |
 
-**Version 0.2**
+This table includes only guideway length. It excludes land, vehicles, buildings, laboratories, power, control, safety systems, contingency, and operations.
 
-- Equations added.
-- Assumptions documented.
-- Cost model made traceable.
-- Unsupported OPEX values removed.
-- Tables reorganised around engineering decisions rather than descriptive text.
+---
+
+## 11. Architecture Trade-Offs
+
+### Smaller Radius
+
+Potential advantages:
+
+- lower land use,
+- shorter guideway,
+- lower civil cost,
+- easier demonstrator construction.
+
+Potential disadvantages:
+
+- higher angular rate,
+- stronger vestibular effects,
+- tighter curvature,
+- higher wear for rail systems,
+- stronger gravity gradients across payloads or humans.
+
+### Larger Radius
+
+Potential advantages:
+
+- lower angular rate,
+- reduced curvature effects,
+- potentially better comfort,
+- more plausible habitat-scale layout.
+
+Potential disadvantages:
+
+- much higher land use,
+- longer guideway,
+- higher required speed for the same lateral acceleration,
+- higher capital cost,
+- more difficult emergency and operations concept.
+
+---
+
+## 12. Required Next Calculations
+
+This document should be followed by reproducible calculations for:
+
+- emergency stopping distance,
+- propulsion power,
+- aerodynamic drag,
+- rolling resistance or maglev power demand,
+- vibration assumptions,
+- ride-quality limits,
+- banking geometry,
+- gravity gradients,
+- payload-environment variability,
+- land-use constraints,
+- energy and operational cost.
+
+All future calculations should state equations, units, assumptions, and uncertainty.
+
+---
+
+## 13. Open Questions
+
+1. What target resultant gravity is scientifically meaningful?
+2. What lateral acceleration is tolerable for each experiment class?
+3. What angular rate is acceptable for biological payloads, plants, animals, and humans?
+4. What radius minimizes total scientific, safety, and cost risk?
+5. Can a small-radius demonstrator answer enough questions before larger infrastructure is considered?
+6. What vibration and acceleration noise levels are acceptable?
+7. How should banking or cabin orientation be implemented?
+8. At what point does maglev become preferable to conventional rail?
+
+---
+
+## 14. Preliminary Conclusion
+
+The corrected vector model shows that even modest resultant hypergravity levels may require substantial lateral acceleration. This strengthens the case for staged demonstrators, careful modelling, and architecture-neutral trade studies before any large facility is proposed.
+
+The most immediate engineering output should be a reproducible parameter model that allows reviewers to vary target gravity, radius, speed, angular rate, bank angle, land use, and cost assumptions.
