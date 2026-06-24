@@ -1,0 +1,43 @@
+%% FIG-003: Architecture Options
+%% Source basis:
+%% - docs/architecture-trade-study.md
+%% - docs/facility-comparison.md
+%% Assumptions:
+%% - architecture-neutral pre-feasibility comparison
+%% - no full-scale architecture is selected at current stage
+
+flowchart LR
+    Q["Research question<br/>Sustained moderate hypergravity"]
+
+    NB["No-build / existing facilities<br/>Use centrifuges, bed rest, DLR/ESA/NASA analogues"]
+    SIM["Simulation only<br/>Physics + parameter modelling"]
+    PAY["Payload-only demonstrator<br/>Instrumented rotating or guided payload"]
+    LAB["Laboratory centrifuge<br/>Biology-first experiments"]
+    CART["Circular guided cart<br/>Engineering measurement demonstrator"]
+    RAIL["Circular railway<br/>Large-radius mature technology candidate"]
+    MAG["Maglev platform<br/>Low-contact advanced candidate"]
+    ROT["Large rotating platform<br/>Artificial-gravity habitat candidate"]
+    HYB["Hybrid system<br/>Combined staged architecture"]
+
+    REC["Current recommendation<br/>Payload-first demonstrator<br/>before human-rated infrastructure"]
+
+    Q --> NB
+    Q --> SIM
+    Q --> PAY
+    Q --> LAB
+    Q --> CART
+    Q --> RAIL
+    Q --> MAG
+    Q --> ROT
+    Q --> HYB
+
+    NB --> REC
+    SIM --> REC
+    PAY --> REC
+    LAB --> REC
+    CART --> REC
+
+    RAIL -.later trade study.-> REC
+    MAG -.later trade study.-> REC
+    ROT -.later concept.-> REC
+    HYB -.after requirements mature.-> REC
