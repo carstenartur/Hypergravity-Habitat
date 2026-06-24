@@ -75,44 +75,47 @@ This distinction is essential because the project combines established mechanics
 ```text
 README.md
 
- docs/
-   concept-note.md
-   research-gap.md
-   scientific-questions.md
-   roadmap.md
-   risk-register.md
-   habitability.md
+docs/
+  concept-note.md
+  research-gap.md
+  literature-review.md
+  scientific-questions.md
+  glossary.md
+  roadmap.md
+  risk-register.md
+  habitability.md
 
-   science/
-     human-physiology.md
-     biology.md
-     plant-science.md
-     sports-science.md
+  science/
+    human-physiology.md
+    biology.md
+    plant-science.md
+    sports-science.md
 
-   engineering/
-     design-requirements.md
-     preliminary-sizing.md
-     railway-platform.md
-     maglev-platform.md
-     transfer-system-concept.md
+  engineering/
+    design-requirements.md
+    preliminary-sizing.md
+    railway-platform.md
+    maglev-platform.md
+    transfer-system-concept.md
 
-   economics/
-     cost-model.md
+  economics/
+    cost-model.md
 
- calculations/
-   Reproducible physics and cost calculations
+calculations/
+  README.md
+  hypergravity_sizing.py
 
- simulations/
-   Numerical models and parameter studies
+simulations/
+  Numerical models and parameter studies
 
- diagrams/
-   Concept sketches and explanatory graphics
+diagrams/
+  Concept sketches and explanatory graphics
 
- references/
-   Literature notes and source material
+references/
+  Literature notes and source material
 
- papers/
-   Draft papers, whitepapers, and proposal-oriented documents
+papers/
+  Draft papers, whitepapers, and proposal-oriented documents
 ```
 
 ---
@@ -123,7 +126,9 @@ README.md
 
 - [`docs/concept-note.md`](docs/concept-note.md) — proposal-grade concept framing.
 - [`docs/research-gap.md`](docs/research-gap.md) — structured research-gap analysis.
+- [`docs/literature-review.md`](docs/literature-review.md) — literature-review scaffold and institutional source anchors.
 - [`docs/scientific-questions.md`](docs/scientific-questions.md) — research-question catalogue.
+- [`docs/glossary.md`](docs/glossary.md) — controlled terminology and notation.
 - [`docs/roadmap.md`](docs/roadmap.md) — staged research and development roadmap.
 - [`docs/risk-register.md`](docs/risk-register.md) — preliminary risk register.
 
@@ -145,6 +150,11 @@ README.md
 ### Economics
 
 - [`docs/economics/cost-model.md`](docs/economics/cost-model.md) — staged cost framework for CAPEX, OPEX, renewal, and funding logic.
+
+### Calculations
+
+- [`calculations/README.md`](calculations/README.md) — calculation standards and usage notes.
+- [`calculations/hypergravity_sizing.py`](calculations/hypergravity_sizing.py) — dependency-free sizing calculator for circular terrestrial hypergravity concepts.
 
 ---
 
