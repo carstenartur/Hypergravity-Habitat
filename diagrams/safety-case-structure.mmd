@@ -1,0 +1,22 @@
+%% FIG-004: Safety Case Structure
+%% Source basis:
+%% - docs/safety-case-outline.md
+%% - docs/risk-register.md
+%% - docs/requirements-traceability-matrix.md
+%% Assumptions:
+%% - conceptual safety argument structure
+%% - does not claim that any platform is safe
+
+flowchart TD
+    SYS["System definition<br/>scope, stage, boundaries, intended use"]
+    HAZ["Hazard identification<br/>mechanical, electrical, biological, human, operational"]
+    RISK["Risk analysis<br/>likelihood, consequence, mitigations, residual risk"]
+    REQ["Safety requirements<br/>safe state, emergency stop, containment, monitoring"]
+    MIT["Mitigations and procedures<br/>design controls, operations, training"]
+    EVID["Evidence<br/>calculation, simulation, test, inspection, expert review"]
+    VER["Verification<br/>traceability matrix, test results, review records"]
+    DEC["Residual risk decision<br/>accept, redesign, restrict, or stop"]
+
+    SYS --> HAZ --> RISK --> REQ --> MIT --> EVID --> VER --> DEC
+    DEC -- redesign required --> SYS
+    DEC -- acceptable for stage --> NEXT["Proceed to next stage<br/>only within defined limits"]
