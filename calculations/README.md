@@ -29,26 +29,48 @@ g_{eff} = \sqrt{g^2 + a_c^2}
 
 This is important because a terrestrial circular platform combines vertical Earth gravity and horizontal centripetal acceleration.
 
----
-
-## Usage
-
-From the repository root:
+Usage:
 
 ```bash
 python calculations/hypergravity_sizing.py
-```
-
-CSV output:
-
-```bash
 python calculations/hypergravity_sizing.py --format csv
+python calculations/hypergravity_sizing.py --g-levels 1.05 1.10 1.20 --radii 100 250 500
 ```
 
-Custom values:
+---
+
+### `coriolis_projectile_deflection.py`
+
+First-order estimator for Coriolis deflection of thrown or kicked projectiles inside a rotating or circular platform.
+
+It estimates:
+
+- platform angular rate from target resultant gravity and radius,
+- approximate projectile flight time,
+- first-order lateral deflection,
+- approximate radius required for an allowed deflection threshold.
+
+The screening model is:
+
+\[
+y \approx \Omega \frac{L^2}{v}
+\]
+
+where:
+
+- \(y\) is lateral deflection,
+- \(\Omega\) is platform angular rate,
+- \(L\) is projectile range,
+- \(v\) is projectile speed.
+
+This model is intentionally simple. It does not include drag, spin, Magnus effect, launch angle, bounce, target height, or exact 3D geometry.
+
+Usage:
 
 ```bash
-python calculations/hypergravity_sizing.py --g-levels 1.05 1.10 1.20 --radii 100 250 500
+python calculations/coriolis_projectile_deflection.py
+python calculations/coriolis_projectile_deflection.py --target-g 1.10 --range 20 --speed 20
+python calculations/coriolis_projectile_deflection.py --target-g 1.10 --range 30 --speed 25 --allowed-deflection 0.5
 ```
 
 ---
@@ -61,6 +83,8 @@ Related documents:
 - `docs/engineering/design-requirements.md`
 - `docs/engineering/railway-platform.md`
 - `docs/engineering/maglev-platform.md`
+- `docs/literature-review.md`
+- `docs/science/sports-science.md`
 
 ---
 
@@ -80,4 +104,4 @@ All future calculation files should:
 
 ## Status
 
-The current calculation model is suitable for concept screening and documentation consistency. It is not sufficient for detailed engineering, safety certification, or construction planning.
+The current calculation tools are suitable for concept screening and documentation consistency. They are not sufficient for detailed engineering, safety certification, sports-science protocol design, or construction planning.
