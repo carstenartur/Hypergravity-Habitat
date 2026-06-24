@@ -138,13 +138,42 @@ These ranges are not final limits. They are a first-order feasibility map.
 
 ---
 
-## 10. Required Next Analysis
+## 10. Screening Takeaway: Standard Rail, Special Rail, and Non-Standard Systems
+
+A railway-based Hypergravity Habitat should be understood as a candidate for **very mild resultant hypergravity** unless the system departs substantially from conventional railway assumptions.
+
+As a first-order screening interpretation:
+
+| Concept class | Approximate resultant effective-g range | Interpretation |
+|---|---:|---|
+| Conventional railway logic | about 1.01–1.03 g | plausible order of magnitude under standard-like cant and cant-deficiency assumptions; still requires expert review |
+| Special railway assumptions / tilting vehicle / aggressive approval envelope | about 1.03–1.04 g, possibly approaching 1.05 g in optimistic special cases | no longer a simple standard-train claim; requires explicit analysis of cant, cant deficiency, wheel unloading, comfort, clearance, stopped-state behaviour, and safety |
+| Dedicated guided or internally tilted system | above about 1.05–1.06 g | likely leaves ordinary railway practice and becomes a specialized guideway, captured vehicle, gimballed cabin, maglev, or rotating-system problem |
+| Clear hypergravity target | 1.10 g and above | should be treated as outside normal railway cant/tilt logic unless a new system architecture is proposed |
+
+This table is not a certified railway limit. It is a screening guide for early feasibility discussion.
+
+The key point is that small lateral accelerations produce only small increases in **resultant** effective gravity. For example, 0.20 g lateral acceleration gives:
+
+```text
+g_eff = √(1² + 0.20²) ≈ 1.020 g
+```
+
+That is only about a 2% increase in resultant effective gravity.
+
+Tilting technology may help align the cabin with the perceived load vector, but it does not remove the underlying wheel-rail or guideway force limits. Track forces, wheel unloading, derailment safety, stopped and low-speed conditions, emergency braking, clearance, maintenance, and certification remain limiting factors.
+
+Therefore, conventional railway concepts are useful as a benchmark and may be relevant for very mild hypergravity or payload demonstrators. However, many of the scientifically interesting questions — especially higher-g exposure, large controlled payload environments, human habitability, transfer systems, and sport/projectile compatibility — may require leaving the space of standard railway solutions.
+
+---
+
+## 11. Required Next Analysis
 
 Before a rail concept claims any target g value, it needs cant and cant-deficiency calculation, wheel-unloading estimate, derailment-risk and vehicle dynamics model, carbody tilt and internal floor alignment model, stopped and low-speed analysis, emergency braking analysis, clearance analysis, ride-quality and vibration analysis, and expert review by railway dynamics specialists.
 
 ---
 
-## 11. Calculation Tool
+## 12. Calculation Tool
 
 A first-order screening calculator has been added:
 
@@ -156,7 +185,7 @@ It prints example envelope cases and target-g requirements. The tool is intentio
 
 ---
 
-## 12. Preliminary Conclusion
+## 13. Preliminary Conclusion
 
 Yes, a g-envelope exists. It is the intersection of physics, railway geometry, track cant, cant deficiency, vehicle tilt, wheel unloading, speed, low-speed operation, and safety constraints.
 
@@ -164,7 +193,7 @@ The preliminary conclusion is that conventional railway technology may be releva
 
 ---
 
-## 13. Source Anchors
+## 14. Source Anchors
 
 - 49 CFR 213.329 — Curves; elevation and speed limitations. Used as an example of regulatory structure for maximum outside rail elevation, cant deficiency qualification, wheel unloading, carbody roll, and lateral acceleration criteria.
 - `docs/physics-reference.md` — equations for resultant effective gravity and floor angle.
