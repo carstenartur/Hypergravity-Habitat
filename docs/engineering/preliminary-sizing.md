@@ -11,7 +11,7 @@
 
 This document provides first-order sizing relationships for candidate Hypergravity Habitat configurations. It is not a construction proposal and should not be read as a final engineering design.
 
-Its purpose is to make the dominant physical relationships explicit before architecture selection. In particular, it corrects a common simplification: for a terrestrial circular platform, target effective gravity is the vector result of Earth gravity and generated lateral acceleration, not simply Earth gravity plus an additional vertical component.
+Its purpose is to make the dominant physical relationships explicit before architecture selection. For a terrestrial circular platform, target effective gravity is treated as the vector result of Earth gravity and generated lateral acceleration.
 
 The document supports comparison of:
 
@@ -59,9 +59,9 @@ The bank angle or cabin-tilt angle needed to align the floor with the resultant 
 
 ---
 
-## 3. Important Correction
+## 3. Resultant Gravity Requirements
 
-A target of **1.10 g resultant effective gravity** does **not** require only 0.10 g lateral acceleration. It requires approximately 0.458 g lateral acceleration because the lateral and vertical components combine vectorially.
+The table below shows the lateral acceleration and approximate resultant-vector angle required for selected target effective-gravity levels.
 
 | Target resultant effective gravity | Required lateral acceleration | Required lateral acceleration | Approximate resultant-vector angle |
 |---:|---:|---:|---:|
@@ -71,7 +71,7 @@ A target of **1.10 g resultant effective gravity** does **not** require only 0.1
 | 1.25 g | 7.35 m/s² | 0.750 g | 36.9° |
 | 1.50 g | 10.96 m/s² | 1.118 g | 48.2° |
 
-This correction has major implications for operating speed, track design, comfort, land use, and feasibility.
+These requirements influence operating speed, track design, comfort, land use, safety, and feasibility.
 
 ---
 
@@ -92,7 +92,7 @@ Larger radii reduce angular rate but increase land use, guideway length, civil i
 
 ## 5. Required Operating Speed
 
-Using the vector-corrected model above:
+Using the resultant-gravity model above:
 
 | Radius | Speed for 1.10 g resultant | Speed for 1.25 g resultant |
 |---:|---:|---:|
@@ -145,7 +145,7 @@ No single radius is optimal without weighting these variables against scientific
 
 ## 8. Demonstrator Implications
 
-The corrected sizing suggests that early demonstrators should not aim immediately for large human-habitat systems.
+The sizing relationships suggest that early demonstrators should not aim immediately for large human-habitat systems.
 
 More credible early steps include:
 
@@ -280,6 +280,6 @@ All future calculations should state equations, units, assumptions, and uncertai
 
 ## 14. Preliminary Conclusion
 
-The corrected vector model shows that even modest resultant hypergravity levels may require substantial lateral acceleration. This strengthens the case for staged demonstrators, careful modelling, and architecture-neutral trade studies before any large facility is proposed.
+The sizing model shows that even modest resultant hypergravity levels may require substantial lateral acceleration. This strengthens the case for staged demonstrators, careful modelling, and architecture-neutral trade studies before any large facility is proposed.
 
 The most immediate engineering output should be a reproducible parameter model that allows reviewers to vary target gravity, radius, speed, angular rate, bank angle, land use, and cost assumptions.
