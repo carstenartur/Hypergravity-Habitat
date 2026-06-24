@@ -1,0 +1,22 @@
+%% FIG-005: Confounder-Control Chain
+%% Source basis:
+%% - docs/vibration-and-confounders.md
+%% - docs/data-management-plan.md
+%% Assumptions:
+%% - platform effects must be measured before biological or human results are interpreted
+%% - diagram is conceptual, not quantitative
+
+flowchart LR
+    PLATFORM["Moving / rotating platform"]
+    EXPOSURE["Target exposure<br/>effective gravity above 1 g"]
+    CONFOUNDERS["Potential confounders<br/>vibration, transients, heat, humidity, light, shear, noise, handling"]
+    SENSORS["Measurement layer<br/>acceleration, vibration, temperature, humidity, light, CO₂, events"]
+    CONTROL["Control strategy<br/>matched 1 g control, vibration control, baseline, recovery"]
+    DATA["Data package<br/>raw data, metadata, calibration, event log, analysis code"]
+    INTERPRET["Interpretation<br/>gravity effect, confounded result, or inconclusive"]
+
+    PLATFORM --> EXPOSURE --> INTERPRET
+    PLATFORM --> CONFOUNDERS --> INTERPRET
+    CONFOUNDERS --> SENSORS --> DATA --> INTERPRET
+    CONTROL --> DATA
+    SENSORS --> CONTROL
