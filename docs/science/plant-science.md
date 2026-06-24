@@ -1,263 +1,441 @@
-# Plant Science
+# Plant Science under Sustained Moderate Hypergravity
 
 **Project:** Hypergravity Habitat  
-**Document:** Plant Science Research Opportunities  
-**Version:** 0.1 (Draft)
+**Document type:** scientific domain brief  
+**Status:** working document for literature review, experimental design, and demonstrator planning  
+**Scope:** plant growth, gravitropism, controlled-environment agriculture, measurement strategy, confounders, and candidate early experiments
 
 ---
 
-# Purpose
+## 1. Purpose
 
-This document identifies research opportunities in plant biology that could be enabled by a long-duration hypergravity research infrastructure.
+This document defines plant-science research questions that could be investigated using a sustained moderate-hypergravity research environment. Plant systems are especially relevant because they respond to gravity throughout development and can be studied with controlled, automated, non-human payloads.
 
-Unlike conventional laboratory centrifuges, the proposed habitat could expose plants to **continuous moderate hypergravity** while simultaneously allowing researchers to investigate interactions with realistic environmental conditions over periods of weeks or months.
+The purpose is not to claim that hypergravity improves plant growth or crop performance. The purpose is to identify measurable questions, experimental requirements, confounders, and staged demonstrator opportunities.
 
-The document focuses on scientific questions rather than expected outcomes.
+The central question is:
 
----
-
-# Background
-
-Gravity is one of the primary environmental stimuli influencing plant development.
-
-Plants continuously detect gravitational direction and respond through gravitropism, affecting
-
-- root growth
-- shoot orientation
-- vascular development
-- structural stability
-- resource allocation
-
-While plant responses under microgravity and high hypergravity have been studied extensively, comparatively little is known about adaptation to **moderately elevated gravity over long periods**.
+> How does sustained moderate hypergravity influence plant growth, morphology, physiology, reproduction, and adaptation under controlled environmental conditions?
 
 ---
 
-# Primary Research Question
+## 2. Scientific Context
 
-> How does continuous exposure to moderate hypergravity influence plant growth, physiology and development?
+Gravity is a primary directional cue for plants. Roots, shoots, statolith systems, auxin distribution, water transport, mechanical support, and growth orientation are all connected to gravity-sensitive processes.
 
----
+Space biology has studied plants under microgravity and altered-gravity conditions because future space habitats require reliable food production and because plants provide a powerful model for studying gravity sensing. Laboratory centrifuges have also enabled hypergravity experiments. However, a habitat-scale or long-duration controlled environment for sustained moderate hypergravity could add a distinct experimental regime.
 
-# Secondary Questions
-
-- Does moderate hypergravity alter growth rate?
-- Does it change biomass production?
-- How are roots affected?
-- Does flowering occur earlier or later?
-- Are structural tissues strengthened?
-- Are there long-term adaptation mechanisms?
+The key question is whether gravity levels modestly above 1 g, applied continuously across significant portions of a plant life cycle, produce measurable and reproducible effects.
 
 ---
 
-# Candidate Species
+## 3. Scope
 
-Initial investigations should focus on well-characterised laboratory species.
+### In Scope
 
-Examples include
+This document covers:
 
-- *Arabidopsis thaliana*
-- wheat
-- barley
-- maize
-- rice
-- tomato
-- lettuce
+- seed germination,
+- root and shoot development,
+- gravitropism,
+- morphology and biomass,
+- photosynthesis and gas exchange,
+- water and nutrient transport,
+- flowering and reproduction,
+- multi-generation studies,
+- controlled-environment agriculture,
+- instrumentation and controls,
+- candidate early payloads.
 
-Species selection should balance scientific value with practical cultivation requirements.
+### Out of Scope
 
----
+This document does not provide:
 
-# Root Development
-
-Potential investigations
-
-- root length
-- branching
-- root angle
-- root density
-- root architecture
-
-Possible measurements
-
-- imaging
-- soil analysis
-- biomass
-- nutrient uptake
+- a complete plant-gravity literature review,
+- cultivar-specific recommendations,
+- agricultural production claims,
+- crop-yield promises,
+- final experimental protocols,
+- conclusions about beneficial adaptation.
 
 ---
 
-# Shoot Development
+## 4. Why Plants Are Strong Early Candidates
 
-Research topics include
+Plants are suitable for early Hypergravity Habitat research because they:
 
-- stem height
-- stem diameter
-- leaf area
-- branching
-- mechanical stability
+- can be studied without human-subject risk,
+- can be grown in automated controlled environments,
+- have measurable morphology and growth outputs,
+- can be imaged repeatedly,
+- support short and long exposure periods,
+- permit 1 g controls and recovery studies,
+- may complete full life cycles within feasible experimental durations,
+- are directly relevant to space life-support and controlled-environment agriculture.
 
-Questions
-
-- Does elevated gravity produce shorter, stronger plants?
-- Is mechanical reinforcement proportional to gravity level?
-
----
-
-# Photosynthesis
-
-Possible investigations
-
-- photosynthetic efficiency
-- chlorophyll concentration
-- gas exchange
-- light utilisation
-- carbon assimilation
-
-Environmental variables such as light intensity and temperature should be controlled independently of gravity.
+A plant payload can also test engineering requirements: lighting, power, thermal stability, humidity control, vibration logging, camera systems, irrigation, sample return, and data handling.
 
 ---
 
-# Water Transport
+## 5. Evidence Standard
 
-Potential questions
+Plant-science documentation should distinguish:
 
-- Does xylem transport change?
-- Does transpiration increase?
-- Does water demand change?
-- Does root pressure adapt?
+| Evidence level | Meaning |
+|---|---|
+| Established knowledge | Gravity influences plant orientation and development through known gravitropic processes |
+| Literature-supported expectation | Some plant systems respond to altered gravity in prior studies |
+| Working hypothesis | Sustained moderate hypergravity may alter specific growth variables |
+| Experimental question | Requires controlled comparison with 1 g conditions |
+| Engineering requirement | Needed to ensure observed effects are not environmental artefacts |
+| Unknown | Must remain unresolved until data are collected |
 
----
-
-# Nutrient Uptake
-
-Possible investigations
-
-- nitrogen uptake
-- phosphorus uptake
-- potassium uptake
-- micronutrient transport
-
-Moderate hypergravity may alter nutrient distribution within the plant.
+The project should not assume that a visible plant change is caused by gravity unless environmental variables are controlled or measured.
 
 ---
 
-# Flowering and Reproduction
+## 6. Primary Research Questions
 
-Research questions
+### 6.1 Gravity Sensitivity
 
-- flowering time
-- pollination success
-- seed production
-- seed quality
-- germination of offspring
+- Which species or developmental stages respond measurably to modest increases above 1 g?
+- Are responses detectable at 1.05 g, 1.10 g, 1.20 g, or only at higher levels?
+- Are responses linear, threshold-based, transient, or adaptive?
+- Does response depend on seedling stage, vegetative growth, flowering, or seed production?
 
-Long-duration experiments may reveal generational adaptation effects.
+### 6.2 Duration and Adaptation
 
----
+- How long must exposure continue before changes become measurable?
+- Are early responses maintained, compensated, or reversed over time?
+- Do plants adapt structurally or metabolically to the elevated load?
+- Are effects reversible after return to 1 g?
 
-# Mechanical Properties
+### 6.3 Environmental Interaction
 
-Potential investigations
-
-- stem stiffness
-- bending resistance
-- breaking strength
-- fibre development
-
-Moderate hypergravity may stimulate structural reinforcement.
-
----
-
-# Controlled Environment Agriculture
-
-A hypergravity habitat could also function as a test platform for controlled-environment agriculture.
-
-Potential applications
-
-- future space habitats
-- lunar agriculture
-- Martian agriculture
-- resilient crop production
+- How does hypergravity interact with light direction and intensity?
+- Does humidity alter observed responses?
+- Does irrigation method affect root development under hypergravity?
+- Do nutrient delivery and substrate mechanics become more important at elevated effective gravity?
+- How can vibration and acceleration transients be separated from gravity effects?
 
 ---
 
-# Combined Environmental Factors
+## 7. Candidate Species and Selection Criteria
 
-Gravity should eventually be studied together with
+Initial species should be selected for reproducibility, established protocols, short generation time, and manageable growth requirements.
 
-- light spectrum
-- humidity
-- atmospheric composition
-- CO₂ concentration
-- irrigation strategy
-- nutrient availability
+Candidate categories:
 
-This allows investigation of interactions between gravity and other environmental variables.
+| Category | Examples | Strengths |
+|---|---|---|
+| Model plants | *Arabidopsis thaliana* | short life cycle, extensive literature, genetics |
+| Leafy greens | lettuce, basil, spinach | relevance to controlled-environment agriculture |
+| Cereals | wheat, barley, rice | relevance to food crops, clear morphology metrics |
+| Fast seedlings | cress, radish | rapid early-growth measurements |
+| Algae or aquatic plants | selected laboratory species | compact payloads and automated monitoring |
+
+Selection criteria:
+
+- known growth requirements,
+- short experimental cycle,
+- imaging compatibility,
+- sensitivity to gravity-related morphology,
+- low maintenance burden,
+- compatibility with containment,
+- relevance to space biology or agriculture.
 
 ---
 
-# Long-Term Adaptation
+## 8. Germination and Early Development
 
-Particular attention should be given to experiments extending over several plant generations.
+Seedling experiments are attractive because they are compact, fast, and sensitive to environmental conditions.
 
-Questions include
+Research questions:
 
-- Do adaptation effects accumulate?
-- Are changes reversible?
+- Does germination timing change under moderate hypergravity?
+- Are root emergence, root angle, and shoot orientation altered?
+- Are early growth rates affected?
+- Does the gravity response differ between exposure from dry seed, imbibition, or post-germination stages?
+
+Candidate measurements:
+
+- time to germination,
+- root length,
+- shoot length,
+- root angle,
+- curvature dynamics,
+- seedling survival,
+- automated time-lapse imaging.
+
+---
+
+## 9. Root System Architecture
+
+Roots provide direct access to gravity-sensitive development.
+
+Research questions:
+
+- Does moderate hypergravity alter primary-root growth?
+- Does lateral branching change?
+- Are root angles, density, and architecture altered?
+- Does root response depend on substrate, hydroponic system, or nutrient availability?
+- Are changes adaptive, compensatory, or stress-related?
+
+Candidate measurements:
+
+- root length,
+- root branching density,
+- root angle distribution,
+- root biomass,
+- nutrient uptake,
+- rhizosphere imaging,
+- water-use metrics.
+
+Controls:
+
+- identical substrate or hydroponic conditions,
+- matched water availability,
+- matched temperature,
+- matched illumination,
+- vibration logging.
+
+---
+
+## 10. Shoot Development and Mechanical Support
+
+Shoots may respond to elevated effective weight through altered morphology or tissue allocation.
+
+Research questions:
+
+- Do stems become shorter, thicker, or mechanically reinforced?
+- Does leaf area change?
+- Does branching pattern change?
+- Does elevated load affect lodging resistance or bending behaviour?
+- Are changes driven by mechanical loading, growth rate, or stress response?
+
+Candidate measurements:
+
+- stem height,
+- stem diameter,
+- leaf area,
+- leaf number,
+- branching metrics,
+- mechanical bending tests,
+- dry and fresh biomass,
+- image-derived morphology.
+
+---
+
+## 11. Photosynthesis and Gas Exchange
+
+Photosynthetic response may be indirect and must be interpreted cautiously.
+
+Research questions:
+
+- Does sustained hypergravity affect photosynthetic efficiency?
+- Are chlorophyll content or leaf morphology altered?
+- Does gas exchange change because of gravity, airflow, canopy geometry, or humidity?
+- Does elevated gravity change carbon allocation between roots, stems, and leaves?
+
+Candidate measurements:
+
+- chlorophyll fluorescence,
+- gas exchange,
+- chlorophyll concentration,
+- biomass partitioning,
+- leaf angle and canopy structure,
+- CO2 and humidity monitoring.
+
+Critical controls:
+
+- identical light spectra and intensity,
+- temperature stability,
+- airflow measurement,
+- chamber geometry,
+- CO2 logging.
+
+---
+
+## 12. Water Transport and Irrigation
+
+Water transport is a major experimental risk area because gravity can influence drainage, capillary behaviour, substrate moisture, and root-zone oxygenation.
+
+Research questions:
+
+- Does elevated effective gravity alter water distribution in the substrate?
+- Does transpiration change?
+- Do irrigation requirements change?
+- Are root responses caused by gravity sensing or by altered water availability?
+- Which irrigation system is most reproducible under hypergravity?
+
+Candidate measurements:
+
+- substrate moisture,
+- water consumption,
+- drainage rate,
+- transpiration,
+- leaf water potential where feasible,
+- humidity and temperature logging.
+
+Design implication:
+
+A plant hypergravity experiment is also a fluid-management experiment. Water delivery must be validated before biological interpretation.
+
+---
+
+## 13. Nutrient Uptake and Biomass Allocation
+
+Research questions:
+
+- Does nutrient uptake change under sustained hypergravity?
+- Does biomass allocation shift between root, stem, leaf, and reproductive structures?
+- Are nutrient gradients affected by irrigation and substrate conditions?
+- Does elevated gravity alter apparent nutrient demand because of changed growth rate?
+
+Candidate measurements:
+
+- tissue nutrient analysis,
+- root-to-shoot ratio,
+- fresh and dry mass,
+- hydroponic nutrient concentration,
+- pH and electrical conductivity,
+- growth rate.
+
+---
+
+## 14. Flowering, Reproduction, and Seed Quality
+
+Long-duration plant experiments may allow full life-cycle studies.
+
+Research questions:
+
+- Does flowering time change?
+- Is pollination success affected?
+- Are seed number, seed mass, and seed viability altered?
+- Do offspring germination or growth traits differ after parental hypergravity exposure?
+- Are effects reversible or heritable?
+
+Candidate measurements:
+
+- flowering time,
+- flower count,
+- fruit or seed yield,
+- seed morphology,
+- germination rate of offspring,
+- multi-generation growth comparison.
+
+---
+
+## 15. Multi-Generation Studies
+
+Multi-generation plant studies could be a long-term strength of the concept, especially for fast-cycle species.
+
+Research questions:
+
+- Do adaptations accumulate across generations?
 - Are epigenetic mechanisms involved?
+- Does selection occur under sustained hypergravity?
+- Do traits persist after return to 1 g?
+
+Requirements:
+
+- stable long-duration operation,
+- strict environmental control,
+- seed tracking,
+- replication,
+- matched 1 g lineage controls,
+- contamination prevention.
 
 ---
 
-# Experimental Infrastructure
+## 16. Controlled-Environment Agriculture
 
-A dedicated plant laboratory may include
+The concept may be relevant to controlled-environment agriculture and space crop production, but this should be treated as a research hypothesis.
 
-- growth chambers
-- hydroponic systems
-- automated irrigation
-- environmental monitoring
-- imaging systems
-- biomass measurement
+Questions:
 
-Continuous monitoring should minimise disturbance of ongoing experiments.
+- How does hypergravity interact with closed-loop cultivation systems?
+- Does elevated gravity affect crop yield or nutritional content?
+- Are compact growth chambers feasible on moving or rotating platforms?
+- Can plant payloads inform lunar, Martian, or rotating-habitat agriculture?
 
----
-
-# Potential Applications
-
-Research findings may contribute to
-
-- plant biology
-- agriculture
-- controlled-environment farming
-- food production for space exploration
-- climate-resilient crop development
+The project should avoid claiming agricultural benefit until controlled experiments exist.
 
 ---
 
-# Open Research Questions
+## 17. Experimental Infrastructure Requirements
 
-- What gravity level produces measurable responses?
-- Which species adapt most rapidly?
-- Are observed changes reversible?
-- Does prolonged hypergravity influence crop yield?
-- Can beneficial adaptations be maintained after return to 1 g?
-- How does gravity interact with water availability and nutrient supply?
+A plant payload may require:
+
+- growth chamber enclosure,
+- LED lighting with known spectrum and intensity,
+- temperature and humidity control,
+- CO2 measurement,
+- irrigation or hydroponic system,
+- substrate containment,
+- drainage management,
+- automated imaging,
+- vibration and acceleration logging,
+- power and data interfaces,
+- sample preservation,
+- contamination control.
+
+The first demonstrator should prioritize reliability and control over biological ambition.
 
 ---
 
-# Relationship to Space Biology
+## 18. Confounders
 
-Most current space biology research focuses on reduced gravity.
+Major confounders include:
 
-A long-duration hypergravity habitat would complement these efforts by investigating the opposite region of the gravitational spectrum.
+- light gradients,
+- heat from lighting,
+- humidity variation,
+- airflow,
+- CO2 concentration,
+- irrigation differences,
+- drainage changes,
+- substrate compaction,
+- vibration,
+- acceleration transients,
+- chamber geometry,
+- handling disturbance,
+- microbial contamination.
 
-Together, both research approaches may improve understanding of how gravity influences plant life throughout its complete biologically relevant range.
+Any plant experiment should report these variables alongside biological outcomes.
 
 ---
 
-# Summary
+## 19. Candidate Early Experiments
 
-Long-duration moderate hypergravity represents an almost unexplored experimental environment for plant science.
+High-value early experiments could include:
 
-A dedicated research infrastructure would enable studies extending from molecular biology to whole-plant physiology while maintaining carefully controlled environmental conditions over weeks or months.
+1. seedling root-angle and growth-rate comparison at 1 g and selected hypergravity levels,
+2. time-lapse imaging of root and shoot development,
+3. lettuce or basil growth under controlled lighting and irrigation,
+4. hydroponic water-management test under moderate hypergravity,
+5. biomass allocation study with matched 1 g controls,
+6. recovery study after return to 1 g,
+7. multi-generation *Arabidopsis* pilot study after environmental stability is proven.
+
+Each experiment should provide both scientific data and infrastructure-validation data.
+
+---
+
+## 20. Open Questions
+
+- What gravity level produces measurable plant responses?
+- Which species and stages are most sensitive?
+- How long must exposure continue to distinguish adaptation from stress?
+- Are responses reversible after return to 1 g?
+- Can irrigation and substrate effects be separated from gravity effects?
+- Does sustained moderate hypergravity affect seed quality or offspring traits?
+- Which plant experiment provides the strongest early proof of experimental usefulness?
+
+---
+
+## 21. Preliminary Conclusion
+
+Plant science is one of the strongest early domains for the Hypergravity Habitat project. Plant payloads are measurable, scalable, ethically simpler than animal or human studies, and relevant to space biology and controlled-environment agriculture.
+
+The next step should be to define a small, highly controlled plant demonstrator experiment with matched 1 g controls, automated imaging, environmental logging, and explicit decision criteria for whether larger biological experiments are justified.
