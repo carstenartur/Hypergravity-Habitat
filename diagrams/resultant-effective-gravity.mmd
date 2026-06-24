@@ -1,0 +1,24 @@
+%% FIG-001: Resultant Effective Gravity Vector
+%% Source basis:
+%% - docs/physics-reference.md
+%% - docs/engineering/preliminary-sizing.md
+%% - calculations/hypergravity_sizing.py
+%% Assumptions:
+%% - terrestrial circular platform
+%% - Earth gravity and centripetal acceleration are perpendicular components
+%% - first-order conceptual vector relationship, not to scale
+
+flowchart LR
+    G["Earth gravity<br/>g = 9.80665 m/s²<br/>vertical component"]
+    AC["Centripetal acceleration<br/>a_c = v² / r = ω² r<br/>horizontal component"]
+    GEFF["Resultant effective gravity<br/>g_eff = √(g² + a_c²)"]
+    THETA["Floor / bank angle<br/>θ = atan(a_c / g)"]
+    NOTE["Design implication<br/>1.10 g resultant ≠ 0.10 g lateral<br/>1.10 g requires about 0.458 g lateral"]
+
+    G --> GEFF
+    AC --> GEFF
+    GEFF --> THETA
+    GEFF --> NOTE
+
+    classDef source fill:#f7f7f7,stroke:#555,stroke-width:1px;
+    class G,AC,GEFF,THETA,NOTE source;
