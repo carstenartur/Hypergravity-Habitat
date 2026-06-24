@@ -1,98 +1,72 @@
 # Hypergravity Habitat
 
-**An open research concept for long-duration studies under moderately elevated effective gravity.**
+**A proposal-oriented research documentation project for sustained moderate hypergravity as a terrestrial experimental environment.**
 
 ---
 
 ## Executive Summary
 
-Hypergravity Habitat is an early-stage research and documentation project. It explores whether a terrestrial research platform could support controlled long-duration experiments at effective gravity levels above normal Earth gravity.
+Hypergravity Habitat is an early-stage research and feasibility documentation project. It explores whether a terrestrial platform could support controlled experiments at sustained effective gravity levels above Earth-normal gravity.
 
-The project addresses a gap between established microgravity research, short-duration acceleration studies, parabolic flight, and conventional laboratory environments. Existing platforms are highly valuable, but they do not fully answer what could be learned from sustained, moderate, experimentally controlled hypergravity exposure.
+The project addresses a possible gap between existing altered-gravity research regimes: orbital microgravity, parabolic flight, bed-rest analogues, high-g exposure, short-duration centrifugation, and conventional laboratory studies. These platforms are scientifically valuable, but they do not fully answer what could be learned from sustained, moderate, experimentally controlled hypergravity exposure over durations long enough to observe adaptation rather than only acute response.
 
-The central question is:
+The central research question is:
 
 > How do biological, technical, and human-centred systems respond to sustained effective gravity above 1 g over scientifically meaningful durations?
 
-This repository does not propose immediate construction of a facility. Its purpose is to develop a rigorous basis for discussion, modelling, feasibility assessment, and future collaboration.
+This repository does **not** propose immediate construction or operation of a facility. Its purpose is to develop a rigorous basis for literature review, modelling, demonstrator definition, expert discussion, feasibility assessment, and future collaboration.
 
 ---
 
 ## Research Vision
 
-The long-term vision is to evaluate a possible terrestrial infrastructure for moderate hypergravity research.
+The long-term vision is to evaluate whether sustained moderate hypergravity deserves to be developed as a distinct research-infrastructure class.
 
-Potential applications include:
+Potential research domains include:
 
 - artificial-gravity research,
-- space medicine,
-- physiology,
-- biomechanics,
-- sports science,
-- biology,
-- engineering validation,
+- space medicine and countermeasure research,
+- human physiology,
+- biomechanics and human performance,
+- plant science,
+- cell and microbial biology,
+- controlled-environment agriculture,
+- railway and maglev engineering,
+- rotating-platform and guideway demonstrators,
 - research infrastructure planning.
 
-The project remains architecture-neutral. Circular railway systems, magnetic levitation systems, rotating structures, and smaller demonstrator concepts are all treated as candidates for comparison.
+The project remains architecture-neutral. Circular railway systems, magnetic levitation systems, rotating structures, payload-only rigs, and hybrid demonstrators are treated as candidates to be compared against common scientific and engineering requirements.
 
 ---
 
 ## Research Gap
 
-| Research regime | Typical platform | Typical duration | Gravity environment |
-|---|---|---:|---:|
-| Microgravity | Orbital platform | Days to months | Near 0 g |
-| Parabolic flight | Aircraft | Seconds | Alternating low-g and high-g |
-| Centrifuge study | Ground-based centrifuge | Minutes to hours | Elevated g |
-| Bed-rest analogue | Clinical research facility | Days to months | 1 g with unloading analogue |
-| Hypergravity habitat concept | Large-radius terrestrial platform | To be studied | Moderately above 1 g |
+| Research regime | Typical platform | Typical duration | Gravity environment | Limitation for this project |
+|---|---|---:|---:|---|
+| Orbital microgravity | Space station | Days to months | Near 0 g | Not elevated gravity |
+| Parabolic flight | Aircraft | Seconds | Alternating low-g and high-g | Too short for adaptation |
+| Bed-rest analogue | Clinical facility | Days to months | 1 g with unloading analogue | Does not create elevated effective gravity |
+| Human centrifuge | Ground centrifuge | Minutes to hours in many protocols | Elevated acceleration | Usually not a continuous habitat or laboratory |
+| Biological centrifuge | Laboratory centrifuge | Variable | Elevated acceleration | Often small-scale and payload-specific |
+| Hypergravity Habitat concept | Terrestrial circular, rotating, or guided platform | To be studied | Moderately above 1 g | Requires feasibility validation |
 
-The research gap is the lack of a clearly defined, habitable, long-duration platform for studying moderate hypergravity as its own scientific regime.
-
----
-
-## Candidate Concepts
-
-### Circular Railway Platform
-
-A circular railway platform could use a large-radius track and continuous motion to generate effective acceleration. This approach may benefit from mature rail engineering, but it raises questions about vibration, wear, access, maintenance, and cost.
-
-### Magnetic Levitation Platform
-
-A maglev platform could reduce mechanical contact and may allow smoother operation. It also introduces higher system complexity, infrastructure cost, and certification challenges.
-
-### Rotating or Hybrid Platform
-
-A rotating or hybrid demonstrator could provide a more direct artificial-gravity test environment. Smaller demonstrators may be useful for early modelling and validation, while larger systems require deeper engineering analysis.
-
----
-
-## Objectives
-
-The repository aims to:
-
-1. define the research domain,
-2. collect scientific questions,
-3. document physical and engineering assumptions,
-4. compare candidate infrastructure concepts,
-5. develop reproducible calculations,
-6. identify risks and uncertainties,
-7. prepare material suitable for academic and institutional review.
+The research gap is the lack of a clearly defined, controlled, long-duration research environment for studying moderate hypergravity as its own scientific regime.
 
 ---
 
 ## Evidence Levels
 
-Documentation should distinguish between:
+All documents should distinguish between evidence levels.
 
 | Evidence level | Meaning |
 |---|---|
-| Established knowledge | Supported by accepted physics, engineering practice, or literature |
-| Engineering estimate | Approximation based on explicit assumptions |
+| Established knowledge | Supported by accepted physics, engineering practice, or peer-reviewed literature |
+| Engineering principle | Direct consequence of transparent equations and assumptions |
+| Engineering estimate | Approximation based on stated assumptions and uncertainty |
 | Working hypothesis | Plausible idea requiring validation |
-| Open research question | Topic requiring further review, modelling, or experiments |
+| Open research question | Topic requiring further review, modelling, or experiment |
 
-This distinction is essential because the project combines established mechanics with early-stage concept development.
+This distinction is essential because the project combines established mechanics with early-stage infrastructure concepts.
 
 ---
 
@@ -101,60 +75,113 @@ This distinction is essential because the project combines established mechanics
 ```text
 README.md
 
-docs/
-  concept-note.md
-  research-gap.md
-  scientific-questions.md
-  railway-platform.md
-  maglev-platform.md
-  human-physiology.md
-  sports-science.md
-  biology.md
-  engineering.md
-  economics.md
-  roadmap.md
+ docs/
+   concept-note.md
+   research-gap.md
+   scientific-questions.md
+   roadmap.md
+   risk-register.md
+   habitability.md
 
-calculations/
-  Reproducible physics and cost calculations
+   science/
+     human-physiology.md
+     biology.md
+     plant-science.md
+     sports-science.md
 
-simulations/
-  Numerical models and parameter studies
+   engineering/
+     design-requirements.md
+     preliminary-sizing.md
+     railway-platform.md
+     maglev-platform.md
+     transfer-system-concept.md
 
-diagrams/
-  Concept sketches and explanatory graphics
+   economics/
+     cost-model.md
 
-references/
-  Literature notes and source material
+ calculations/
+   Reproducible physics and cost calculations
 
-papers/
-  Draft papers, whitepapers, and proposal-oriented documents
+ simulations/
+   Numerical models and parameter studies
+
+ diagrams/
+   Concept sketches and explanatory graphics
+
+ references/
+   Literature notes and source material
+
+ papers/
+   Draft papers, whitepapers, and proposal-oriented documents
 ```
 
 ---
 
-## Roadmap
+## Main Documents
 
-### Phase 1: Foundation
+### Concept and Research Framing
 
-- Literature review
-- Terminology and scope
-- Baseline calculations
-- Research gap analysis
-- Initial concept note
+- [`docs/concept-note.md`](docs/concept-note.md) — proposal-grade concept framing.
+- [`docs/research-gap.md`](docs/research-gap.md) — structured research-gap analysis.
+- [`docs/scientific-questions.md`](docs/scientific-questions.md) — research-question catalogue.
+- [`docs/roadmap.md`](docs/roadmap.md) — staged research and development roadmap.
+- [`docs/risk-register.md`](docs/risk-register.md) — preliminary risk register.
 
-### Phase 2: Comparative Study
+### Science
 
-- Compare rail, maglev, rotating, and demonstrator concepts
-- Develop cost and energy estimates
-- Document safety and operational constraints
-- Identify the smallest useful experimental platform
+- [`docs/science/human-physiology.md`](docs/science/human-physiology.md) — human physiology and adaptation questions.
+- [`docs/science/biology.md`](docs/science/biology.md) — cell, microbial, organismal, and model-system biology.
+- [`docs/science/plant-science.md`](docs/science/plant-science.md) — plant growth, gravitropism, controlled-environment agriculture.
+- [`docs/science/sports-science.md`](docs/science/sports-science.md) — human performance and sports-science questions, treated cautiously as a later-stage domain.
 
-### Phase 3: Feasibility Preparation
+### Engineering and Feasibility
 
-- Refine research questions with domain experts
-- Create simulation and visualization models
-- Prepare material for external review
-- Define a demonstrator pathway
+- [`docs/engineering/design-requirements.md`](docs/engineering/design-requirements.md) — technology-neutral requirements framework.
+- [`docs/engineering/preliminary-sizing.md`](docs/engineering/preliminary-sizing.md) — vector-corrected radius, speed, acceleration, and sizing model.
+- [`docs/engineering/railway-platform.md`](docs/engineering/railway-platform.md) — circular railway concept assessment.
+- [`docs/engineering/maglev-platform.md`](docs/engineering/maglev-platform.md) — magnetic-levitation concept assessment.
+- [`docs/engineering/transfer-system-concept.md`](docs/engineering/transfer-system-concept.md) — staged access, logistics, and emergency-transfer concepts.
+
+### Economics
+
+- [`docs/economics/cost-model.md`](docs/economics/cost-model.md) — staged cost framework for CAPEX, OPEX, renewal, and funding logic.
+
+---
+
+## Candidate Concepts
+
+### Circular Railway Platform
+
+A circular railway platform could use a large-radius track and continuous motion to generate centripetal acceleration. This approach may benefit from mature rail engineering, but it raises questions about vibration, wear, access, maintenance, banking geometry, land use, emergency stopping, and cost.
+
+### Magnetic Levitation Platform
+
+A maglev platform could reduce mechanical contact and may offer improved ride quality. It also introduces system complexity, power electronics, electromagnetic-compatibility questions, specialized maintenance, safety-case uncertainty, and cost risk.
+
+### Rotating or Hybrid Platform
+
+A rotating or hybrid demonstrator could provide a direct artificial-gravity test environment. Smaller demonstrators may be useful for instrumentation, biological payloads, and parameter validation. Larger rotating systems require deeper structural, human-factors, and safety analysis.
+
+### Payload-Only Demonstrator
+
+A small payload demonstrator may be the most credible first experimental step. It could test acceleration stability, vibration, environmental control, data logging, and simple biological payloads before any human-centred work is considered.
+
+---
+
+## Current Development Logic
+
+The repository is organized around staged feasibility, not immediate implementation.
+
+1. Define the research gap.
+2. Establish cautious scientific questions.
+3. Build reproducible physics and sizing models.
+4. Compare candidate concepts against common requirements.
+5. Identify the smallest useful demonstrator.
+6. Test measurement quality and confounders.
+7. Use low-risk biological payloads before human studies.
+8. Create a safety, ethics, and risk framework.
+9. Seek external expert review.
+10. Prepare a formal pre-feasibility proposal only if earlier stages justify it.
 
 ---
 
@@ -165,24 +192,27 @@ Contributions should:
 - separate facts from hypotheses,
 - state assumptions explicitly,
 - use SI units consistently,
-- include derivations for key calculations,
+- show equations before derived numbers,
 - cite sources wherever possible,
-- document uncertainty,
+- document uncertainty and limitations,
 - avoid promotional language,
-- identify limitations and risks,
-- make calculations reproducible.
+- identify safety and ethics constraints,
+- make calculations reproducible,
+- include stop/go decision points where appropriate.
 
 ---
 
 ## Collaboration
 
-The project welcomes critical feedback from experts in aerospace medicine, physiology, biomechanics, sports science, biology, railway engineering, maglev systems, structural engineering, safety engineering, simulation, and research infrastructure planning.
+The project welcomes critical feedback from researchers and practitioners in aerospace medicine, artificial gravity, physiology, biomechanics, plant science, cell biology, microbiology, sports science, railway engineering, maglev systems, rotating structures, safety engineering, research ethics, simulation, and research infrastructure planning.
+
+The most valuable contributions at this stage are not advocacy but critique: identifying weak assumptions, missing literature, hidden risks, better experimental pathways, or more credible demonstrator concepts.
 
 ---
 
 ## Disclaimer
 
-This repository is an exploratory research and documentation project. It does not propose immediate construction or operation of any facility. Any real-world implementation would require scientific review, engineering validation, safety assessment, ethical review, and institutional oversight.
+This repository is an exploratory research and documentation project. It does not propose immediate construction, human exposure, clinical application, or operation of any facility. Any real-world implementation would require scientific review, engineering validation, safety assessment, ethical review, medical governance, regulatory compliance, and institutional oversight.
 
 ---
 
