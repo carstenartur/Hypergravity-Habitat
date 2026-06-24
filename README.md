@@ -8,13 +8,21 @@
 
 Hypergravity Habitat is an early-stage research and feasibility documentation project. It explores whether a terrestrial platform could support controlled experiments at sustained effective gravity levels above Earth-normal gravity.
 
-The project addresses a possible gap between existing altered-gravity research regimes: orbital microgravity, parabolic flight, bed-rest analogues, high-g exposure, short-duration centrifugation, and conventional laboratory studies. These platforms are scientifically valuable, but they do not fully answer what could be learned from sustained, moderate, experimentally controlled hypergravity exposure over durations long enough to observe adaptation rather than only acute response.
+The project addresses a possible gap between existing altered-gravity research regimes: orbital microgravity, parabolic flight, bed-rest analogues, high-g exposure, short-duration centrifugation, biological centrifugation, and conventional laboratory studies. These platforms are scientifically valuable, but they do not fully answer what could be learned from sustained, moderate, experimentally controlled hypergravity exposure over durations long enough to observe adaptation rather than only acute response.
 
 The central research question is:
 
 > How do biological, technical, and human-centred systems respond to sustained effective gravity above 1 g over scientifically meaningful durations?
 
 This repository does **not** propose immediate construction or operation of a facility. Its purpose is to develop a rigorous basis for literature review, modelling, demonstrator definition, expert discussion, feasibility assessment, and future collaboration.
+
+---
+
+## Repository Status
+
+This repository is an exploratory research documentation project. It is intended to support literature review, modelling, demonstrator definition, expert feedback, and pre-feasibility planning.
+
+It does not propose immediate construction, human exposure, clinical use, sports-training use, or operation of a facility. Any real-world implementation would require formal scientific review, engineering validation, safety assessment, ethics approval, medical governance, regulatory compliance, and institutional oversight.
 
 ---
 
@@ -70,74 +78,6 @@ This distinction is essential because the project combines established mechanics
 
 ---
 
-## Repository Structure
-
-```text
-README.md
-
-docs/
-  concept-note.md
-  proposal-brief.md
-  research-gap.md
-  literature-review.md
-  scientific-questions.md
-  glossary.md
-  roadmap.md
-  work-packages.md
-  risk-register.md
-  safety-case-outline.md
-  ethics-and-governance.md
-  data-management-plan.md
-  requirements-traceability-matrix.md
-  facility-comparison.md
-  architecture-trade-study.md
-  minimum-useful-demonstrator.md
-  experimental-programme.md
-  physics-reference.md
-  vibration-and-confounders.md
-  habitability.md
-
-  science/
-    human-physiology.md
-    biology.md
-    plant-science.md
-    sports-science.md
-    coriolis-projectile-accuracy.md
-
-  engineering/
-    design-requirements.md
-    preliminary-sizing.md
-    railway-platform.md
-    tilting-train-and-cant-limits.md
-    railway-g-envelope.md
-    full-ring-vehicle-concept.md
-    maglev-platform.md
-    transfer-system-concept.md
-
-  economics/
-    cost-model.md
-
-calculations/
-  README.md
-  hypergravity_sizing.py
-  coriolis_projectile_deflection.py
-  railway_g_envelope.py
-
-diagrams/
-  README.md
-
-simulations/
-  Numerical models and parameter studies
-
-references/
-  Literature notes and source material
-
-papers/
-  Draft papers, whitepapers, and proposal-oriented documents
-```
-
----
-
 ## Main Documents
 
 ### Concept and Proposal Framing
@@ -158,6 +98,9 @@ papers/
 - [`docs/ethics-and-governance.md`](docs/ethics-and-governance.md) — human, animal, biological, sports-science, and data governance framework.
 - [`docs/data-management-plan.md`](docs/data-management-plan.md) — FAIR/open-science and sensitive-data handling framework.
 - [`docs/requirements-traceability-matrix.md`](docs/requirements-traceability-matrix.md) — requirement-to-evidence traceability.
+- [`docs/ai-use-and-transparency.md`](docs/ai-use-and-transparency.md) — AI-use disclosure and verification responsibility.
+- [`docs/documentation-style-guide.md`](docs/documentation-style-guide.md) — documentation style, formula notation, and public-readiness rules.
+- [`docs/external-review-request-template.md`](docs/external-review-request-template.md) — template for contacting potential reviewers and collaborators.
 
 ### Demonstrator and Architecture Logic
 
@@ -188,41 +131,15 @@ papers/
 - [`docs/engineering/maglev-platform.md`](docs/engineering/maglev-platform.md) — magnetic-levitation concept assessment.
 - [`docs/engineering/transfer-system-concept.md`](docs/engineering/transfer-system-concept.md) — staged access, logistics, and emergency-transfer concepts.
 
-### Economics
+### Economics, Calculations, and Figures
 
 - [`docs/economics/cost-model.md`](docs/economics/cost-model.md) — staged cost framework for CAPEX, OPEX, renewal, and funding logic.
-
-### Calculations and Figures
-
 - [`calculations/README.md`](calculations/README.md) — calculation standards and usage notes.
 - [`calculations/hypergravity_sizing.py`](calculations/hypergravity_sizing.py) — dependency-free sizing calculator for circular terrestrial hypergravity concepts.
 - [`calculations/coriolis_projectile_deflection.py`](calculations/coriolis_projectile_deflection.py) — first-order Coriolis deflection estimator for thrown or kicked projectiles.
 - [`calculations/railway_g_envelope.py`](calculations/railway_g_envelope.py) — first-order railway g-envelope screening calculator.
 - [`diagrams/README.md`](diagrams/README.md) — planned figure set for proposal and review material.
-
----
-
-## Candidate Concepts
-
-### Circular Railway Platform
-
-A circular railway platform could use a large-radius track and continuous motion to generate centripetal acceleration. This approach may benefit from mature rail engineering, but it raises questions about vibration, wear, access, maintenance, banking geometry, tilting-vehicle feasibility, land use, emergency stopping, and cost.
-
-### Full-Ring Vehicle
-
-A mechanically connected full-ring vehicle could reduce the intuitive problem of a short train tipping or sliding on a steeply canted curve by distributing loads around a closed annular structure. However, it becomes a specialized guided ring system with new constraints: structural load paths, guideway capture, thermal expansion, vibration modes, stopped-state behaviour, maintenance, and emergency access.
-
-### Magnetic Levitation Platform
-
-A maglev platform could reduce mechanical contact and may offer improved ride quality. It also introduces system complexity, power electronics, electromagnetic-compatibility questions, specialized maintenance, safety-case uncertainty, and cost risk.
-
-### Rotating or Hybrid Platform
-
-A rotating or hybrid demonstrator could provide a direct artificial-gravity test environment. Smaller demonstrators may be useful for instrumentation, biological payloads, and parameter validation. Larger rotating systems require deeper structural, human-factors, and safety analysis.
-
-### Payload-Only Demonstrator
-
-A small payload demonstrator may be the most credible first experimental step. It could test acceleration stability, vibration, environmental control, data logging, and simple biological payloads before any human-centred work is considered.
+- [`diagrams/figure-register.md`](diagrams/figure-register.md) — figure source register and rendering standard.
 
 ---
 
@@ -250,7 +167,8 @@ Contributions should:
 - separate facts from hypotheses,
 - state assumptions explicitly,
 - use SI units consistently,
-- show equations before derived numbers,
+- show readable formulas before derived numbers,
+- define all symbols directly after formulas,
 - cite sources wherever possible,
 - document uncertainty and limitations,
 - avoid promotional language,
@@ -258,24 +176,45 @@ Contributions should:
 - make calculations reproducible,
 - include stop/go decision points where appropriate.
 
+See [`docs/documentation-style-guide.md`](docs/documentation-style-guide.md).
+
 ---
 
-## Collaboration
+## AI Use and Transparency
 
-The project welcomes critical feedback from researchers and practitioners in aerospace medicine, artificial gravity, physiology, biomechanics, plant science, cell biology, microbiology, sports science, railway engineering, maglev systems, rotating structures, safety engineering, research ethics, simulation, and research infrastructure planning.
+AI tools may have been used to support drafting, restructuring, language editing, consistency checks, and review preparation. AI tools are not authors of this project. All scientific, engineering, safety, ethical, and bibliographic claims remain the responsibility of the human project maintainer(s) and contributors and must be verified against appropriate sources before being treated as evidence.
 
-The most valuable contributions at this stage are not advocacy but critique: identifying weak assumptions, missing literature, hidden risks, better experimental pathways, or more credible demonstrator concepts.
+See [`docs/ai-use-and-transparency.md`](docs/ai-use-and-transparency.md).
+
+---
+
+## Contributing
+
+Critical feedback is welcome. The most useful contributions at this stage identify weak assumptions, missing literature, calculation errors, confounders, safety issues, ethics concerns, or reasons why the concept should be narrowed, redirected, or stopped.
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
+
+---
+
+## Citation
+
+If you use or reference this project, please cite it using the metadata in [`CITATION.cff`](CITATION.cff). The repository is exploratory and should not be cited as evidence that a facility is feasible, safe, or justified.
 
 ---
 
 ## Disclaimer
 
-This repository is an exploratory research and documentation project. It does not propose immediate construction, human exposure, clinical application, or operation of any facility. Any real-world implementation would require scientific review, engineering validation, safety assessment, ethical review, medical governance, regulatory compliance, and institutional oversight.
+This repository is an exploratory research and documentation project. It does not propose immediate construction, human exposure, clinical application, sports-training application, or operation of any facility. Any real-world implementation would require scientific review, engineering validation, safety assessment, ethical review, medical governance, regulatory compliance, and institutional oversight.
 
 ---
 
 ## License
 
-Documentation is intended to be published under Creative Commons Attribution 4.0 International (CC BY 4.0) unless otherwise stated.
+Documentation and diagrams are intended to be available under Creative Commons Attribution 4.0 International (CC BY 4.0) unless otherwise stated. Software and scripts are available under the MIT License unless otherwise stated. Future datasets, sensitive material, third-party material, or generated artifacts may use different licenses or access restrictions where appropriate.
 
-Software, simulations, datasets, diagrams, or generated artifacts may use different licenses where appropriate.
+See [`LICENSE.md`](LICENSE.md).
+
+---
+
+<!-- project-footer -->
+**Project:** [Hypergravity Habitat](README.md) · **Status:** exploratory research documentation · **License:** see repository license and file-level notes
