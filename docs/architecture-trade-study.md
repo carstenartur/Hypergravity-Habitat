@@ -3,7 +3,7 @@
 **Project:** Hypergravity Habitat  
 **Document type:** architecture comparison and trade-study framework  
 **Status:** working document for pre-feasibility review  
-**Scope:** railway, maglev, rotating, payload-only, hybrid, and no-build options
+**Scope:** railway, full-ring vehicle, maglev, rotating, payload-only, hybrid, and no-build options
 
 ---
 
@@ -29,9 +29,12 @@ The current candidate set includes:
 4. laboratory centrifuge-based biological demonstrator,
 5. small circular guided payload cart,
 6. circular railway platform,
-7. magnetic levitation platform,
-8. large rotating habitat platform,
-9. hybrid architecture.
+7. full-ring vehicle / annular guideway concept,
+8. magnetic levitation platform,
+9. large rotating habitat platform,
+10. hybrid architecture.
+
+The full-ring vehicle is now treated as its own architecture class because it changes the load path relative to a conventional train. It is not merely a longer train.
 
 ---
 
@@ -53,6 +56,8 @@ Each candidate should be evaluated against common criteria.
 | Coriolis / angular-rate constraint | does it support movement or projectile tasks? |
 | maintainability | can it operate reliably over required duration? |
 | governance burden | what approvals are required? |
+| stopped-state behaviour | what happens at low speed or rest? |
+| load-path clarity | are loads carried through wheels, guideways, structure, bearings, or magnetic support? |
 
 ---
 
@@ -210,6 +215,8 @@ A rail vehicle or payload module moves continuously around a circular track.
 
 - vibration and noise,
 - wheel and rail wear,
+- track cant and cant deficiency limits,
+- local wheel unloading,
 - large land use,
 - high speed for modest resultant g at large radius,
 - transfer and emergency complexity,
@@ -221,7 +228,40 @@ A serious trade-study candidate, but not the first demonstrator unless the scien
 
 ---
 
-## 10. Architecture 6: Magnetic Levitation Platform
+## 10. Architecture 6: Full-Ring Vehicle / Annular Guideway
+
+### Description
+
+A mechanically connected vehicle occupies most or all of a circular guideway. It may range from a nearly closed articulated train to a captured annular guideway structure or rotating habitat-like ring.
+
+### Strengths
+
+- changes the load path relative to a short conventional train,
+- can distribute radial and structural loads around the ring,
+- can reduce the intuitive single-vehicle tipping problem on steep cant,
+- may allow positive guideway capture through side, upper, or lower guides,
+- could provide continuous interior circulation and larger usable area,
+- may bridge the gap between railway, guideway, maglev, and rotating-habitat concepts.
+
+### Limitations
+
+- no longer conventional rolling stock,
+- requires global ring load-path analysis,
+- local support unloading remains possible,
+- stopped and low-speed states remain critical,
+- thermal expansion and tolerance management become major design issues,
+- dynamic modes of a long connected structure may be difficult,
+- module replacement, maintenance, and evacuation become complex,
+- failure of one segment may affect the whole ring,
+- may require a custom captured guideway rather than ordinary rail.
+
+### Best Use
+
+Important long-term architecture class to include in trade studies. It should not be treated as a simple extension of the railway concept. It requires its own modelling and may ultimately converge toward a guided annular structure or rotating habitat.
+
+---
+
+## 11. Architecture 7: Magnetic Levitation Platform
 
 ### Description
 
@@ -250,7 +290,7 @@ Advanced future candidate if rail vibration and wear prove limiting.
 
 ---
 
-## 11. Architecture 7: Large Rotating Habitat Platform
+## 12. Architecture 8: Large Rotating Habitat Platform
 
 ### Description
 
@@ -278,18 +318,19 @@ Long-term concept; small rotating payload demonstrators are more realistic near 
 
 ---
 
-## 12. Architecture 8: Hybrid Platform
+## 13. Architecture 9: Hybrid Platform
 
 ### Description
 
-A combination of payload modules, rotating rigs, guided tracks, stationary support labs, and possibly rail or maglev subsystems.
+A combination of payload modules, rotating rigs, guided tracks, stationary support labs, rail, full-ring, maglev, or annular subsystems.
 
 ### Strengths
 
 - flexible staging,
 - allows separate testing of subsystems,
 - can combine stationary skill training with hypergravity exposure,
-- supports incremental development.
+- supports incremental development,
+- may allow a full-ring or guided-annular concept to evolve from smaller tests.
 
 ### Limitations
 
@@ -304,7 +345,7 @@ Potentially useful after requirements mature; not a substitute for disciplined s
 
 ---
 
-## 13. Comparison Matrix
+## 14. Comparison Matrix
 
 | Architecture | Scientific value | Safety complexity | Cost | Near-term feasibility | Scalability | Recommended role |
 |---|---:|---:|---:|---:|---:|---|
@@ -314,13 +355,14 @@ Potentially useful after requirements mature; not a substitute for disciplined s
 | lab centrifuge biological demo | high | low-medium | low | high | low-medium | strong early science path |
 | circular guided payload cart | medium-high | medium | medium | medium | medium | engineering demonstrator |
 | circular railway platform | high if justified | high | high | low-medium | high | later trade-study candidate |
+| full-ring vehicle / annular guideway | high if justified | very high | high | low | high | separate long-term architecture class |
 | maglev platform | high if justified | high | high | low | high | advanced future candidate |
 | large rotating habitat | high if justified | high | high | low | high | long-term concept |
 | hybrid platform | variable | variable | variable | medium | high | later integration strategy |
 
 ---
 
-## 14. Weighted Trade-Study Template
+## 15. Weighted Trade-Study Template
 
 A future formal trade study should use weighted scores.
 
@@ -332,6 +374,8 @@ A future formal trade study should use weighted scores.
 | demonstrator feasibility | 4 | near-term funding relevance |
 | cost realism | 4 | proposal credibility |
 | confounder control | 4 | especially biology/humans |
+| load-path clarity | 4 | essential for full-ring, rail, maglev, and rotating systems |
+| stopped-state behaviour | 4 | essential for canted, full-ring, and occupied concepts |
 | scalability | 3 | future relevance |
 | maintainability | 3 | long-duration operation |
 | human compatibility | 2 | later-stage, not first priority |
@@ -341,7 +385,7 @@ Weights should be adjusted by stage. Human compatibility should not dominate Sta
 
 ---
 
-## 15. Current Recommendation
+## 16. Current Recommendation
 
 The current best path is:
 
@@ -349,27 +393,32 @@ The current best path is:
 2. use existing facilities where possible,
 3. define a payload-first demonstrator,
 4. prioritize plant or microbial payloads with strong instrumentation,
-5. perform a formal rail/maglev/rotating trade study only after measurement requirements are clearer,
-6. defer human-rated railway, maglev, or habitat designs until non-human evidence exists.
+5. perform a formal rail/full-ring/maglev/rotating trade study only after measurement requirements are clearer,
+6. treat full-ring concepts as a separate architecture class requiring annular-structure modelling,
+7. defer human-rated railway, maglev, full-ring, or habitat designs until non-human evidence exists.
 
 ---
 
-## 16. Key Architecture Risks
+## 17. Key Architecture Risks
 
 | Risk | Most affected architecture | Mitigation |
 |---|---|---|
-| vibration confounding | rail, guided cart, rotating rig | instrumented demonstrator |
+| vibration confounding | rail, guided cart, rotating rig, full-ring | instrumented demonstrator |
 | angular-rate limits | rotating, small-radius concepts | parameter modelling |
-| high capital cost | rail, maglev, large rotating | staged demonstrators |
+| high capital cost | rail, full-ring, maglev, large rotating | staged demonstrators |
 | electromagnetic interference | maglev | EMC testing |
-| transfer complexity | rail, maglev, habitat | payload-first approach |
+| transfer complexity | rail, full-ring, maglev, habitat | payload-first approach |
+| stopped-state instability or unusable interior | rail, full-ring, high-cant guideway | stopped-state model and emergency concept |
+| thermal expansion and structural modes | full-ring, large rotating habitat | annular-structure simulation |
 | human ethics burden | any human platform | defer human studies |
 | small effect size | all science platforms | sensitive payload selection |
 
 ---
 
-## 17. Preliminary Conclusion
+## 18. Preliminary Conclusion
 
 No full-scale architecture should be selected yet. The current evidence supports a staged demonstrator strategy.
 
-The recommended near-term architecture is a payload-first rotating or guided demonstrator, preferably using plant or microbial payloads and comprehensive instrumentation. Railway and maglev concepts remain valuable but should be evaluated after the project has clearer measurement requirements and evidence that larger infrastructure is scientifically justified.
+The recommended near-term architecture is a payload-first rotating or guided demonstrator, preferably using plant or microbial payloads and comprehensive instrumentation. Railway, full-ring, maglev, and rotating habitat concepts remain valuable but should be evaluated after the project has clearer measurement requirements and evidence that larger infrastructure is scientifically justified.
+
+The full-ring concept is important because it changes the conventional railway tipping intuition. However, it also introduces a new class of annular-structure, guideway, stopped-state, maintenance, and emergency-access problems. It should therefore remain in the architecture trade study as a distinct architecture class between conventional railway and rotating habitat.
