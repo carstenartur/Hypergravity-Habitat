@@ -1,334 +1,567 @@
 # Concept Note: Hypergravity Habitat
 
 **Working title:** Hypergravity Habitat  
-**Document type:** Scientific concept note  
-**Project status:** Exploratory research and feasibility documentation  
-**Repository:** `carstenartur/Hypergravity-Habitat`
+**Document type:** Scientific concept note / pre-feasibility framing document  
+**Project status:** Exploratory research programme and feasibility documentation  
+**Repository:** `carstenartur/Hypergravity-Habitat`  
+**Intended audience:** academic reviewers, aerospace medicine researchers, engineering collaborators, research infrastructure funders, and early-stage proposal reviewers
 
 ---
 
 ## 1. Purpose of this Document
 
-This concept note defines the scientific and technical rationale for the Hypergravity Habitat project. It is intended to serve as a concise entry document for academic reviewers, research partners, engineering collaborators, and potential funding discussions.
+This concept note defines the scientific, technical, and programmatic rationale for the **Hypergravity Habitat** project. It is intended to serve as the primary conceptual entry point for reviewers who need to understand the project before reading the more detailed documents in this repository.
 
-The document does not present a finalized design. Instead, it frames the research domain, clarifies the central questions, identifies candidate infrastructure concepts, and defines the next steps required before any implementation pathway could be assessed responsibly.
+The document deliberately does **not** present a final facility design. It frames a research problem, defines a candidate research infrastructure class, identifies open scientific and engineering questions, and establishes the documentation standards required for a later feasibility study.
+
+The central question is:
+
+> Can sustained, controlled exposure to moderately elevated effective gravity become a useful terrestrial research environment for space medicine, physiology, biology, engineering, rehabilitation science, and artificial-gravity research?
+
+At the present stage, the responsible output is not an implementation claim. It is a structured basis for expert review, simulation work, small-scale demonstrators, and possible funding discussions.
 
 ---
 
 ## 2. Executive Summary
 
-The Hypergravity Habitat project investigates whether a terrestrial research platform could enable long-duration experiments under moderately elevated effective gravity.
+Human spaceflight has created a mature research ecosystem around **microgravity**, including orbital laboratories, parabolic flight, bed-rest studies, isolation analogues, and human centrifuge experiments. These platforms have produced substantial knowledge about unloading, adaptation, countermeasures, vestibular effects, cardiovascular deconditioning, musculoskeletal loss, and operational health risks.
 
-Current altered-gravity research is well developed in several areas: orbital microgravity, parabolic flight, clinical analogues, and short-duration acceleration studies. However, there is a distinct conceptual gap between short exposure to elevated acceleration and a controlled environment in which systems could remain under moderate hypergravity for scientifically meaningful durations.
+By contrast, sustained **moderate hypergravity** has not yet been developed into a broadly available long-duration terrestrial habitat environment. Existing centrifuges can expose humans or payloads to elevated acceleration, but many such facilities are optimized for short-duration acceleration tolerance, vestibular research, or countermeasure protocols rather than for days-to-months exposure in a controlled laboratory or living environment.
 
-The project asks:
+The Hypergravity Habitat project investigates whether this missing research infrastructure class is scientifically and technically meaningful. It asks whether a controlled environment above 1 g could support experiments long enough to distinguish **acute response** from **adaptation**.
 
-> What can be learned from sustained effective gravity above 1 g when exposure is long enough to observe adaptation, not only immediate response?
+The concept is relevant to several domains:
 
-The repository explores this question through literature review, physics calculations, engineering comparison, safety considerations, and a staged research roadmap.
+- artificial-gravity research for long-duration spaceflight,
+- countermeasure development for microgravity-induced deconditioning,
+- musculoskeletal and cardiovascular physiology,
+- aging, immobilization, and rehabilitation research,
+- plant and microbial biology under altered effective gravity,
+- payload testing under sustained load environments,
+- large-radius rotating or circular transport-based research infrastructure.
 
-The primary output at this stage is not a construction proposal. It is a structured foundation for a later feasibility study.
+The project explores multiple infrastructure candidates, including circular railway platforms, magnetic levitation systems, rotating platforms, and hybrid demonstrators. The purpose is not to select a preferred architecture prematurely. Instead, the project first defines scientific requirements, measurable outputs, safety constraints, and engineering feasibility criteria.
 
 ---
 
-## 3. Problem Statement
+## 3. Scientific and Strategic Motivation
 
-Gravity is a constant boundary condition for life and technology on Earth. Spaceflight research has shown that changes in this boundary condition can have major effects on biological systems, human performance, engineering systems, and experimental procedures.
+Gravity is a permanent boundary condition for life on Earth. The biological and technical systems we consider normal have evolved, developed, or been designed under approximately 1 g. Spaceflight demonstrates that removing or reducing this load condition can produce substantial physiological and operational consequences. These effects motivate countermeasure research for missions to the Moon, Mars, and beyond.
 
-Microgravity research has therefore become a mature field. By contrast, continuous moderate hypergravity remains less clearly represented as a long-duration research environment.
+However, a systematic question remains underdeveloped:
 
-Important questions remain open:
+> What happens when the long-term environmental load is not reduced below Earth gravity, but increased modestly above it?
 
-- Which effective gravity levels above 1 g are scientifically interesting?
-- Which exposure durations are required to distinguish acute response from adaptation?
-- Which systems should be studied first: physical models, biological samples, plants, animals, human participants, or technical payloads?
-- Which infrastructure concept could provide stable, reproducible, and safe conditions?
-- What would be the smallest useful demonstrator?
+This question is not equivalent to classical high-g tolerance research. The relevant regime is not seconds or minutes at high acceleration. The relevant regime is sustained, controlled exposure at moderate levels such as 1.05 g, 1.1 g, 1.2 g, 1.5 g, or possibly higher levels depending on the experimental system and safety constraints.
 
-The project starts from these questions rather than from a fixed engineering answer.
+The scientific interest lies in adaptation over time:
+
+- Do musculoskeletal systems respond to modest chronic loading in measurable ways?
+- Could moderate hypergravity serve as a model for mechanical loading and unloading research?
+- Which biological systems are sensitive to small changes in effective gravity?
+- What exposure duration is necessary before adaptation differs from acute response?
+- How do vestibular, cardiovascular, metabolic, sleep, and behavioural systems respond?
+- Could sustained hypergravity help define requirements for artificial gravity in spacecraft?
+- What are the limits of comfort, performance, safety, and experimental reproducibility?
+
+The strategic value of the concept is that it could connect existing fields that are usually separated: aerospace medicine, artificial gravity, rehabilitation science, aging research, railway and maglev engineering, structural dynamics, human factors, and biological laboratory infrastructure.
 
 ---
 
 ## 4. Working Definition
 
-In this project, a **hypergravity habitat** is defined as:
+In this repository, a **Hypergravity Habitat** is defined as:
 
-> A controlled terrestrial research environment designed to expose experimental systems to sustained effective gravity above Earth-normal gravity.
+> A controlled terrestrial research environment designed to expose experimental systems to sustained effective gravity above Earth-normal gravity under reproducible, measurable, and governable conditions.
 
-The word habitat is used in a broad research-infrastructure sense. It does not imply immediate human habitation. Early stages may focus on calculations, simulations, laboratory-scale demonstrators, technical payloads, or non-human experiments.
+The term **habitat** is used in a research-infrastructure sense. It does not imply that early project stages involve human residence. Early stages may focus on literature review, calculations, simulation, instrumentation, payload experiments, non-human biological systems, or small-scale demonstrators.
+
+A mature version of the concept may eventually include human-centred studies, but only after formal expert review, medical governance, ethics approval, safety engineering, and institutional oversight.
 
 ---
 
-## 5. Research Gap
+## 5. Evidence Levels Used in this Repository
 
-A simplified comparison of existing research regimes helps define the gap:
+To maintain scientific credibility, all documentation should distinguish between different levels of certainty.
 
-| Regime | Typical platform | Typical duration | Main relevance | Limitation for this project |
+| Evidence level | Meaning | Required treatment |
+|---|---|---|
+| Established scientific knowledge | Well-supported findings from peer-reviewed literature or recognized institutional sources | Cite sources and avoid overextension |
+| Engineering principle | Direct consequence of mechanics, physics, control theory, or established engineering practice | Show equations, assumptions, units, and constraints |
+| Engineering estimate | Approximate calculation based on plausible but incomplete parameters | State assumptions and uncertainty explicitly |
+| Working hypothesis | A research proposition not yet demonstrated for this concept | Mark as hypothesis and define test pathway |
+| Design option | One possible architecture among several | Compare using common criteria; do not present as selected design |
+| Open question | A point requiring literature review, simulation, experiment, or expert input | Track as part of the research roadmap |
+
+This distinction is essential. The project should not claim that sustained moderate hypergravity is beneficial, safe, economical, or operationally practical until evidence supports such claims.
+
+---
+
+## 6. Research Gap
+
+Existing altered-gravity research infrastructure covers several important regimes, but not all combinations of gravity level, duration, experimental scale, and habitability.
+
+| Research regime | Typical platform | Typical exposure duration | Primary strength | Limitation for this project |
 |---|---|---:|---|---|
-| Microgravity | Orbital platform | Days to months | Space adaptation | Near-zero gravity, not elevated gravity |
-| Parabolic flight | Aircraft | Seconds | Short altered-gravity exposure | Too short for long adaptation studies |
-| Centrifuge study | Ground facility | Minutes to hours | Acceleration tolerance and controlled loading | Usually not a long-duration laboratory or living environment |
-| Ground analogue | Clinical or laboratory setting | Days to months | Selected effects of unloading or confinement | Does not create sustained elevated effective gravity |
-| Hypergravity Habitat concept | Terrestrial circular or rotating platform | To be determined | Sustained moderate hypergravity | Requires feasibility assessment |
+| Orbital microgravity | ISS and other orbital platforms | Days to months | Real microgravity and spaceflight context | Near-zero gravity rather than elevated gravity |
+| Parabolic flight | Aircraft | Seconds per parabola | Repeated short altered-gravity exposure | Too short for long adaptation studies |
+| Bed-rest analogue | Clinical research facility | Days to months | Controlled model for unloading and immobilization | Does not create sustained elevated effective gravity |
+| Isolation analogue | Habitat simulation | Days to months | Behaviour, operations, confinement | Does not alter mechanical load by gravity |
+| Human centrifuge | Short-arm or long-arm centrifuge | Minutes to hours in many protocols | Controlled artificial-gravity or acceleration exposure | Often not a continuous living or laboratory environment |
+| High-g training | Aviation or spaceflight centrifuge | Seconds to minutes | Acceleration tolerance and operational training | Different regime from moderate long-duration exposure |
+| Hypergravity Habitat concept | Circular, rotating, or guided terrestrial platform | To be defined | Sustained moderate hypergravity as a controlled environment | Requires feasibility, safety, and scientific validation |
 
-This concept note therefore treats sustained moderate hypergravity as a separate research domain that deserves systematic evaluation.
+The gap addressed here is therefore not simply “more gravity”. It is the combination of:
+
+1. moderate gravity levels above 1 g,
+2. exposure durations long enough for adaptation studies,
+3. controlled environmental conditions,
+4. reproducible experimental protocols,
+5. scalable infrastructure concepts,
+6. explicit safety and governance pathways.
 
 ---
 
-## 6. Scientific Objectives
+## 7. Scientific Objectives
 
-The project has six initial objectives.
+The project is organized around seven objectives.
 
 ### Objective 1: Define the research domain
 
-Clarify terminology, gravity ranges, exposure durations, and experimental categories.
+Clarify terminology, gravity ranges, exposure durations, experimental classes, and boundary conditions. This includes the distinction between acute exposure, intermittent exposure, repeated exposure, and sustained exposure.
 
-### Objective 2: Establish a transparent research gap analysis
+### Objective 2: Establish an evidence-based research gap
 
-Compare the concept with existing altered-gravity platforms and identify which questions cannot be answered well by current infrastructure.
+Compare the Hypergravity Habitat concept with existing platforms and identify which research questions are not well served by current infrastructure.
 
-### Objective 3: Develop baseline physics models
+### Objective 3: Develop reproducible physics and parameter models
 
-Document relationships between radius, velocity, acceleration, perceived load direction, rotation effects, energy demand, and operational constraints.
+Document the relationships between radius, velocity, angular rate, centripetal acceleration, resultant effective gravity, Coriolis effects, banking angle, power demand, energy storage, and operational constraints.
 
 ### Objective 4: Compare candidate infrastructure concepts
 
-Evaluate railway, magnetic levitation, rotating, and hybrid demonstrator approaches using consistent criteria.
+Evaluate circular railway, magnetic levitation, rotating platform, and hybrid concepts using common criteria. Avoid choosing an architecture before scientific requirements are defined.
 
-### Objective 5: Identify experimental pathways
+### Objective 5: Define experimental pathways
 
-Define which experimental systems could be studied in early phases and which would require later ethical, technical, and institutional review.
+Identify which experiments are plausible at each stage: theoretical studies, sensor packages, physical payloads, cell cultures, plants, microorganisms, animal models, and possible later human-centred protocols.
 
-### Objective 6: Prepare a staged feasibility roadmap
+### Objective 6: Build a staged feasibility roadmap
 
-Develop a pathway from concept documentation to simulation, demonstrator design, expert review, and possible funding proposals.
+Define a pathway from literature review and calculations toward simulation, demonstrator design, external review, and possible proposal submission.
 
----
+### Objective 7: Create proposal-grade documentation
 
-## 7. Candidate Infrastructure Concepts
-
-The project intentionally compares several architecture classes.
-
-### 7.1 Circular Railway Platform
-
-A circular railway platform would generate acceleration through continuous motion along a large-radius track. The interior environment could be aligned with the resultant effective load through banking, tilting, or cabin geometry.
-
-Potential strengths:
-
-- Uses mature engineering domains.
-- May scale to large radii.
-- Could support modular vehicles or payload cabins.
-- Provides a familiar basis for cost and safety comparison.
-
-Open challenges:
-
-- Vibration and ride quality.
-- Mechanical wear.
-- Safe access and evacuation.
-- Continuous operation over long periods.
-- Infrastructure scale and land use.
-
-### 7.2 Magnetic Levitation Platform
-
-A magnetic levitation system could reduce mechanical contact and may provide smoother continuous operation.
-
-Potential strengths:
-
-- Reduced contact wear.
-- Potentially improved vibration environment.
-- High controllability.
-- Relevance for advanced transportation engineering.
-
-Open challenges:
-
-- Higher technical complexity.
-- Power and control requirements.
-- Cost and certification.
-- Limited availability of comparable long-duration research systems.
-
-### 7.3 Rotating Platform or Demonstrator
-
-A rotating platform may provide a more direct artificial-gravity test environment. Smaller demonstrators may be useful for instrumentation, modelling, and early payload experiments.
-
-Potential strengths:
-
-- Direct generation of effective acceleration.
-- Strong connection to artificial-gravity research.
-- Suitable for staged demonstrator design.
-
-Open challenges:
-
-- Rotational side effects at small radius.
-- Structural and mechanical complexity at large radius.
-- Scaling from demonstrator to useful research environment.
-
-### 7.4 Hybrid Concepts
-
-Hybrid systems may combine elements of rail, rotating structures, modular laboratories, and stationary support infrastructure. These concepts should be evaluated only after clear requirements are defined.
+Develop documents that can support academic feedback, early institutional discussions, and eventually structured funding applications.
 
 ---
 
-## 8. Methodological Approach
+## 8. Candidate Research Infrastructure Classes
 
-The project should proceed through a sequence of increasingly concrete work packages.
+The project compares several architecture families. None should be treated as selected until requirements and constraints have been defined.
 
-### Work Package 1: Terminology and Scope
+### 8.1 Circular Railway Platform
 
-- Define gravity ranges and exposure durations.
-- Distinguish acute exposure, repeated exposure, and sustained exposure.
-- Define what is meant by experimental usefulness.
+A circular railway platform would generate centripetal acceleration through continuous motion along a large-radius track. Payload cabins or laboratory modules could be designed so that the resultant load vector aligns with the internal floor or experimental rack orientation.
+
+Potential strengths:
+
+- draws on mature rail engineering and safety practice,
+- may allow large radii that reduce angular-rate effects,
+- could support modular cabins or payload containers,
+- provides a concrete basis for cost, vibration, maintenance, and site studies,
+- may be easier to communicate to civil engineering and infrastructure partners than a fully novel rotating habitat.
+
+Open challenges:
+
+- vibration and ride quality,
+- wheel-rail wear or guideway maintenance,
+- noise and dynamic loads,
+- safe access and evacuation,
+- continuous operation over long durations,
+- land use and permitting,
+- precise environmental control in a moving laboratory.
+
+### 8.2 Magnetic Levitation Platform
+
+A magnetic levitation system could reduce mechanical contact and may provide smoother long-duration operation. It could also allow precise control of motion, acceleration, and vibration environment.
+
+Potential strengths:
+
+- reduced contact wear,
+- high controllability,
+- potential for low-vibration operation,
+- relevance to advanced mobility research,
+- possible synergy with guideway, control, and power electronics research.
+
+Open challenges:
+
+- higher technical complexity,
+- cost and certification uncertainty,
+- power and thermal management,
+- electromagnetic compatibility,
+- fault handling,
+- limited comparators for long-duration laboratory operation.
+
+### 8.3 Rotating Platform or Centrifugal Demonstrator
+
+A rotating platform is the most direct way to generate effective gravity. Small demonstrators may be useful for instrumentation, payload testing, and model validation.
+
+Potential strengths:
+
+- direct physical principle,
+- strong connection to artificial-gravity research,
+- suitable for staged demonstrator development,
+- can be scaled from small payload rigs to larger systems.
+
+Open challenges:
+
+- angular-rate and Coriolis effects at small radius,
+- structural complexity at large radius,
+- balancing and vibration control,
+- bearing or drive system reliability,
+- access to payloads or occupants during operation,
+- scaling from laboratory demonstrator to useful habitat.
+
+### 8.4 Hybrid Concepts
+
+Hybrid concepts may combine circular guideways, rotating laboratories, stationary support infrastructure, modular payload systems, and intermittent operation. Hybrid approaches may become attractive once scientific requirements are clearer.
+
+Potential strengths:
+
+- flexible staging,
+- separation of laboratory, operations, and support functions,
+- opportunity to test subsystems independently,
+- possible reduction of initial demonstrator cost.
+
+Open challenges:
+
+- integration complexity,
+- interface definition,
+- safety case complexity,
+- risk of over-design before requirements are mature.
+
+---
+
+## 9. Methodological Approach
+
+The project should proceed through staged work packages. Each work package should produce a reviewable output.
+
+### Work Package 1: Terminology, Scope, and Evidence Standards
+
+Outputs:
+
+- project glossary,
+- gravity-regime definitions,
+- exposure-duration taxonomy,
+- evidence-level scheme,
+- documentation standard.
+
+Core questions:
+
+- What does “moderate hypergravity” mean in this project?
+- Which claims require citations?
+- Which assumptions are design hypotheses rather than facts?
 
 ### Work Package 2: Literature and Infrastructure Review
 
-- Summarize relevant altered-gravity research.
-- Map existing platforms and analogue environments.
-- Identify the specific gap addressed by sustained moderate hypergravity.
+Outputs:
+
+- review of relevant microgravity, artificial-gravity, hypergravity, bed-rest, and analogue literature,
+- map of existing platforms and their limitations,
+- structured research-gap document.
+
+Core questions:
+
+- Which research questions are already well covered?
+- Which questions remain unresolved because current facilities do not provide sustained moderate hypergravity?
+- What evidence exists for biological or physiological sensitivity to gravity levels near 1 g?
 
 ### Work Package 3: Physics and Parameter Studies
 
-- Compute feasible combinations of radius, velocity, and acceleration.
-- Evaluate operational constraints.
-- Identify parameter ranges for small demonstrators and larger platforms.
+Outputs:
 
-### Work Package 4: Engineering Comparison
+- reproducible equations,
+- parameter tables,
+- radius-velocity-acceleration plots,
+- Coriolis and angular-rate analysis,
+- initial operational envelopes.
 
-- Compare candidate concepts using common criteria.
-- Document assumptions and uncertainties.
-- Identify showstoppers and priority questions.
+Core questions:
 
-### Work Package 5: Experimental Design Pathway
+- What radius and velocity are needed for relevant effective gravity levels?
+- What angular rates are acceptable for different experiment classes?
+- What are the implications for guideway size, energy, safety, and comfort?
 
-- Identify early payload types.
-- Define measurement requirements.
-- Separate non-human, technical, and possible later human-centred studies.
-- Define governance requirements for higher-risk study types.
+### Work Package 4: Concept Comparison
 
-### Work Package 6: Feasibility Study Preparation
+Outputs:
 
-- Consolidate findings into a formal feasibility document.
-- Prepare figures, tables, and calculations.
-- Identify potential academic and institutional partners.
+- architecture comparison matrix,
+- requirement-to-concept traceability table,
+- preliminary showstopper analysis,
+- staged demonstrator options.
+
+Core questions:
+
+- Which concept can answer which research question?
+- What is the smallest useful demonstrator?
+- Which concepts should be rejected early and why?
+
+### Work Package 5: Experimental Pathway
+
+Outputs:
+
+- experiment-class taxonomy,
+- measurement requirements,
+- instrumentation needs,
+- ethics and governance requirements,
+- candidate early experiments.
+
+Core questions:
+
+- Which experiments can be done without human participants?
+- Which biological systems provide high scientific value at low operational risk?
+- Which human-centred questions require later institutional review?
+
+### Work Package 6: Risk, Safety, and Governance Framework
+
+Outputs:
+
+- risk register,
+- safety-case outline,
+- medical-governance requirements,
+- emergency and access concept,
+- ethical review pathway.
+
+Core questions:
+
+- What risks are specific to sustained hypergravity?
+- What risks are inherited from moving platforms, rotating systems, or laboratory operations?
+- Which risks can be addressed at demonstrator scale?
+
+### Work Package 7: Feasibility and Funding Preparation
+
+Outputs:
+
+- pre-feasibility study outline,
+- proposal-ready executive summary,
+- partner map,
+- staged budget structure,
+- TRL-style roadmap.
+
+Core questions:
+
+- Which first milestone is fundable and testable?
+- Which disciplines and institutions are needed?
+- Which evidence is still missing before a construction-oriented feasibility study would be justified?
 
 ---
 
-## 9. Evaluation Criteria
+## 10. Evaluation Criteria for Candidate Concepts
 
-Candidate concepts should be compared using criteria such as:
+Candidate infrastructure concepts should be assessed using common criteria rather than subjective preference.
 
-| Criterion | Question |
+| Criterion | Evaluation question |
 |---|---|
-| Scientific value | Which research questions can the platform answer? |
-| Controllability | Can gravity level and exposure duration be defined precisely? |
+| Scientific value | Which research questions can the concept answer? |
+| Exposure quality | Can effective gravity level and duration be controlled precisely? |
 | Reproducibility | Can experiments be repeated under comparable conditions? |
-| Safety | Can risks be identified, reduced, and governed? |
-| Scalability | Can the system grow from demonstrator to larger platform? |
-| Maintainability | Can the system operate over long periods? |
-| Cost realism | Are cost assumptions transparent and plausible? |
-| Infrastructure fit | Can the concept be integrated into a realistic site and operation model? |
+| Environmental control | Can temperature, humidity, air composition, light, vibration, and noise be managed? |
+| Angular-rate effects | Are Coriolis and vestibular effects acceptable for the intended experiment class? |
+| Payload access | Can samples, sensors, and modules be accessed safely? |
+| Safety | Can credible hazards be identified, mitigated, and governed? |
+| Scalability | Can the concept scale from demonstrator to larger infrastructure? |
+| Maintainability | Can the system operate over long durations without excessive maintenance? |
+| Cost realism | Are capital and operating costs transparent and plausible? |
+| Site feasibility | Can land use, permitting, access, utilities, and emergency response be addressed? |
+| Institutional fit | Does the concept align with academic, aerospace, medical, or infrastructure partners? |
 
 ---
 
-## 10. Expected Outputs
+## 11. Candidate Experiment Classes
 
-Near-term outputs should include:
+The project should not begin with human habitation. A credible pathway should move from low-risk experiments toward higher-complexity studies.
 
-- a refined research gap document,
-- a list of scientific questions,
-- baseline physics calculations,
-- architecture comparison tables,
-- risk and limitation documentation,
-- preliminary cost structure,
-- demonstrator concepts,
-- a roadmap toward a formal feasibility study.
+### Class A: Calculations and Simulation
 
-Later outputs may include:
+- physics envelopes,
+- structural dynamics,
+- vibration models,
+- power and energy models,
+- human-factors simulations,
+- experiment scheduling models.
 
-- simulation models,
-- diagrams and explanatory graphics,
-- whitepaper drafts,
-- proposal-oriented documents,
-- collaboration briefs for research institutions.
+### Class B: Instrumented Physical Payloads
+
+- accelerometers,
+- vibration sensors,
+- fluid systems,
+- materials samples,
+- mechanical reliability payloads,
+- environmental-control instrumentation.
+
+### Class C: Cell, Microbial, and Plant Systems
+
+- cell cultures,
+- microorganisms,
+- plant growth systems,
+- automated imaging,
+- environmental monitoring,
+- sample-return procedures.
+
+### Class D: Small-Animal or Organism Models
+
+This class would require formal scientific justification, ethics approval, veterinary oversight, and institutional governance. It should not be treated as an early default pathway.
+
+### Class E: Human-Centred Studies
+
+Human-centred protocols would require a mature safety case, medical governance, independent ethics review, participant protection, operational training, emergency procedures, and clear scientific necessity.
+
+Examples of possible later questions include:
+
+- tolerance of short repeated exposures,
+- vestibular adaptation,
+- cardiovascular response,
+- sleep and behavioural effects,
+- functional performance,
+- musculoskeletal markers.
+
+No human-centred study should be implied as ready before the required governance pathway exists.
 
 ---
 
-## 11. Risks and Limitations
+## 12. Expected Scientific Impact
 
-The project must explicitly document limitations.
+If feasible, a Hypergravity Habitat or staged demonstrator programme could contribute to several research areas.
 
-Scientific limitations:
+### Space Medicine and Artificial Gravity
 
-- The most relevant gravity levels and durations are not yet established.
-- Benefits or harms of sustained moderate hypergravity must not be assumed.
-- Different biological systems may respond very differently.
+The concept could help define whether artificial gravity should be studied only as intermittent centrifugation or also as a sustained environmental condition. It may help quantify which gravity levels and exposure durations are scientifically meaningful.
 
-Engineering limitations:
+### Physiology, Aging, and Rehabilitation
 
-- Large-radius infrastructure may be expensive.
-- Ride quality may constrain useful operation.
-- Access, evacuation, and maintenance concepts require detailed study.
-- Energy and operational costs must be modelled transparently.
+Sustained moderate loading could provide a complementary model for studying mechanical load, unloading, immobilization, bed rest, and recovery. The concept should be framed carefully: it is not a proposed therapy until evidence exists.
 
-Programme limitations:
+### Biology
+
+Plants, microorganisms, tissues, and cellular systems may offer early experimental pathways because they can be studied with controlled instrumentation and lower operational risk than human habitation.
+
+### Engineering
+
+The project could generate research questions in rail systems, maglev systems, rotating structures, vibration control, environmental-control systems, safety engineering, and continuous-operation infrastructure.
+
+### Research Infrastructure Design
+
+The project may help define what a new class of altered-gravity research infrastructure would require, even if later analysis rejects some candidate architectures.
+
+---
+
+## 13. Risks and Limitations
+
+The project must explicitly document limitations rather than hide them.
+
+### Scientific Limitations
+
+- The most relevant gravity levels are not yet established.
+- Exposure durations required for adaptation are not yet known.
+- Beneficial effects must not be assumed.
+- Harmful effects must be treated as plausible until evaluated.
+- Results may differ strongly between humans, plants, microorganisms, tissues, and technical payloads.
+
+### Engineering Limitations
+
+- Large-radius infrastructure may be costly and land-intensive.
+- Small-radius systems may introduce strong rotational side effects.
+- Continuous operation creates maintenance, reliability, and safety requirements.
+- Vibration, noise, and environmental control may limit experimental value.
+- Moving laboratory systems require robust access, emergency, and shutdown concepts.
+
+### Programme Limitations
 
 - A serious feasibility study requires interdisciplinary review.
-- Any high-risk experiment type would require formal institutional governance.
-- Funding relevance depends on a clearly defined minimum useful demonstrator.
+- Funding relevance depends on a sharply defined first milestone.
+- Institutional credibility depends on avoiding premature claims.
+- Human-centred studies require governance beyond technical design.
 
 ---
 
-## 12. Relevance for Funding Discussions
+## 14. Relevance for Funding and Institutional Review
 
-The project may be relevant to early-stage funding if framed as a feasibility and concept-validation effort rather than as an immediate infrastructure construction plan.
+The concept is most credible when framed as a **pre-feasibility and concept-validation programme**, not as an immediate construction proposal.
 
 Potential funding-oriented themes include:
 
-- artificial-gravity research,
-- space health and countermeasure studies,
+- artificial gravity and human spaceflight countermeasures,
+- altered-gravity biology,
 - terrestrial research infrastructure,
 - simulation and modelling,
+- demonstrator development,
 - advanced mobility or maglev engineering,
-- biological response to altered gravity,
-- demonstrator development.
+- rehabilitation and immobilization research,
+- spaceflight analogue environments.
 
-A credible proposal would require:
+A credible first proposal should have:
 
-- a sharply defined research question,
-- a limited and testable first milestone,
-- transparent assumptions,
-- interdisciplinary partners,
-- explicit risk management,
-- measurable outputs.
+1. a limited scope,
+2. a testable research question,
+3. a defined demonstrator or modelling output,
+4. named disciplines and partner roles,
+5. transparent assumptions,
+6. measurable deliverables,
+7. explicit risk management,
+8. a clear decision point at the end.
 
----
-
-## 13. Near-Term Next Steps
-
-Recommended next steps are:
-
-1. Complete `docs/research-gap.md` as the evidence-based foundation.
-2. Rewrite `docs/scientific-questions.md` as a structured research programme.
-3. Create reproducible baseline calculations for acceleration, radius, and velocity.
-4. Compare railway, maglev, rotating, and demonstrator options.
-5. Define a minimum useful demonstrator.
-6. Prepare a short external review version for academic feedback.
+The first funded milestone should probably not be a full habitat. It should be a rigorous feasibility package or demonstrator study that determines whether larger infrastructure development is justified.
 
 ---
 
-## 14. Documentation Standard
+## 15. Recommended Near-Term Deliverables
 
-All further documentation should follow these principles:
+The next useful deliverables are:
 
-- Separate established knowledge from hypotheses.
-- State assumptions explicitly.
+1. `docs/research-gap.md` — evidence-based mapping of the research gap.
+2. `docs/scientific-questions.md` — structured research programme.
+3. `docs/physics.md` — reproducible formulas and parameter studies.
+4. `docs/design-requirements.md` — requirements before architecture selection.
+5. `docs/risk-register.md` — safety, scientific, operational, and programme risks.
+6. `docs/literature-review.md` — cited review of relevant sources.
+7. `docs/roadmap.md` — staged path from concept to pre-feasibility study.
+8. `docs/glossary.md` — controlled terminology for reviewers.
+
+---
+
+## 16. Initial Reference Anchors
+
+This concept note should be expanded with a formal literature review. The following institutional sources provide starting points for contextual framing:
+
+- NASA Human Research Program — human health and performance risks, countermeasures, spaceflight research, and analogue environments: <https://www.nasa.gov/hrp/>
+- DLR Institute of Aerospace Medicine / :envihab — terrestrial aerospace medicine research infrastructure, environmental conditions, countermeasures, and the DLR Short-Arm Centrifuge: <https://www.dlr.de/en/envihab>
+- ESA human research and bed-rest study materials — European context for spaceflight analogues and countermeasure studies: <https://www.esa.int/>
+
+These references are not sufficient for a funding proposal. A proposal-grade version requires peer-reviewed literature on artificial gravity, centrifugation, bed rest, musculoskeletal adaptation, vestibular effects, cardiovascular response, plant gravitropism, hypergravity biology, and relevant engineering systems.
+
+---
+
+## 17. Documentation Standard
+
+All further documentation should follow these rules:
+
 - Use SI units consistently.
-- Avoid promotional claims.
+- Show equations before presenting derived numbers.
+- State assumptions before conclusions.
+- Distinguish evidence from hypothesis.
+- Avoid promotional language.
 - Identify uncertainty and limitations.
 - Prefer measurable research questions.
-- Make calculations reproducible.
+- Link each document to the wider research programme.
 - Add references as the literature review matures.
+- Treat safety, ethics, and governance as central design constraints.
 
 ---
 
-## 15. Status
+## 18. Status
 
-This concept note is a living document. It should be revised as the literature review, calculations, and engineering comparisons become more precise.
+This concept note is a living document. It should be revised after the research-gap review, physics calculations, engineering comparisons, and expert feedback become more precise.
+
+The immediate goal is to transform the repository from an idea collection into a coherent, reviewable research programme suitable for academic discussion and early-stage feasibility funding.
