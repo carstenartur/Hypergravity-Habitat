@@ -1,0 +1,30 @@
+name: Public readiness
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-readiness-lint:
+    name: Public-readiness lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run public-readiness lint
+        run: python scripts/public_readiness_lint.py .
+
+      - name: Diagnose missing project footers
+        continue-on-error: true
+        run: python scripts/public_readiness_lint.py . --require-footers
