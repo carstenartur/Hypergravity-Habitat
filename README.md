@@ -1,5 +1,7 @@
 # Hypergravity Habitat
 
+[![Public readiness](https://github.com/carstenartur/Hypergravity-Habitat/actions/workflows/public-readiness.yml/badge.svg)](https://github.com/carstenartur/Hypergravity-Habitat/actions/workflows/public-readiness.yml)
+
 **A proposal-oriented research documentation project for sustained moderate hypergravity as a terrestrial experimental environment.**
 
 ---
@@ -22,7 +24,9 @@ This repository does **not** propose immediate construction or operation of a fa
 
 This repository is an exploratory research documentation project. It is intended to support literature review, modelling, demonstrator definition, expert feedback, and pre-feasibility planning.
 
-It does not propose immediate construction, human exposure, clinical use, sports-training use, or operation of a facility. Any real-world implementation would require formal scientific review, engineering validation, safety assessment, ethics approval, medical governance, regulatory compliance, and institutional oversight.
+It does not propose immediate construction, human exposure, clinical use, sports-training use, or operation of any facility. Any real-world implementation would require formal scientific review, engineering validation, safety assessment, ethics approval, medical governance, regulatory compliance, and institutional oversight.
+
+For external review, please start with [Public review coordination and next-stage roadmap](https://github.com/carstenartur/Hypergravity-Habitat/issues/7).
 
 ---
 
