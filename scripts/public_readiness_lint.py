@@ -5,7 +5,7 @@ The script checks Markdown files for issues that make the repository harder to
 review publicly:
 
 - unfinished formula markup,
-- unverified DOI markers,
+- explicit unverified-source markers,
 - known stale internal paths,
 - optional missing project footers.
 
@@ -25,10 +25,16 @@ RAW_FORMULA_PATTERNS = (
     "\\(",
     "\\)",
 )
+
+# Keep these markers deliberately specific. Broad phrases such as "to verify"
+# can appear in normal prose, for example "programme to verify the research gap".
 UNVERIFIED_PATTERNS = (
     "DOI to verify",
-    "to verify",
+    "metadata to verify",
+    "reference to verify",
+    "citation to verify",
 )
+
 STALE_PATHS = {
     "docs/physics.md": "docs/physics-reference.md",
     "docs/design-requirements.md": "docs/engineering/design-requirements.md",
