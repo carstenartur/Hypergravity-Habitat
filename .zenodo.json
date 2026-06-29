@@ -1,0 +1,30 @@
+{
+  "title": "Hypergravity Habitat",
+  "description": "Exploratory research documentation and calculation material for assessing whether sustained moderate hypergravity could become a useful terrestrial research environment for biological, human-centred, and technical systems. The repository is a pre-feasibility and expert-review resource.",
+  "creators": [
+    {
+      "name": "Hammer, Carsten",
+      "orcid": "0009-0005-1047-6381"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "upload_type": "publication",
+  "publication_type": "technicalnote",
+  "access_right": "open",
+  "keywords": [
+    "hypergravity",
+    "artificial gravity",
+    "space medicine",
+    "terrestrial analogue",
+    "research infrastructure",
+    "pre-feasibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/carstenartur/Hypergravity-Habitat",
+      "relation": "isSupplementTo",
+      "scheme": "url",
+      "resource_type": "publication-technicalnote"
+    }
+  ]
+}
